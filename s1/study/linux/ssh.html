@@ -1,0 +1,1875 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SSH &#xB7; &#x5B66;&#x4E60;&#x4E2D;&#x5FC3;</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="S1">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="linux_hardware_cmd.html">
+    
+    
+    <link rel="prev" href="linux_systemctl.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitee.com/3017677" target="_blank" class="custom-link">&#x7801;&#x4E91;</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    &#x4ECB;&#x7ECD;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chang_yong_url.html">
+            
+                <a href="../chang_yong_url.html">
+            
+                    
+                    &#x5E38;&#x7528;URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3">
+            
+                <span>
+            
+                    
+                    ANSIBLE
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../ansible/ab_readme.html">
+            
+                <a href="../ansible/ab_readme.html">
+            
+                    
+                    ansible
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../ansible/ab_proxy.html">
+            
+                <a href="../ansible/ab_proxy.html">
+            
+                    
+                    ssh&#x8DF3;&#x8F6C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4">
+            
+                <span>
+            
+                    
+                    work
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../work/cai_ji.html">
+            
+                <a href="../work/cai_ji.html">
+            
+                    
+                    &#x91C7;&#x96C6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../git.html">
+            
+                <a href="../git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6">
+            
+                <span>
+            
+                    
+                    gitbook&#x64CD;&#x4F5C;&#x6307;&#x5357;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../gitbook_readme.html">
+            
+                <a href="../gitbook_readme.html">
+            
+                    
+                    &#x5E38;&#x7528;&#x64CD;&#x4F5C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../gitbook_plugins.html">
+            
+                <a href="../gitbook_plugins.html">
+            
+                    
+                    &#x63D2;&#x4EF6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../gitbook-convert.html">
+            
+                <a href="../gitbook-convert.html">
+            
+                    
+                    &#x6587;&#x6863;&#x8F6C;&#x6362;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7">
+            
+                <span>
+            
+                    
+                    &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1">
+            
+                <span>
+            
+                    
+                    Windows
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../windows/win_readme.html">
+            
+                <a href="../windows/win_readme.html">
+            
+                    
+                    Windows&#x5E38;&#x7528;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2">
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="linux_systemctl.html">
+            
+                <a href="linux_systemctl.html">
+            
+                    
+                    systemctl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2.2" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="linux_hardware_cmd.html">
+            
+                <a href="linux_hardware_cmd.html">
+            
+                    
+                    Linux&#x786C;&#x4EF6;&#x5E38;&#x7528;&#x547D;&#x4EE4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="linux_performance_cmd.html">
+            
+                <a href="linux_performance_cmd.html">
+            
+                    
+                    Linux&#x6027;&#x80FD;&#x5E38;&#x7528;&#x547D;&#x4EE4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="linux-book-xingnengyouhua/toc.html">
+            
+                <a href="linux-book-xingnengyouhua/toc.html">
+            
+                    
+                    Linux&#x6027;&#x80FD;&#x4F18;&#x5316;&#x5B9E;&#x6218;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.5.1" data-path="linux-book-xingnengyouhua/book-000.html">
+            
+                <a href="linux-book-xingnengyouhua/book-000.html">
+            
+                    
+                    00 | &#x5F00;&#x7BC7;&#x8BCD;&#xFF1A;&#x522B;&#x518D;&#x8BA9;Linux&#x6027;&#x80FD;&#x95EE;&#x9898;&#x6210;&#x4E3A;&#x4F60;&#x7684;&#x7ECA;&#x811A;&#x77F3;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.2" data-path="linux-book-xingnengyouhua/book-004.html">
+            
+                <a href="linux-book-xingnengyouhua/book-004.html">
+            
+                    
+                    04 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x7ECF;&#x5E38;&#x8BF4;&#x7684; CPU &#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.3" data-path="linux-book-xingnengyouhua/book-006.html">
+            
+                <a href="linux-book-xingnengyouhua/book-006.html">
+            
+                    
+                    06 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x7684; CPU &#x4F7F;&#x7528;&#x7387;&#x5F88;&#x9AD8;&#xFF0C;&#x4F46;&#x4E3A;&#x5565;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x9AD8; CPU &#x7684;&#x5E94;&#x7528;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.4" data-path="linux-book-xingnengyouhua/book-007.html">
+            
+                <a href="linux-book-xingnengyouhua/book-007.html">
+            
+                    
+                    07 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x4E2D;&#x51FA;&#x73B0;&#x5927;&#x91CF;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#x8FDB;&#x7A0B;&#x548C;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#xFF08;&#x4E0A;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.5" data-path="linux-book-xingnengyouhua/book-008.html">
+            
+                <a href="linux-book-xingnengyouhua/book-008.html">
+            
+                    
+                    08 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x4E2D;&#x51FA;&#x73B0;&#x5927;&#x91CF;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#x8FDB;&#x7A0B;&#x548C;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.6" data-path="linux-book-xingnengyouhua/book-009.html">
+            
+                <a href="linux-book-xingnengyouhua/book-009.html">
+            
+                    
+                    09 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x600E;&#x4E48;&#x7406;&#x89E3;Linux&#x8F6F;&#x4E2D;&#x65AD;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.7" data-path="linux-book-xingnengyouhua/book-010.html">
+            
+                <a href="linux-book-xingnengyouhua/book-010.html">
+            
+                    
+                    10 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x7684;&#x8F6F;&#x4E2D;&#x65AD;CPU&#x4F7F;&#x7528;&#x7387;&#x5347;&#x9AD8;&#xFF0C;&#x6211;&#x8BE5;&#x600E;&#x4E48;&#x529E;?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.8" data-path="linux-book-xingnengyouhua/book-011.html">
+            
+                <a href="linux-book-xingnengyouhua/book-011.html">
+            
+                    
+                    11 | &#x5957;&#x8DEF;&#x7BC7;&#xFF1A;&#x5982;&#x4F55;&#x8FC5;&#x901F;&#x5206;&#x6790;&#x51FA;&#x7CFB;&#x7EDF;CPU&#x7684;&#x74F6;&#x9888;&#x5728;&#x54EA;&#x91CC;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.9" data-path="linux-book-xingnengyouhua/book-012.html">
+            
+                <a href="linux-book-xingnengyouhua/book-012.html">
+            
+                    
+                    12 | &#x5957;&#x8DEF;&#x7BC7;&#xFF1A;CPU &#x6027;&#x80FD;&#x4F18;&#x5316;&#x7684;&#x51E0;&#x4E2A;&#x601D;&#x8DEF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.10" data-path="linux-book-xingnengyouhua/book-013.html">
+            
+                <a href="linux-book-xingnengyouhua/book-013.html">
+            
+                    
+                    13 | Linux &#x6027;&#x80FD;&#x4F18;&#x5316;&#x7B54;&#x7591;&#xFF08;&#x4E00;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.11" data-path="linux-book-xingnengyouhua/book-014.html">
+            
+                <a href="linux-book-xingnengyouhua/book-014.html">
+            
+                    
+                    14 | Linux &#x6027;&#x80FD;&#x4F18;&#x5316;&#x7B54;&#x7591;&#xFF08;&#x4E8C;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.12" data-path="linux-book-xingnengyouhua/book-015.html">
+            
+                <a href="linux-book-xingnengyouhua/book-015.html">
+            
+                    
+                    15 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;Linux&#x5185;&#x5B58;&#x662F;&#x600E;&#x4E48;&#x5DE5;&#x4F5C;&#x7684;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.13" data-path="linux-book-xingnengyouhua/book-016.html">
+            
+                <a href="linux-book-xingnengyouhua/book-016.html">
+            
+                    
+                    16 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x600E;&#x4E48;&#x7406;&#x89E3;&#x5185;&#x5B58;&#x4E2D;&#x7684;Buffer&#x548C;Cache&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.14" data-path="linux-book-xingnengyouhua/book-017.html">
+            
+                <a href="linux-book-xingnengyouhua/book-017.html">
+            
+                    
+                    17 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x5982;&#x4F55;&#x5229;&#x7528;&#x7CFB;&#x7EDF;&#x7F13;&#x5B58;&#x4F18;&#x5316;&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;&#x6548;&#x7387;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.15" data-path="linux-book-xingnengyouhua/book-018.html">
+            
+                <a href="linux-book-xingnengyouhua/book-018.html">
+            
+                    
+                    18 | &#x6848;&#xF9B5;&#x7BC7;&#xFF1A;&#x5185;&#x5B58;&#x6CC4;&#xF94E;&#xF9BA;&#xFF0C;&#x6211;&#x8BE5;&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x548C;&#x5904;&#xF9E4;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.16" data-path="linux-book-xingnengyouhua/book-019.html">
+            
+                <a href="linux-book-xingnengyouhua/book-019.html">
+            
+                    
+                    19 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x4E3A;&#x4EC0;&#x4E48;&#x7CFB;&#x7EDF;&#x7684;Swap&#x53D8;&#x9AD8;&#x4E86;&#xFF08;&#x4E0A;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.17" data-path="linux-book-xingnengyouhua/book-020.html">
+            
+                <a href="linux-book-xingnengyouhua/book-020.html">
+            
+                    
+                    20 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x4E3A;&#x4EC0;&#x4E48;&#x7CFB;&#x7EDF;&#x7684;Swap&#x53D8;&#x9AD8;&#x4E86;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.18" data-path="linux-book-xingnengyouhua/book-fulu-001.html">
+            
+                <a href="linux-book-xingnengyouhua/book-fulu-001.html">
+            
+                    
+                    &#x9644;&#x5F55;&#xFF1A;CPU&#x5229;&#x7528;&#x7387;&#x80CC;&#x540E;&#x7684;&#x771F;&#x76F8;&#xFF0C;&#x53EA;&#x6709;1%&#x7684;&#x4EBA;&#x77E5;&#x9053;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="linux_other_cmd.html">
+            
+                <a href="linux_other_cmd.html">
+            
+                    
+                    Linux&#x5176;&#x5B83;&#x5E38;&#x7528;&#x547D;&#x4EE4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7" data-path="linux_res.html">
+            
+                <a href="linux_res.html">
+            
+                    
+                    Linux&#x8D44;&#x6E90;&#x6C47;&#x603B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.8" data-path="linux_uuid.html">
+            
+                <a href="linux_uuid.html">
+            
+                    
+                    Linux&#x5757;&#x8BBE;&#x5907;UUID&#x63A2;&#x7A76;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.9" data-path="linux_tpcc.html">
+            
+                <a href="linux_tpcc.html">
+            
+                    
+                    &#x670D;&#x52A1;&#x5668;&#x5904;&#x7406;&#x80FD;&#x529B;&#xFF0C;&#x4F60;&#x4F30;&#x7B97;&#x6B63;&#x786E;&#x8FC7;&#x5417;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.10">
+            
+                <span>
+            
+                    
+                    &#x547D;&#x4EE4;&#x901F;&#x67E5;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.10.1" data-path="command/lftp.html">
+            
+                <a href="command/lftp.html">
+            
+                    
+                    lftp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8">
+            
+                <span>
+            
+                    
+                    shell
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../shell_script/get_ip.html">
+            
+                <a href="../shell_script/get_ip.html">
+            
+                    
+                    &#x83B7;&#x53D6;&#x4E3B;&#x673A;&#x540D;&#x3001;IP&#x3001;&#x767B;&#x5F55;&#x7528;&#x6237;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../shell_script/base.html">
+            
+                <a href="../shell_script/base.html">
+            
+                    
+                    &#x57FA;&#x672C;&#x8BED;&#x6CD5;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9">
+            
+                <span>
+            
+                    
+                    python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../python/python_readme.html">
+            
+                <a href="../python/python_readme.html">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../python/python_template.html">
+            
+                <a href="../python/python_template.html">
+            
+                    
+                    python&#x6A21;&#x677F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../python/python_argparse.html">
+            
+                <a href="../python/python_argparse.html">
+            
+                    
+                    python&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x89E3;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../python/python_zhengze.html">
+            
+                <a href="../python/python_zhengze.html">
+            
+                    
+                    python&#x6B63;&#x5219;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../python/han_shu_shi.html">
+            
+                <a href="../python/han_shu_shi.html">
+            
+                    
+                    &#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../python/python_logging.html">
+            
+                <a href="../python/python_logging.html">
+            
+                    
+                    &#x5185;&#x90E8;&#x6A21;&#x5757;logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../python/import_bs4.html">
+            
+                <a href="../python/import_bs4.html">
+            
+                    
+                    BeautifulSoup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../python/leaning_log.html">
+            
+                <a href="../python/leaning_log.html">
+            
+                    
+                    &#x9879;&#x76EE;1leaning_log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../python/leaning_log_user.html">
+            
+                <a href="../python/leaning_log_user.html">
+            
+                    
+                    &#x521B;&#x5EFA;&#x7528;&#x6237;&#x8D26;&#x53F7;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10">
+            
+                <span>
+            
+                    
+                    Zabbix
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../zabbix/zbx_readme.html">
+            
+                <a href="../zabbix/zbx_readme.html">
+            
+                    
+                    zabbix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../zabbix/zbx_agt_conf.html">
+            
+                <a href="../zabbix/zbx_agt_conf.html">
+            
+                    
+                    agent&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BF4;&#x660E;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../zabbix/zbx_tables.html">
+            
+                <a href="../zabbix/zbx_tables.html">
+            
+                    
+                    &#x8868;&#x7ED3;&#x6784;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../zabbix/get_data_from_mysql.html">
+            
+                <a href="../zabbix/get_data_from_mysql.html">
+            
+                    
+                    &#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x83B7;&#x53D6;&#x76D1;&#x63A7;&#x6570;&#x636E;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../zabbix/zbx_patrol.html">
+            
+                <a href="../zabbix/zbx_patrol.html">
+            
+                    
+                    &#x68C0;&#x67E5;zabbix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../zabbix/zbx_autoreg.html">
+            
+                <a href="../zabbix/zbx_autoreg.html">
+            
+                    
+                    &#x81EA;&#x52A8;&#x6CE8;&#x518C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../zabbix/zabbix_kpi.html">
+            
+                <a href="../zabbix/zabbix_kpi.html">
+            
+                    
+                    &#x76D1;&#x63A7;&#x6307;&#x6807;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../zabbix/zabbix_linux.html">
+            
+                <a href="../zabbix/zabbix_linux.html">
+            
+                    
+                    &#x76D1;&#x63A7;Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../zabbix/zabbix_windows.html">
+            
+                <a href="../zabbix/zabbix_windows.html">
+            
+                    
+                    &#x76D1;&#x63A7;Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../zabbix/zabbix_network_devices.html">
+            
+                <a href="../zabbix/zabbix_network_devices.html">
+            
+                    
+                    &#x76D1;&#x63A7;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../zabbix/zabbix_oracle.html">
+            
+                <a href="../zabbix/zabbix_oracle.html">
+            
+                    
+                    &#x76D1;&#x63A7;ORACLE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="../zabbix/zabbix_zk_UserParameter.html">
+            
+                <a href="../zabbix/zabbix_zk_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="../zabbix/zabbix_redis_UserParameter.html">
+            
+                <a href="../zabbix/zabbix_redis_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.14" data-path="../zabbix/zabbix_kafka_UserParameter.html">
+            
+                <a href="../zabbix/zabbix_kafka_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.15" data-path="../zabbix/zabbix_storm_UserParameter.html">
+            
+                <a href="../zabbix/zabbix_storm_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;storm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.16" data-path="../zabbix/zabbix_sparkstreaming_UserParameter.html">
+            
+                <a href="../zabbix/zabbix_sparkstreaming_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;spark streaming
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11">
+            
+                <span>
+            
+                    
+                    &#x6570;&#x636E;&#x5E93;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../database/oracle.html">
+            
+                <a href="../database/oracle.html">
+            
+                    
+                    ORACLE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2">
+            
+                <span>
+            
+                    
+                    [mysql]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.2.1" data-path="../database/mysql/mysql_readme.html">
+            
+                <a href="../database/mysql/mysql_readme.html">
+            
+                    
+                    mysql&#x57FA;&#x7840;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.2" data-path="../database/mysql/mysql_datatype.html">
+            
+                <a href="../database/mysql/mysql_datatype.html">
+            
+                    
+                    mysql&#x5B57;&#x6BB5;&#x7C7B;&#x578B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.3" data-path="../database/mysql/mysql_query.html">
+            
+                <a href="../database/mysql/mysql_query.html">
+            
+                    
+                    mysql&#x5173;&#x8054;&#x67E5;&#x8BE2;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.4" data-path="../database/mysql/mysql_event.html">
+            
+                <a href="../database/mysql/mysql_event.html">
+            
+                    
+                    mysql&#x4E8B;&#x4EF6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.5" data-path="../database/mysql/mysql_procedure.html">
+            
+                <a href="../database/mysql/mysql_procedure.html">
+            
+                    
+                    mysql&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12">
+            
+                <span>
+            
+                    
+                    Hadoop
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../hadoop/hdfs.html">
+            
+                <a href="../hadoop/hdfs.html">
+            
+                    
+                    HDFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../hadoop/yarn.html">
+            
+                <a href="../hadoop/yarn.html">
+            
+                    
+                    Yarn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../kafka/kafka_readme.html">
+            
+                <a href="../kafka/kafka_readme.html">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../elk/elk_readme.html">
+            
+                <a href="../elk/elk_readme.html">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../elk/elk_logstash_rabbitmq.html">
+            
+                <a href="../elk/elk_logstash_rabbitmq.html">
+            
+                    
+                    logstash&#x8F93;&#x51FA;&#x5230;rabbitmq
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15">
+            
+                <span>
+            
+                    
+                    &#x5176;&#x5B83;&#x5E38;&#x7528;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../grafana_readme.html">
+            
+                <a href="../grafana_readme.html">
+            
+                    
+                    grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../sublime_readme.html">
+            
+                <a href="../sublime_readme.html">
+            
+                    
+                    sublime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../markdown_readme.html">
+            
+                <a href="../markdown_readme.html">
+            
+                    
+                    markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../NavicatPremium_readme.html">
+            
+                <a href="../NavicatPremium_readme.html">
+            
+                    
+                    NavicatPremium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../RemoteDesktopManager_readme.html">
+            
+                <a href="../RemoteDesktopManager_readme.html">
+            
+                    
+                    RemoteDesktopManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="../other_app/vsc_readme.html">
+            
+                <a href="../other_app/vsc_readme.html">
+            
+                    
+                    VSC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7" data-path="../other_app/dbeaver_readme.html">
+            
+                <a href="../other_app/dbeaver_readme.html">
+            
+                    
+                    DBeaver
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16">
+            
+                <span>
+            
+                    
+                    PM
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../manager/Linux&#x9762;&#x8BD5;&#x9898;.html">
+            
+                <a href="../manager/Linux&#x9762;&#x8BD5;&#x9898;.html">
+            
+                    
+                    Linux&#x9762;&#x8BD5;&#x9898;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../manager/ruan_jian_ce_shi_mian_shi.html">
+            
+                <a href="../manager/ruan_jian_ce_shi_mian_shi.html">
+            
+                    
+                    &#x8F6F;&#x4EF6;&#x6D4B;&#x8BD5;&#x9762;&#x8BD5;&#x9898;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../manager/ht-ji_neng.md">
+            
+                <span>
+            
+                    
+                    &#x4EBA;&#x5458;&#x6280;&#x80FD;
+            
+                
+            
+
+            
+        </span></li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../manager/ri_chang.html">
+            
+                <a href="../manager/ri_chang.html">
+            
+                    
+                    &#x65E5;&#x5E38;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5" data-path="../manager/ren_zhi_jue_se_hjfz.html">
+            
+                <a href="../manager/ren_zhi_jue_se_hjfz.html">
+            
+                    
+                    &#x9EC4;&#x91D1;&#x6CD5;&#x5219;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            &#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="..">SSH</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#ssh&#x65E0;&#x5BC6;&#x7801;&#x767B;&#x5F55;"><b>1. </b>SSH&#x65E0;&#x5BC6;&#x7801;&#x767B;&#x5F55;</a></li><ul><li><span class="title-icon "></span><a href="#ssh-copy-id-&#x65B9;&#x5F0F;"><b>1.1. </b>ssh-copy-id &#x65B9;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x6CA1;&#x6709;ssh-copy-id&#x547D;&#x4EE4;"><b>1.2. </b>&#x6CA1;&#x6709;SSH-COPY-ID&#x547D;&#x4EE4;</a></li></ul><li><span class="title-icon "></span><a href="#25-best-ssh-commands--tricks"><b>2. </b>25 Best SSH Commands / Tricks</a></li></ul></div><a href="#ssh&#x65E0;&#x5BC6;&#x7801;&#x767B;&#x5F55;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="ssh&#x65E0;&#x5BC6;&#x7801;&#x767B;&#x5F55;"><a name="ssh&#x65E0;&#x5BC6;&#x7801;&#x767B;&#x5F55;" class="anchor-navigation-ex-anchor" href="#ssh&#x65E0;&#x5BC6;&#x7801;&#x767B;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>1. SSH&#x65E0;&#x5BC6;&#x7801;&#x767B;&#x5F55;</h1>
+<p>ssh-keygen  &#x4EA7;&#x751F;&#x516C;&#x94A5;&#x4E0E;&#x79C1;&#x94A5;&#x5BF9;.</p>
+<p>&#x5C06;&#x672C;&#x673A;&#x7684;&#x516C;&#x94A5;&#x590D;&#x5236;&#x5230;&#x8FDC;&#x7A0B;&#x673A;&#x5668;&#x7684;authorized_keys&#x6587;&#x4EF6;&#x4E2D;</p>
+<h2 id="ssh-copy-id-&#x65B9;&#x5F0F;"><a name="ssh-copy-id-&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#ssh-copy-id-&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. ssh-copy-id &#x65B9;&#x5F0F;</h2>
+<p>ssh-copy-id&#x80FD;&#x8BA9;&#x4F60;&#x6709;&#x5230;&#x8FDC;&#x7A0B;&#x673A;&#x5668;&#x7684;home, ~./ssh , &#x548C; ~/.ssh/authorized_keys&#x7684;&#x6743;&#x5229;</p>
+<ol>
+<li><p>&#x7B2C;&#x4E00;&#x6B65;:&#x5728;&#x672C;&#x5730;&#x673A;&#x5668;&#x4E0A;&#x4F7F;&#x7528;ssh-keygen&#x4EA7;&#x751F;&#x516C;&#x94A5;&#x79C1;&#x94A5;&#x5BF9;</p>
+<p> <code>ssh-keygen</code></p>
+</li>
+<li><p>&#x7B2C;&#x4E8C;&#x6B65;:&#x7528;ssh-copy-id&#x5C06;&#x516C;&#x94A5;&#x590D;&#x5236;&#x5230;&#x8FDC;&#x7A0B;&#x673A;&#x5668;&#x4E2D;</p>
+<p> <code>ssh-copy-id -i ~/.ssh/id_rsa.pub  &#x7528;&#x6237;&#x540D;@IP</code></p>
+<blockquote>
+<p>&#x6CE8;&#x610F;: ssh-copy-id &#x5C06;&#x5F53;&#x524D;&#x7528;&#x6237;key&#x5199;&#x5230;&#x8FDC;&#x7A0B;&#x673A;&#x5668;&#x7684; <code>~/.ssh/authorized_key</code>&#x6587;&#x4EF6;&#x4E2D;</p>
+</blockquote>
+<p> &#x6216;&#x8005;</p>
+<p> <code>ssh-copy-id -u eucalyptus -i ~eucalyptus/.ssh/id_rsa.pub ssh &#x7528;&#x6237;&#x540D;@IP</code></p>
+<p> &#x4E0A;&#x8FF0;&#x662F;&#x7ED9;eucalyptus&#x7528;&#x6237;&#x8D4B;&#x4E88;&#x65E0;&#x5BC6;&#x7801;&#x767B;&#x9646;&#x7684;&#x6743;&#x5229;,&#x7B2C;&#x4E00;&#x6B21;&#x9700;&#x8981;&#x5BC6;&#x7801;&#x767B;&#x5F55;</p>
+</li>
+</ol>
+<p><em>&#x5E38;&#x89C1;&#x95EE;&#x9898;&#xFF1A;</em></p>
+<pre class="language-"><code>`/usr/bin/ssh-copy-id: ERROR: No identities found`
+
+&#x4F7F;&#x7528;&#x9009;&#x9879; -i &#xFF0C;&#x5F53;&#x6CA1;&#x6709;&#x503C;&#x4F20;&#x9012;&#x7684;&#x65F6;&#x5019;&#x6216;&#x8005; &#x5982;&#x679C; ~/.ssh/identity.pub &#x6587;&#x4EF6;&#x4E0D;&#x53EF;&#x8BBF;&#x95EE;&#xFF08;&#x4E0D;&#x5B58;&#x5728;&#xFF09;, ssh-copy-id &#x5C06;&#x663E;&#x793A;&#x4E0A;&#x8FF0;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;  &#xFF08; -i&#x9009;&#x9879;&#x4F1A;&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x5C06;ssh-add -L&#x7684;&#x5185;&#x5BB9;&#xFF09;
+</code></pre><h2 id="&#x6CA1;&#x6709;ssh-copy-id&#x547D;&#x4EE4;"><a name="&#x6CA1;&#x6709;ssh-copy-id&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x6CA1;&#x6709;ssh-copy-id&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x6CA1;&#x6709;SSH-COPY-ID&#x547D;&#x4EE4;</h2>
+<p>&#x4ECE;&#x4E00;&#x53F0;&#x6CA1;&#x6709;SSH-COPY-ID&#x547D;&#x4EE4;&#x7684;&#x4E3B;&#x673A;&#x5C06;&#x4F60;&#x7684;SSH&#x516C;&#x94A5;&#x590D;&#x5236;&#x5230;&#x670D;&#x52A1;&#x5668;</p>
+<p><code>cat ~/.ssh/id_rsa.pub | ssh user@machine &quot;[[ -d ~/.ssh ]] || mkdir ~/.ssh; cat &gt;&gt; ~/.ssh/authorized_keys&quot;</code></p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;Mac OS X&#x6216;&#x5176;&#x5B83;&#x6CA1;&#x6709;ssh-copy-id&#x547D;&#x4EE4;&#x7684;*nix&#x53D8;&#x79CD;&#xFF0C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5C06;&#x4F60;&#x7684;&#x516C;&#x94A5;&#x590D;&#x5236;&#x5230;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#xFF0C;&#x56E0;&#x6B64;&#x4F60;&#x7167;&#x6837;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x65E0;&#x5BC6;&#x7801;SSH&#x767B;&#x5F55;&#x3002;</p>
+<h1 id="25-best-ssh-commands--tricks"><a name="25-best-ssh-commands--tricks" class="anchor-navigation-ex-anchor" href="#25-best-ssh-commands--tricks"><i class="fa fa-link" aria-hidden="true"></i></a>2. 25 Best SSH Commands / Tricks</h1>
+<p>&#x539F;&#x6587;&#xFF1A;<a href="http://blog.urfix.com/25-ssh-commands-tricks/" target="_blank">http://blog.urfix.com/25-ssh-commands-tricks/</a></p>
+<ol>
+<li><p>&#x590D;&#x5236;SSH&#x5BC6;&#x94A5;&#x5230;&#x76EE;&#x6807;&#x4E3B;&#x673A;&#xFF0C;&#x5F00;&#x542F;&#x65E0;&#x5BC6;&#x7801;SSH&#x767B;&#x5F55;</p>
+<p> <code>ssh-copy-id user@host</code></p>
+<blockquote>
+<p>&#x5982;&#x679C;&#x8FD8;&#x6CA1;&#x6709;&#x5BC6;&#x94A5;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;ssh-keygen&#x547D;&#x4EE4;&#x751F;&#x6210;&#x3002;</p>
+</blockquote>
+</li>
+<li><p>&#x4ECE;&#x67D0;&#x4E3B;&#x673A;&#x7684;80&#x7AEF;&#x53E3;&#x5F00;&#x542F;&#x5230;&#x672C;&#x5730;&#x4E3B;&#x673A;2001&#x7AEF;&#x53E3;&#x7684;&#x96A7;&#x9053;</p>
+<p> <code>ssh -N -L2001:localhost:80 somemachine</code></p>
+<p> &#x73B0;&#x5728;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8F93;&#x5165;<a href="http://localhost:2001&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;&#x7F51;&#x7AD9;&#x3002;" target="_blank">http://localhost:2001&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;&#x7F51;&#x7AD9;&#x3002;</a></p>
+</li>
+<li><p>&#x5C06;&#x4F60;&#x7684;&#x9EA6;&#x514B;&#x98CE;&#x8F93;&#x51FA;&#x5230;&#x8FDC;&#x7A0B;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x626C;&#x58F0;&#x5668;</p>
+<p> <code>dd if=/dev/dsp | ssh -c arcfour -C username@host dd of=/dev/dsp</code></p>
+<p> &#x8FD9;&#x6837;&#x6765;&#x81EA;&#x4F60;&#x9EA6;&#x514B;&#x98CE;&#x7AEF;&#x53E3;&#x7684;&#x58F0;&#x97F3;&#x5C06;&#x5728;SSH&#x76EE;&#x6807;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x626C;&#x58F0;&#x5668;&#x7AEF;&#x53E3;&#x8F93;&#x51FA;&#xFF0C;&#x4F46;&#x9057;&#x61BE;&#x7684;&#x662F;&#xFF0C;&#x58F0;&#x97F3;&#x8D28;&#x91CF;&#x5F88;&#x5DEE;&#xFF0C;&#x4F60;&#x4F1A;&#x542C;&#x5230;&#x5F88;&#x591A;&#x5636;&#x5636;&#x58F0;&#x3002;</p>
+</li>
+<li><p>&#x6BD4;&#x8F83;&#x8FDC;&#x7A0B;&#x548C;&#x672C;&#x5730;&#x6587;&#x4EF6;</p>
+<p> <code>ssh user@host cat /path/to/remotefile | diff /path/to/localfile &#x2013;</code></p>
+<p> &#x5728;&#x6BD4;&#x8F83;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x548C;&#x8FDC;&#x7A0B;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x6709;&#x5DEE;&#x5F02;&#x65F6;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5F88;&#x7BA1;&#x7528;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;SSH&#x6302;&#x8F7D;&#x76EE;&#x5F55;/&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;</p>
+<p> <code>sshfs name@server:/path/to/folder /path/to/mount/point</code></p>
+<p> &#x4ECE;<a href="http://fuse.sourceforge.net/sshfs.html" target="_blank">http://fuse.sourceforge.net/sshfs.html</a>&#x4E0B;&#x8F7D;sshfs&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x4F60;&#x8DE8;&#x7F51;&#x7EDC;&#x5B89;&#x5168;&#x6302;&#x8F7D;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;&#x4E2D;&#x95F4;&#x4E3B;&#x673A;&#x5EFA;&#x7ACB;SSH&#x8FDE;&#x63A5;</p>
+<p> <code>ssh -t reachable_host ssh unreachable_host</code></p>
+<p> Unreachable_host&#x8868;&#x793A;&#x4ECE;&#x672C;&#x5730;&#x7F51;&#x7EDC;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x7684;&#x4E3B;&#x673A;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x4ECE;reachable_host&#x6240;&#x5728;&#x7F51;&#x7EDC;&#x8BBF;&#x95EE;&#xFF0C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x901A;&#x8FC7;&#x5230;reachable_host&#x7684;&#x201C;&#x9690;&#x85CF;&#x201D;&#x8FDE;&#x63A5;&#xFF0C;&#x521B;&#x5EFA;&#x8D77;&#x5230;unreachable_host&#x7684;&#x8FDE;&#x63A5;&#x3002;</p>
+</li>
+<li><p>Copy from host1 to host2, through your host</p>
+<p> `ssh root@host1 &quot;cd /somedir/tocopy/ &amp;&amp; tar -cf &#x2013; .&quot; | ssh root@host2 &quot;cd /samedir/tocopyto/ &amp;&amp; tar -xf -&quot;``</p>
+<p> Good if only you have access to host1 and host2, but they have no access to your host (so ncat won&#x2019;t work) and they have no direct access to each other.</p>
+</li>
+<li><p>Run any GUI program remotely</p>
+<p> <code>ssh -fX <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>user</span><span class="token punctuation">&gt;</span></span>@<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>program</span><span class="token punctuation">&gt;</span></span></code></p>
+<p> The SSH server configuration requires:</p>
+<p> X11Forwarding yes # this is default in Debian</p>
+<p> And it&#x2019;s convenient too:</p>
+<p> Compression delayed</p>
+</li>
+<li><p>&#x76F4;&#x63A5;&#x8FDE;&#x63A5;&#x5230;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x4E3B;&#x673A;B&#x8FDE;&#x63A5;&#x7684;&#x4E3B;&#x673A;A</p>
+<p> <code>ssh -t hostA ssh hostB</code></p>
+<p> &#x5F53;&#x7136;&#xFF0C;&#x4F60;&#x8981;&#x80FD;&#x8BBF;&#x95EE;&#x4E3B;&#x673A;A&#x624D;&#x884C;&#x3002;</p>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x5230;&#x76EE;&#x6807;&#x4E3B;&#x673A;&#x7684;&#x6301;&#x4E45;&#x5316;&#x8FDE;&#x63A5;</p>
+<p> <code>ssh -MNf <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>user</span><span class="token punctuation">&gt;</span></span>@<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span></code></p>
+<p> &#x5728;&#x540E;&#x53F0;&#x521B;&#x5EFA;&#x5230;&#x76EE;&#x6807;&#x4E3B;&#x673A;&#x7684;&#x6301;&#x4E45;&#x5316;&#x8FDE;&#x63A5;&#xFF0C;&#x5C06;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x548C;&#x4F60;~/.ssh/config&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre class="language-"><code> Host host
+ ControlPath ~/.ssh/master-%r@%h:%p
+ ControlMaster no
+</code></pre><p> &#x6240;&#x6709;&#x5230;&#x76EE;&#x6807;&#x4E3B;&#x673A;&#x7684;SSH&#x8FDE;&#x63A5;&#x90FD;&#x5C06;&#x4F7F;&#x7528;&#x6301;&#x4E45;&#x5316;SSH&#x5957;&#x63A5;&#x5B57;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;SSH&#x5B9A;&#x671F;&#x540C;&#x6B65;&#x6587;&#x4EF6;&#xFF08;&#x4F7F;&#x7528;rsync/sftp/cvs/svn&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5C06;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x6B21;&#x6253;&#x5F00;&#x4E00;&#x4E2A;SSH&#x8FDE;&#x63A5;&#x65F6;&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5957;&#x63A5;&#x5B57;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;SSH&#x8FDE;&#x63A5;&#x5C4F;&#x5E55;</p>
+<p><code>ssh -t remote_host screen &#x2013;r</code></p>
+<p>&#x76F4;&#x63A5;&#x8FDE;&#x63A5;&#x5230;&#x8FDC;&#x7A0B;&#x5C4F;&#x5E55;&#x4F1A;&#x8BDD;&#xFF08;&#x8282;&#x7701;&#x4E86;&#x65E0;&#x7528;&#x7684;&#x7236;bash&#x8FDB;&#x7A0B;&#xFF09;&#x3002;</p>
+</li>
+<li><p>&#x7AEF;&#x53E3;&#x68C0;&#x6D4B;&#xFF08;&#x6572;&#x95E8;&#xFF09;</p>
+<p><code>knock <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span> 3000 4000 5000 &amp;&amp; ssh -p <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span> user@host &amp;&amp; knock <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span> 5000 4000 3000</code></p>
+<p>&#x5728;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#x4E0A;&#x6572;&#x4E00;&#x4E0B;&#x6253;&#x5F00;&#x67D0;&#x4E2A;&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#xFF08;&#x5982;SSH&#xFF09;&#xFF0C;&#x518D;&#x6572;&#x4E00;&#x4E0B;&#x5173;&#x95ED;&#x8BE5;&#x7AEF;&#x53E3;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x5B89;&#x88C5;knockd&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x793A;&#x4F8B;&#x3002;</p>
+<pre class="language-"><code>[options]
+logfile = /var/log/knockd.log
+[openSSH]
+sequence = 3000,4000,5000
+seq_timeout = 5
+command = /sbin/iptables -A INPUT -i eth0 -s %IP% -p tcp &#x2013;dport 22 -j ACCEPT
+tcpflags = syn
+[closeSSH]
+sequence = 5000,4000,3000
+seq_timeout = 5
+command = /sbin/iptables -D INPUT -i eth0 -s %IP% -p tcp &#x2013;dport 22 -j ACCEPT
+tcpflags = syn
+</code></pre></li>
+<li><p>&#x5220;&#x9664;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x4E00;&#x884C;&#x5185;&#x5BB9;&#xFF0C;&#x6709;&#x7528;&#x7684;&#x4FEE;&#x590D;</p>
+<p><code>ssh-keygen -R <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>the_offending_host</span><span class="token punctuation">&gt;</span></span></code></p>
+<p>&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6700;&#x597D;&#x4F7F;&#x7528;&#x4E13;&#x4E1A;&#x7684;&#x5DE5;&#x5177;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;SSH&#x8FD0;&#x884C;&#x590D;&#x6742;&#x7684;&#x8FDC;&#x7A0B;shell&#x547D;&#x4EE4;</p>
+<p><code>ssh host -l user $(&lt;cmd.txt)</code></p>
+<p>&#x66F4;&#x5177;&#x79FB;&#x690D;&#x6027;&#x7684;&#x7248;&#x672C;&#xFF1A;</p>
+<p><code>ssh host -l user &#x201C;</code>cat cmd.txt<code>&#x201D;</code></p>
+</li>
+<li><p>&#x901A;&#x8FC7;SSH&#x5C06;MySQL&#x6570;&#x636E;&#x5E93;&#x590D;&#x5236;&#x5230;&#x65B0;&#x670D;&#x52A1;&#x5668;</p>
+<p><code>mysqldump &#x2013;add-drop-table &#x2013;extended-insert &#x2013;force &#x2013;log-error=error.log -uUSER -pPASS OLD_DB_NAME | ssh -C user@newhost &#x201C;mysql -uUSER -pPASS NEW_DB_NAME&#x201D;</code></p>
+<p>&#x901A;&#x8FC7;&#x538B;&#x7F29;&#x7684;SSH&#x96A7;&#x9053;Dump&#x4E00;&#x4E2A;MySQL&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5C06;&#x5176;&#x4F5C;&#x4E3A;&#x8F93;&#x5165;&#x4F20;&#x9012;&#x7ED9;mysql&#x547D;&#x4EE4;&#xFF0C;&#x6211;&#x8BA4;&#x4E3A;&#x8FD9;&#x662F;&#x8FC1;&#x79FB;&#x6570;&#x636E;&#x5E93;&#x5230;&#x65B0;&#x670D;&#x52A1;&#x5668;&#x6700;&#x5FEB;&#x6700;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+</li>
+<li><p>&#x5220;&#x9664;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x4E00;&#x884C;&#xFF0C;&#x4FEE;&#x590D;&#x201C;SSH&#x4E3B;&#x673A;&#x5BC6;&#x94A5;&#x66F4;&#x6539;&#x201D;&#x7684;&#x8B66;&#x544A;</p>
+<p><code>sed -i 8d ~/.ssh/known_hosts</code></p>
+</li>
+<li><p>&#x4ECE;&#x4E00;&#x53F0;&#x6CA1;&#x6709;SSH-COPY-ID&#x547D;&#x4EE4;&#x7684;&#x4E3B;&#x673A;&#x5C06;&#x4F60;&#x7684;SSH&#x516C;&#x94A5;&#x590D;&#x5236;&#x5230;&#x670D;&#x52A1;&#x5668;</p>
+<p><code>cat ~/.ssh/id_rsa.pub | ssh user@machine &#x201C;mkdir ~/.ssh; cat &gt;&gt; ~/.ssh/authorized_keys&#x201D;</code></p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;Mac OS X&#x6216;&#x5176;&#x5B83;&#x6CA1;&#x6709;ssh-copy-id&#x547D;&#x4EE4;&#x7684;*nix&#x53D8;&#x79CD;&#xFF0C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5C06;&#x4F60;&#x7684;&#x516C;&#x94A5;&#x590D;&#x5236;&#x5230;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#xFF0C;&#x56E0;&#x6B64;&#x4F60;&#x7167;&#x6837;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x65E0;&#x5BC6;&#x7801;SSH&#x767B;&#x5F55;&#x3002;</p>
+</li>
+<li><p>&#x5B9E;&#x65F6;SSH&#x7F51;&#x7EDC;&#x541E;&#x5410;&#x91CF;&#x6D4B;&#x8BD5;</p>
+<p><code>yes | pv | ssh $host &#x201C;cat &gt; /dev/null&#x201D;</code></p>
+<p>&#x901A;&#x8FC7;SSH&#x8FDE;&#x63A5;&#x5230;&#x4E3B;&#x673A;&#xFF0C;&#x663E;&#x793A;&#x5B9E;&#x65F6;&#x7684;&#x4F20;&#x8F93;&#x901F;&#x5EA6;&#xFF0C;&#x5C06;&#x6240;&#x6709;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x6307;&#x5411;/dev/null&#xFF0C;&#x9700;&#x8981;&#x5148;&#x5B89;&#x88C5;pv&#x3002;</p>
+<p>&#x5982;&#x679C;&#x662F;Debian&#xFF1A;
+<code>apt-get install pv</code></p>
+<p>&#x5982;&#x679C;&#x662F;Fedora&#xFF1A;<code>yum install pv</code></p>
+<blockquote>
+<p>&#x53EF;&#x80FD;&#x9700;&#x8981;&#x542F;&#x7528;&#x989D;&#x5916;&#x7684;&#x8F6F;&#x4EF6;&#x4ED3;&#x5E93;&#x3002;</p>
+</blockquote>
+</li>
+<li><p>&#x5982;&#x679C;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x8FDE;&#x63A5;&#x7684;&#x8FDC;&#x7A0B;GNU screen</p>
+<p><code>ssh -t user@some.domain.com /usr/bin/screen &#x2013;xRR</code></p>
+<p>&#x4EBA;&#x4EEC;&#x603B;&#x662F;&#x559C;&#x6B22;&#x5728;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x7EC8;&#x7AEF;&#x4E2D;&#x6253;&#x5F00;&#x8BB8;&#x591A;shell&#xFF0C;&#x5982;&#x679C;&#x4F1A;&#x8BDD;&#x7A81;&#x7136;&#x4E2D;&#x65AD;&#xFF0C;&#x6216;&#x4F60;&#x6309;&#x4E0B;&#x4E86;&#x201C;Ctrl-a d&#x201D;&#xFF0C;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x4E0A;&#x7684;shell&#x4E0D;&#x4F1A;&#x53D7;&#x5230;&#x4E1D;&#x6BEB;&#x5F71;&#x54CD;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x8FDE;&#x63A5;&#xFF0C;&#x5176;&#x5B83;&#x6709;&#x7528;&#x7684;screen&#x547D;&#x4EE4;&#x6709;&#x201C;Ctrl-a c&#x201D;&#xFF08;&#x6253;&#x5F00;&#x65B0;&#x7684;shell&#xFF09;&#x548C;&#x201C;Ctrl-a a&#x201D;&#xFF08;&#x5728;shell&#x4E4B;&#x95F4;&#x6765;&#x56DE;&#x5207;&#x6362;&#xFF09;&#xFF0C;&#x8BF7;&#x8BBF;&#x95EE;<a href="http://aperiodic.net/screen/quick_reference" target="_blank">http://aperiodic.net/screen/quick_reference</a>&#x9605;&#x8BFB;&#x66F4;&#x591A;&#x5173;&#x4E8E;screen&#x547D;&#x4EE4;&#x7684;&#x5FEB;&#x901F;&#x53C2;&#x8003;&#x3002;</p>
+</li>
+<li><p>&#x7EE7;&#x7EED;SCP&#x5927;&#x6587;&#x4EF6;</p>
+<p><code>rsync &#x2013;partial &#x2013;progress &#x2013;rsh=ssh $file_source $user@$host:$destination_file</code></p>
+<p>&#x5B83;&#x53EF;&#x4EE5;&#x6062;&#x590D;&#x5931;&#x8D25;&#x7684;rsync&#x547D;&#x4EE4;&#xFF0C;&#x5F53;&#x4F60;&#x901A;&#x8FC7;VPN&#x4F20;&#x8F93;&#x5927;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x5907;&#x4EFD;&#x7684;&#x6570;&#x636E;&#x5E93;&#x65F6;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x4E24;&#x8FB9;&#x7684;&#x4E3B;&#x673A;&#x4E0A;&#x5B89;&#x88C5;rsync&#x3002;</p>
+<p><code>rsync &#x2013;partial &#x2013;progress &#x2013;rsh=ssh $file_source $user@$host:$destination_file local -&gt; remote</code></p>
+<p>&#x6216;</p>
+<p><code>rsync &#x2013;partial &#x2013;progress &#x2013;rsh=ssh $user@$host:$remote_file $destination_file remote -&gt; local</code></p>
+</li>
+<li><p>&#x901A;&#x8FC7;SSH W/ WIRESHARK&#x5206;&#x6790;&#x6D41;&#x91CF;</p>
+<p><code>ssh root@server.com &apos;tshark -f &quot;port !22&quot; -w -&apos; | wireshark -k -i &#x2013;</code></p>
+<p>&#x4F7F;&#x7528;tshark&#x6355;&#x6349;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x7F51;&#x7EDC;&#x901A;&#x4FE1;&#xFF0C;&#x901A;&#x8FC7;SSH&#x8FDE;&#x63A5;&#x53D1;&#x9001;&#x539F;&#x59CB;pcap&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x5728;wireshark&#x4E2D;&#x663E;&#x793A;&#xFF0C;&#x6309;&#x4E0B;Ctrl+C&#x5C06;&#x505C;&#x6B62;&#x6355;&#x6349;&#xFF0C;&#x4F46;&#x4E5F;&#x4F1A;&#x5173;&#x95ED;wireshark&#x7A97;&#x53E3;&#xFF0C;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x201C;-c #&#x201D;&#x53C2;&#x6570;&#x7ED9;tshark&#xFF0C;&#x8BA9;&#x5B83;&#x53EA;&#x6355;&#x6349;&#x201C;#&#x201D;&#x6307;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x5305;&#x7C7B;&#x578B;&#xFF0C;&#x6216;&#x901A;&#x8FC7;&#x547D;&#x540D;&#x7BA1;&#x9053;&#x91CD;&#x5B9A;&#x5411;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x76F4;&#x63A5;&#x901A;&#x8FC7;SSH&#x4F20;&#x8F93;&#x7ED9;wireshark&#xFF0C;&#x6211;&#x5EFA;&#x8BAE;&#x4F60;&#x8FC7;&#x6EE4;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x4EE5;&#x8282;&#x7EA6;&#x5E26;&#x5BBD;&#xFF0C;tshark&#x53EF;&#x4EE5;&#x4F7F;&#x7528;tcpdump&#x66FF;&#x4EE3;&#xFF1A;</p>
+<p><code>ssh root@example.com tcpdump -w &#x2013; &apos;port !22&apos; | wireshark -k -i &#x2013;</code></p>
+</li>
+<li><p>&#x4FDD;&#x6301;SSH&#x4F1A;&#x8BDD;&#x6C38;&#x4E45;&#x6253;&#x5F00;</p>
+<p><code>autossh -M50000 -t server.example.com &#x2018;screen -raAd mysession&#x2019;</code></p>
+<p>&#x6253;&#x5F00;&#x4E00;&#x4E2A;SSH&#x4F1A;&#x8BDD;&#x540E;&#xFF0C;&#x8BA9;&#x5176;&#x4FDD;&#x6301;&#x6C38;&#x4E45;&#x6253;&#x5F00;&#xFF0C;&#x5BF9;&#x4E8E;&#x4F7F;&#x7528;&#x7B14;&#x8BB0;&#x672C;&#x7535;&#x8111;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5728;Wi-Fi&#x70ED;&#x70B9;&#x4E4B;&#x95F4;&#x5207;&#x6362;&#xFF0C;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x5207;&#x6362;&#x540E;&#x4E0D;&#x4F1A;&#x4E22;&#x5931;&#x8FDE;&#x63A5;&#x3002;</p>
+</li>
+<li><p>&#x66F4;&#x7A33;&#x5B9A;&#xFF0C;&#x66F4;&#x5FEB;&#xFF0C;&#x66F4;&#x5F3A;&#x7684;SSH&#x5BA2;&#x6237;&#x7AEF;</p>
+<p><code>ssh -4 -C -c blowfish-cbc</code></p>
+<p>&#x5F3A;&#x5236;&#x4F7F;&#x7528;IPv4&#xFF0C;&#x538B;&#x7F29;&#x6570;&#x636E;&#x6D41;&#xFF0C;&#x4F7F;&#x7528;Blowfish&#x52A0;&#x5BC6;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;cstream&#x63A7;&#x5236;&#x5E26;&#x5BBD;</p>
+<p><code>tar -cj /backup | cstream -t 777k | ssh host &#x2018;tar -xj -C /backup&#x2019;</code></p>
+<p>&#x4F7F;&#x7528;bzip&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x7136;&#x540E;&#x4EE5;777k bit/s&#x901F;&#x7387;&#x5411;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x4F20;&#x8F93;&#x3002;Cstream&#x8FD8;&#x6709;&#x66F4;&#x591A;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x8BF7;&#x8BBF;&#x95EE;<a href="http://www.cons.org/cracauer/cstream.html#usage" target="_blank">http://www.cons.org/cracauer/cstream.html#usage</a>&#x4E86;&#x89E3;&#x8BE6;&#x60C5;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<p><code>echo w00t, i&#x2019;m 733+ | cstream -b1 -t2</code></p>
+</li>
+<li><p>&#x4E00;&#x6B65;&#x5C06;SSH&#x516C;&#x94A5;&#x4F20;&#x8F93;&#x5230;&#x53E6;&#x4E00;&#x53F0;&#x673A;&#x5668;</p>
+<p><code>ssh-keygen; ssh-copy-id user@host; ssh user@host</code></p>
+<p>&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x7EC4;&#x5408;&#x5141;&#x8BB8;&#x4F60;&#x65E0;&#x5BC6;&#x7801;SSH&#x767B;&#x5F55;&#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x672C;&#x5730;&#x673A;&#x5668;&#x7684;~/.ssh&#x76EE;&#x5F55;&#x4E0B;&#x5DF2;&#x7ECF;&#x6709;&#x4E00;&#x4E2A;SSH&#x5BC6;&#x94A5;&#x5BF9;&#xFF0C;ssh-keygen&#x547D;&#x4EE4;&#x751F;&#x6210;&#x7684;&#x65B0;&#x5BC6;&#x94A5;&#x53EF;&#x80FD;&#x4F1A;&#x8986;&#x76D6;&#x5B83;&#x4EEC;&#xFF0C;ssh-copy-id&#x5C06;&#x5BC6;&#x94A5;&#x590D;&#x5236;&#x5230;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#xFF0C;&#x5E76;&#x8FFD;&#x52A0;&#x5230;&#x8FDC;&#x7A0B;&#x8D26;&#x53F7;&#x7684;~/.ssh/authorized_keys&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;SSH&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x5BC6;&#x94A5;&#x53E3;&#x4EE4;&#xFF0C;&#x8C03;&#x7528;ssh user@host&#x540E;&#x4E0D;&#x4E45;&#x5C31;&#x4F1A;&#x663E;&#x793A;&#x8FDC;&#x7A0B;shell&#x3002;</p>
+</li>
+<li><p>&#x5C06;&#x6807;&#x51C6;&#x8F93;&#x5165;&#xFF08;stdin&#xFF09;&#x590D;&#x5236;&#x5230;&#x4F60;&#x7684;X11&#x7F13;&#x51B2;&#x533A;</p>
+<p><code>ssh user@host cat /path/to/some/file | xclip</code></p>
+<p>&#x4F60;&#x662F;&#x5426;&#x4F7F;&#x7528;scp&#x5C06;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;&#x5DE5;&#x4F5C;&#x7528;&#x7535;&#x8111;&#x4E0A;&#xFF0C;&#x4EE5;&#x4FBF;&#x590D;&#x5236;&#x5176;&#x5185;&#x5BB9;&#x5230;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x4E2D;&#xFF1F;xclip&#x53EF;&#x4EE5;&#x5E2E;&#x5230;&#x4F60;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5C06;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x590D;&#x5236;&#x5230;X11&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x70B9;&#x51FB;&#x9F20;&#x6807;&#x4E2D;&#x952E;&#x7C98;&#x8D34;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+</li>
+</ol>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; one 2014-2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6700;&#x540E;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-10-11 16:29:26
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="linux_systemctl.html" class="navigation navigation-prev " aria-label="Previous page: systemctl">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="linux_hardware_cmd.html" class="navigation navigation-next " aria-label="Next page: Linux&#x786C;&#x4EF6;&#x5E38;&#x7528;&#x547D;&#x4EE4;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SSH","level":"1.7.2.2","depth":3,"next":{"title":"Linux硬件常用命令","level":"1.7.2.3","depth":3,"path":"linux/linux_hardware_cmd.md","ref":"linux/linux_hardware_cmd.md","articles":[]},"previous":{"title":"systemctl","level":"1.7.2.1","depth":3,"path":"linux/linux_systemctl.md","ref":"linux/linux_systemctl.md","articles":[]},"dir":"ltr"},"config":{"plugins":["tbfed-pagefooter","expandable-chapters","-sharing","sharing-plus","splitter","header","anchor-navigation-ex-toc","prism","-highlight","include-codeblock","ace","livereload"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy one 2014-2018","modify_label":"最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"ace":{},"livereload":{},"splitter":{},"search":{},"layout":{"headerPath":"layouts/header.html"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"header":{},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"multipleH1":true,"showLevel":true,"float":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"monokai","unindent":true},"sharing":{"qq":true,"all":[],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"S1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"学习中心","language":"zh-hans","links":{"sidebar":{"码云":"https://gitee.com/3017677"},"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"学习中心"},"file":{"path":"linux/ssh.md","mtime":"2018-10-11T08:29:26.659Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-05T10:24:09.483Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

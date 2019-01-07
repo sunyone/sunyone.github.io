@@ -1,0 +1,1871 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>04 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x7ECF;&#x5E38;&#x8BF4;&#x7684; CPU &#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09; &#xB7; &#x5B66;&#x4E60;&#x4E2D;&#x5FC3;</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="S1">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="book-006.html">
+    
+    
+    <link rel="prev" href="book-000.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitee.com/3017677" target="_blank" class="custom-link">&#x7801;&#x4E91;</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    &#x4ECB;&#x7ECD;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../chang_yong_url.html">
+            
+                <a href="../../chang_yong_url.html">
+            
+                    
+                    &#x5E38;&#x7528;URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3">
+            
+                <span>
+            
+                    
+                    ANSIBLE
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../ansible/ab_readme.html">
+            
+                <a href="../../ansible/ab_readme.html">
+            
+                    
+                    ansible
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../ansible/ab_proxy.html">
+            
+                <a href="../../ansible/ab_proxy.html">
+            
+                    
+                    ssh&#x8DF3;&#x8F6C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4">
+            
+                <span>
+            
+                    
+                    work
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../work/cai_ji.html">
+            
+                <a href="../../work/cai_ji.html">
+            
+                    
+                    &#x91C7;&#x96C6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../git.html">
+            
+                <a href="../../git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6">
+            
+                <span>
+            
+                    
+                    gitbook&#x64CD;&#x4F5C;&#x6307;&#x5357;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../gitbook_readme.html">
+            
+                <a href="../../gitbook_readme.html">
+            
+                    
+                    &#x5E38;&#x7528;&#x64CD;&#x4F5C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../gitbook_plugins.html">
+            
+                <a href="../../gitbook_plugins.html">
+            
+                    
+                    &#x63D2;&#x4EF6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../gitbook-convert.html">
+            
+                <a href="../../gitbook-convert.html">
+            
+                    
+                    &#x6587;&#x6863;&#x8F6C;&#x6362;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7">
+            
+                <span>
+            
+                    
+                    &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1">
+            
+                <span>
+            
+                    
+                    Windows
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../../windows/win_readme.html">
+            
+                <a href="../../windows/win_readme.html">
+            
+                    
+                    Windows&#x5E38;&#x7528;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2">
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../linux_systemctl.html">
+            
+                <a href="../linux_systemctl.html">
+            
+                    
+                    systemctl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../ssh.html">
+            
+                <a href="../ssh.html">
+            
+                    
+                    SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../linux_hardware_cmd.html">
+            
+                <a href="../linux_hardware_cmd.html">
+            
+                    
+                    Linux&#x786C;&#x4EF6;&#x5E38;&#x7528;&#x547D;&#x4EE4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="../linux_performance_cmd.html">
+            
+                <a href="../linux_performance_cmd.html">
+            
+                    
+                    Linux&#x6027;&#x80FD;&#x5E38;&#x7528;&#x547D;&#x4EE4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="toc.html">
+            
+                <a href="toc.html">
+            
+                    
+                    Linux&#x6027;&#x80FD;&#x4F18;&#x5316;&#x5B9E;&#x6218;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.5.1" data-path="book-000.html">
+            
+                <a href="book-000.html">
+            
+                    
+                    00 | &#x5F00;&#x7BC7;&#x8BCD;&#xFF1A;&#x522B;&#x518D;&#x8BA9;Linux&#x6027;&#x80FD;&#x95EE;&#x9898;&#x6210;&#x4E3A;&#x4F60;&#x7684;&#x7ECA;&#x811A;&#x77F3;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2.5.2" data-path="book-004.html">
+            
+                <a href="book-004.html">
+            
+                    
+                    04 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x7ECF;&#x5E38;&#x8BF4;&#x7684; CPU &#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.3" data-path="book-006.html">
+            
+                <a href="book-006.html">
+            
+                    
+                    06 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x7684; CPU &#x4F7F;&#x7528;&#x7387;&#x5F88;&#x9AD8;&#xFF0C;&#x4F46;&#x4E3A;&#x5565;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x9AD8; CPU &#x7684;&#x5E94;&#x7528;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.4" data-path="book-007.html">
+            
+                <a href="book-007.html">
+            
+                    
+                    07 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x4E2D;&#x51FA;&#x73B0;&#x5927;&#x91CF;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#x8FDB;&#x7A0B;&#x548C;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#xFF08;&#x4E0A;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.5" data-path="book-008.html">
+            
+                <a href="book-008.html">
+            
+                    
+                    08 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x4E2D;&#x51FA;&#x73B0;&#x5927;&#x91CF;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#x8FDB;&#x7A0B;&#x548C;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.6" data-path="book-009.html">
+            
+                <a href="book-009.html">
+            
+                    
+                    09 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x600E;&#x4E48;&#x7406;&#x89E3;Linux&#x8F6F;&#x4E2D;&#x65AD;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.7" data-path="book-010.html">
+            
+                <a href="book-010.html">
+            
+                    
+                    10 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x7684;&#x8F6F;&#x4E2D;&#x65AD;CPU&#x4F7F;&#x7528;&#x7387;&#x5347;&#x9AD8;&#xFF0C;&#x6211;&#x8BE5;&#x600E;&#x4E48;&#x529E;?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.8" data-path="book-011.html">
+            
+                <a href="book-011.html">
+            
+                    
+                    11 | &#x5957;&#x8DEF;&#x7BC7;&#xFF1A;&#x5982;&#x4F55;&#x8FC5;&#x901F;&#x5206;&#x6790;&#x51FA;&#x7CFB;&#x7EDF;CPU&#x7684;&#x74F6;&#x9888;&#x5728;&#x54EA;&#x91CC;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.9" data-path="book-012.html">
+            
+                <a href="book-012.html">
+            
+                    
+                    12 | &#x5957;&#x8DEF;&#x7BC7;&#xFF1A;CPU &#x6027;&#x80FD;&#x4F18;&#x5316;&#x7684;&#x51E0;&#x4E2A;&#x601D;&#x8DEF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.10" data-path="book-013.html">
+            
+                <a href="book-013.html">
+            
+                    
+                    13 | Linux &#x6027;&#x80FD;&#x4F18;&#x5316;&#x7B54;&#x7591;&#xFF08;&#x4E00;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.11" data-path="book-014.html">
+            
+                <a href="book-014.html">
+            
+                    
+                    14 | Linux &#x6027;&#x80FD;&#x4F18;&#x5316;&#x7B54;&#x7591;&#xFF08;&#x4E8C;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.12" data-path="book-015.html">
+            
+                <a href="book-015.html">
+            
+                    
+                    15 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;Linux&#x5185;&#x5B58;&#x662F;&#x600E;&#x4E48;&#x5DE5;&#x4F5C;&#x7684;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.13" data-path="book-016.html">
+            
+                <a href="book-016.html">
+            
+                    
+                    16 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x600E;&#x4E48;&#x7406;&#x89E3;&#x5185;&#x5B58;&#x4E2D;&#x7684;Buffer&#x548C;Cache&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.14" data-path="book-017.html">
+            
+                <a href="book-017.html">
+            
+                    
+                    17 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x5982;&#x4F55;&#x5229;&#x7528;&#x7CFB;&#x7EDF;&#x7F13;&#x5B58;&#x4F18;&#x5316;&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;&#x6548;&#x7387;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.15" data-path="book-018.html">
+            
+                <a href="book-018.html">
+            
+                    
+                    18 | &#x6848;&#xF9B5;&#x7BC7;&#xFF1A;&#x5185;&#x5B58;&#x6CC4;&#xF94E;&#xF9BA;&#xFF0C;&#x6211;&#x8BE5;&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x548C;&#x5904;&#xF9E4;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.16" data-path="book-019.html">
+            
+                <a href="book-019.html">
+            
+                    
+                    19 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x4E3A;&#x4EC0;&#x4E48;&#x7CFB;&#x7EDF;&#x7684;Swap&#x53D8;&#x9AD8;&#x4E86;&#xFF08;&#x4E0A;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.17" data-path="book-020.html">
+            
+                <a href="book-020.html">
+            
+                    
+                    20 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x4E3A;&#x4EC0;&#x4E48;&#x7CFB;&#x7EDF;&#x7684;Swap&#x53D8;&#x9AD8;&#x4E86;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.18" data-path="book-fulu-001.html">
+            
+                <a href="book-fulu-001.html">
+            
+                    
+                    &#x9644;&#x5F55;&#xFF1A;CPU&#x5229;&#x7528;&#x7387;&#x80CC;&#x540E;&#x7684;&#x771F;&#x76F8;&#xFF0C;&#x53EA;&#x6709;1%&#x7684;&#x4EBA;&#x77E5;&#x9053;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="../linux_other_cmd.html">
+            
+                <a href="../linux_other_cmd.html">
+            
+                    
+                    Linux&#x5176;&#x5B83;&#x5E38;&#x7528;&#x547D;&#x4EE4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7" data-path="../linux_res.html">
+            
+                <a href="../linux_res.html">
+            
+                    
+                    Linux&#x8D44;&#x6E90;&#x6C47;&#x603B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.8" data-path="../linux_uuid.html">
+            
+                <a href="../linux_uuid.html">
+            
+                    
+                    Linux&#x5757;&#x8BBE;&#x5907;UUID&#x63A2;&#x7A76;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.9" data-path="../linux_tpcc.html">
+            
+                <a href="../linux_tpcc.html">
+            
+                    
+                    &#x670D;&#x52A1;&#x5668;&#x5904;&#x7406;&#x80FD;&#x529B;&#xFF0C;&#x4F60;&#x4F30;&#x7B97;&#x6B63;&#x786E;&#x8FC7;&#x5417;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.10">
+            
+                <span>
+            
+                    
+                    &#x547D;&#x4EE4;&#x901F;&#x67E5;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.10.1" data-path="../command/lftp.html">
+            
+                <a href="../command/lftp.html">
+            
+                    
+                    lftp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8">
+            
+                <span>
+            
+                    
+                    shell
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../shell_script/get_ip.html">
+            
+                <a href="../../shell_script/get_ip.html">
+            
+                    
+                    &#x83B7;&#x53D6;&#x4E3B;&#x673A;&#x540D;&#x3001;IP&#x3001;&#x767B;&#x5F55;&#x7528;&#x6237;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../shell_script/base.html">
+            
+                <a href="../../shell_script/base.html">
+            
+                    
+                    &#x57FA;&#x672C;&#x8BED;&#x6CD5;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9">
+            
+                <span>
+            
+                    
+                    python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../python/python_readme.html">
+            
+                <a href="../../python/python_readme.html">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../python/python_template.html">
+            
+                <a href="../../python/python_template.html">
+            
+                    
+                    python&#x6A21;&#x677F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../python/python_argparse.html">
+            
+                <a href="../../python/python_argparse.html">
+            
+                    
+                    python&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x89E3;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../python/python_zhengze.html">
+            
+                <a href="../../python/python_zhengze.html">
+            
+                    
+                    python&#x6B63;&#x5219;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../python/han_shu_shi.html">
+            
+                <a href="../../python/han_shu_shi.html">
+            
+                    
+                    &#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../../python/python_logging.html">
+            
+                <a href="../../python/python_logging.html">
+            
+                    
+                    &#x5185;&#x90E8;&#x6A21;&#x5757;logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../../python/import_bs4.html">
+            
+                <a href="../../python/import_bs4.html">
+            
+                    
+                    BeautifulSoup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../../python/leaning_log.html">
+            
+                <a href="../../python/leaning_log.html">
+            
+                    
+                    &#x9879;&#x76EE;1leaning_log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../../python/leaning_log_user.html">
+            
+                <a href="../../python/leaning_log_user.html">
+            
+                    
+                    &#x521B;&#x5EFA;&#x7528;&#x6237;&#x8D26;&#x53F7;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10">
+            
+                <span>
+            
+                    
+                    Zabbix
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../zabbix/zbx_readme.html">
+            
+                <a href="../../zabbix/zbx_readme.html">
+            
+                    
+                    zabbix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../zabbix/zbx_agt_conf.html">
+            
+                <a href="../../zabbix/zbx_agt_conf.html">
+            
+                    
+                    agent&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BF4;&#x660E;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../zabbix/zbx_tables.html">
+            
+                <a href="../../zabbix/zbx_tables.html">
+            
+                    
+                    &#x8868;&#x7ED3;&#x6784;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../zabbix/get_data_from_mysql.html">
+            
+                <a href="../../zabbix/get_data_from_mysql.html">
+            
+                    
+                    &#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x83B7;&#x53D6;&#x76D1;&#x63A7;&#x6570;&#x636E;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../../zabbix/zbx_patrol.html">
+            
+                <a href="../../zabbix/zbx_patrol.html">
+            
+                    
+                    &#x68C0;&#x67E5;zabbix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../../zabbix/zbx_autoreg.html">
+            
+                <a href="../../zabbix/zbx_autoreg.html">
+            
+                    
+                    &#x81EA;&#x52A8;&#x6CE8;&#x518C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../../zabbix/zabbix_kpi.html">
+            
+                <a href="../../zabbix/zabbix_kpi.html">
+            
+                    
+                    &#x76D1;&#x63A7;&#x6307;&#x6807;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../../zabbix/zabbix_linux.html">
+            
+                <a href="../../zabbix/zabbix_linux.html">
+            
+                    
+                    &#x76D1;&#x63A7;Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../../zabbix/zabbix_windows.html">
+            
+                <a href="../../zabbix/zabbix_windows.html">
+            
+                    
+                    &#x76D1;&#x63A7;Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../../zabbix/zabbix_network_devices.html">
+            
+                <a href="../../zabbix/zabbix_network_devices.html">
+            
+                    
+                    &#x76D1;&#x63A7;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../../zabbix/zabbix_oracle.html">
+            
+                <a href="../../zabbix/zabbix_oracle.html">
+            
+                    
+                    &#x76D1;&#x63A7;ORACLE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="../../zabbix/zabbix_zk_UserParameter.html">
+            
+                <a href="../../zabbix/zabbix_zk_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="../../zabbix/zabbix_redis_UserParameter.html">
+            
+                <a href="../../zabbix/zabbix_redis_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.14" data-path="../../zabbix/zabbix_kafka_UserParameter.html">
+            
+                <a href="../../zabbix/zabbix_kafka_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.15" data-path="../../zabbix/zabbix_storm_UserParameter.html">
+            
+                <a href="../../zabbix/zabbix_storm_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;storm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.16" data-path="../../zabbix/zabbix_sparkstreaming_UserParameter.html">
+            
+                <a href="../../zabbix/zabbix_sparkstreaming_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;spark streaming
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11">
+            
+                <span>
+            
+                    
+                    &#x6570;&#x636E;&#x5E93;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../database/oracle.html">
+            
+                <a href="../../database/oracle.html">
+            
+                    
+                    ORACLE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2">
+            
+                <span>
+            
+                    
+                    [mysql]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.2.1" data-path="../../database/mysql/mysql_readme.html">
+            
+                <a href="../../database/mysql/mysql_readme.html">
+            
+                    
+                    mysql&#x57FA;&#x7840;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.2" data-path="../../database/mysql/mysql_datatype.html">
+            
+                <a href="../../database/mysql/mysql_datatype.html">
+            
+                    
+                    mysql&#x5B57;&#x6BB5;&#x7C7B;&#x578B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.3" data-path="../../database/mysql/mysql_query.html">
+            
+                <a href="../../database/mysql/mysql_query.html">
+            
+                    
+                    mysql&#x5173;&#x8054;&#x67E5;&#x8BE2;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.4" data-path="../../database/mysql/mysql_event.html">
+            
+                <a href="../../database/mysql/mysql_event.html">
+            
+                    
+                    mysql&#x4E8B;&#x4EF6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.5" data-path="../../database/mysql/mysql_procedure.html">
+            
+                <a href="../../database/mysql/mysql_procedure.html">
+            
+                    
+                    mysql&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12">
+            
+                <span>
+            
+                    
+                    Hadoop
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../hadoop/hdfs.html">
+            
+                <a href="../../hadoop/hdfs.html">
+            
+                    
+                    HDFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../hadoop/yarn.html">
+            
+                <a href="../../hadoop/yarn.html">
+            
+                    
+                    Yarn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../kafka/kafka_readme.html">
+            
+                <a href="../../kafka/kafka_readme.html">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../elk/elk_readme.html">
+            
+                <a href="../../elk/elk_readme.html">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../elk/elk_logstash_rabbitmq.html">
+            
+                <a href="../../elk/elk_logstash_rabbitmq.html">
+            
+                    
+                    logstash&#x8F93;&#x51FA;&#x5230;rabbitmq
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15">
+            
+                <span>
+            
+                    
+                    &#x5176;&#x5B83;&#x5E38;&#x7528;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../grafana_readme.html">
+            
+                <a href="../../grafana_readme.html">
+            
+                    
+                    grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../../sublime_readme.html">
+            
+                <a href="../../sublime_readme.html">
+            
+                    
+                    sublime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../../markdown_readme.html">
+            
+                <a href="../../markdown_readme.html">
+            
+                    
+                    markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../../NavicatPremium_readme.html">
+            
+                <a href="../../NavicatPremium_readme.html">
+            
+                    
+                    NavicatPremium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../../RemoteDesktopManager_readme.html">
+            
+                <a href="../../RemoteDesktopManager_readme.html">
+            
+                    
+                    RemoteDesktopManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="../../other_app/vsc_readme.html">
+            
+                <a href="../../other_app/vsc_readme.html">
+            
+                    
+                    VSC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7" data-path="../../other_app/dbeaver_readme.html">
+            
+                <a href="../../other_app/dbeaver_readme.html">
+            
+                    
+                    DBeaver
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16">
+            
+                <span>
+            
+                    
+                    PM
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../manager/Linux&#x9762;&#x8BD5;&#x9898;.html">
+            
+                <a href="../../manager/Linux&#x9762;&#x8BD5;&#x9898;.html">
+            
+                    
+                    Linux&#x9762;&#x8BD5;&#x9898;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../../manager/ruan_jian_ce_shi_mian_shi.html">
+            
+                <a href="../../manager/ruan_jian_ce_shi_mian_shi.html">
+            
+                    
+                    &#x8F6F;&#x4EF6;&#x6D4B;&#x8BD5;&#x9762;&#x8BD5;&#x9898;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../../manager/ht-ji_neng.md">
+            
+                <span>
+            
+                    
+                    &#x4EBA;&#x5458;&#x6280;&#x80FD;
+            
+                
+            
+
+            
+        </span></li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../../manager/ri_chang.html">
+            
+                <a href="../../manager/ri_chang.html">
+            
+                    
+                    &#x65E5;&#x5E38;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5" data-path="../../manager/ren_zhi_jue_se_hjfz.html">
+            
+                <a href="../../manager/ren_zhi_jue_se_hjfz.html">
+            
+                    
+                    &#x9EC4;&#x91D1;&#x6CD5;&#x5219;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            &#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../..">04 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x7ECF;&#x5E38;&#x8BF4;&#x7684; CPU &#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09;</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x600E;&#x4E48;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x60C5;&#x51B5;"><b>1. </b>&#x600E;&#x4E48;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x60C5;&#x51B5;</a></li><li><span class="title-icon "></span><a href="#&#x6848;&#x4F8B;&#x5206;&#x6790;"><b>2. </b>&#x6848;&#x4F8B;&#x5206;&#x6790;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F60;&#x7684;&#x51C6;&#x5907;"><b>2.1. </b>&#x4F60;&#x7684;&#x51C6;&#x5907;</a></li><li><span class="title-icon "></span><a href="#&#x64CD;&#x4F5C;&#x548C;&#x5206;&#x6790;"><b>2.2. </b>&#x64CD;&#x4F5C;&#x548C;&#x5206;&#x6790;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5C0F;&#x7ED3;"><b>3. </b>&#x5C0F;&#x7ED3;</a></li><li><span class="title-icon "></span><a href="#&#x601D;&#x8003;"><b>4. </b>&#x601D;&#x8003;</a></li></ul></div><a href="#&#x600E;&#x4E48;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x60C5;&#x51B5;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><strong>04 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x7ECF;&#x5E38;&#x8BF4;&#x7684; CPU &#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09;</strong></p>
+<p>2018-11-28 &#x502A;&#x670B;&#x98DE;</p>
+<p>&#x4F60;&#x597D;&#xFF0C;&#x6211;&#x662F;&#x502A;&#x670B;&#x98DE;&#x3002;</p>
+<p>&#x4E0A;&#x4E00;&#x8282;&#xFF0C;&#x6211;&#x7ED9;&#x4F60;&#x8BB2;&#x4E86; CPU &#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x3002;&#x7B80;&#x5355;&#x56DE;&#x987E;&#x4E00;&#x4E0B;&#xFF0C;CPU &#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x662F;&#x4FDD;&#x8BC1; Linux &#x7CFB;&#x7EDF;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x7684;&#x4E00;&#x4E2A;&#x6838;&#x5FC3;&#x529F;&#x80FD;&#xFF0C;&#x6309;&#x7167;&#x4E0D;&#x540C;&#x573A;&#x666F;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x8FDB;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x3001;&#x7EBF;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x548C;&#x4E2D;&#x65AD;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x3002;&#x5177;&#x4F53;&#x7684;&#x6982;&#x5FF5;&#x548C;&#x533A;&#x522B;&#xFF0C;&#x4F60;&#x4E5F;&#x8981;&#x5728;&#x8111;&#x6D77;&#x4E2D;&#x8FC7;&#x4E00;&#x904D;&#xFF0C;&#x5FD8;&#x4E86;&#x7684;&#x8BDD;&#x53CA;&#x65F6;&#x67E5;&#x770B;&#x4E0A;&#x4E00;&#x7BC7;&#x3002;</p>
+<p>&#x4ECA;&#x5929;&#x6211;&#x4EEC;&#x5C31;&#x63A5;&#x7740;&#x6765;&#x770B;&#xFF0C;&#x7A76;&#x7ADF;&#x600E;&#x4E48;&#x5206;&#x6790; CPU &#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<h1 id="&#x600E;&#x4E48;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x60C5;&#x51B5;"><a name="&#x600E;&#x4E48;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x60C5;&#x51B5;" class="anchor-navigation-ex-anchor" href="#&#x600E;&#x4E48;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x600E;&#x4E48;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x60C5;&#x51B5;</h1>
+<p>&#x901A;&#x8FC7;&#x524D;&#x9762;&#x5B66;&#x4E60;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;&#x8FC7;&#x591A;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#xFF0C;&#x4F1A;&#x628A; CPU &#x65F6;&#x95F4;&#x6D88;&#x8017;&#x5728;&#x5BC4;&#x5B58;&#x5668;&#x3001;&#x5185;&#x6838;&#x6808;&#x4EE5;&#x53CA;&#x865A;&#x62DF;&#x5185;&#x5B58;&#x7B49;&#x6570;&#x636E;&#x7684;&#x4FDD;&#x5B58;&#x548C;&#x6062;&#x590D;&#x4E0A;&#xFF0C;&#x7F29;&#x77ED;&#x8FDB;&#x7A0B;&#x771F;&#x6B63;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x6210;&#x4E86;&#x7CFB;&#x7EDF;&#x6027;&#x80FD;&#x5927;&#x5E45;&#x4E0B;&#x964D;&#x7684;&#x4E00;&#x4E2A;&#x5143;&#x51F6;&#x3002;</p>
+<p>&#x65E2;&#x7136;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x5BF9;&#x7CFB;&#x7EDF;&#x6027;&#x80FD;&#x5F71;&#x54CD;&#x90A3;&#x4E48;&#x5927;&#xFF0C;&#x4F60;&#x80AF;&#x5B9A;&#x8FEB;&#x4E0D;&#x53CA;&#x5F85;&#x60F3;&#x77E5;&#x9053;&#xFF0C;&#x5230;&#x5E95;&#x8981;&#x600E;&#x4E48;&#x67E5;&#x770B;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x5462;&#xFF1F;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; vmstat &#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#xFF0C;&#x6765;&#x67E5;&#x8BE2;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x60C5;&#x51B5;&#x3002;</p>
+<p>vmstat &#x662F;&#x4E00;&#x4E2A;&#x5E38;&#x7528;&#x7684;&#x7CFB;&#x7EDF;&#x6027;&#x80FD;&#x5206;&#x6790;&#x5DE5;&#x5177;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x5206;&#x6790;&#x7CFB;&#x7EDF;&#x7684;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#xFF0C;&#x4E5F;&#x5E38;&#x7528;&#x6765;&#x5206;&#x6790; CPU &#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x548C;&#x4E2D;&#x65AD;&#x7684;&#x6B21;&#x6570;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x5C31;&#x662F;&#x4E00;&#x4E2A; vmstat &#x7684;&#x4F7F;&#x7528;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x6BCF;&#x9694; 5 &#x79D2;&#x8F93;&#x51FA; 1 &#x7EC4;&#x6570;&#x636E;</span>
+$ <span class="token function">vmstat</span> 5
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   <span class="token function">free</span>   buff  cache   si   so    bi    bo   <span class="token keyword">in</span>   cs us sy <span class="token function">id</span> wa st
+ 0  0      0 7005360  91564 818900    0    0     0     0   25   33  0  0 100  0  0
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x4E00;&#x8D77;&#x6765;&#x770B;&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5148;&#x8BD5;&#x7740;&#x81EA;&#x5DF1;&#x89E3;&#x8BFB;&#x6BCF;&#x5217;&#x7684;&#x542B;&#x4E49;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x91CD;&#x70B9;&#x5F3A;&#x8C03;&#x4E0B;&#xFF0C;&#x9700;&#x8981;&#x7279;&#x522B;&#x5173;&#x6CE8;&#x7684;&#x56DB;&#x5217;&#x5185;&#x5BB9;&#xFF1A;</p>
+<ul>
+<li><p>cs&#xFF08;context switch&#xFF09;&#x662F;&#x6BCF;&#x79D2;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x7684;&#x6B21;&#x6570;&#x3002;</p>
+</li>
+<li><p>in&#xFF08;interrupt&#xFF09;&#x5219;&#x662F;&#x6BCF;&#x79D2;&#x4E2D;&#x65AD;&#x7684;&#x6B21;&#x6570;&#x3002;</p>
+</li>
+<li><p>r&#xFF08;Running or Runnable&#xFF09;&#x662F;&#x5C31;&#x7EEA;&#x961F;&#x5217;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x548C;&#x7B49;&#x5F85; CPU &#x7684;&#x8FDB;&#x7A0B;&#x6570;&#x3002;</p>
+</li>
+<li><p>b&#xFF08;Blocked&#xFF09;&#x5219;&#x662F;&#x5904;&#x4E8E;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#x7761;&#x7720;&#x72B6;&#x6001;&#x7684;&#x8FDB;&#x7A0B;&#x6570;&#x3002;</p>
+</li>
+</ul>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570; cs &#x662F; 33 &#x6B21;&#xFF0C;&#x800C;&#x7CFB;&#x7EDF;&#x4E2D;&#x65AD;&#x6B21;&#x6570; in &#x5219;&#x662F; 25 &#x6B21;&#xFF0C;&#x800C;&#x5C31;&#x7EEA;&#x961F;&#x5217;&#x957F;&#x5EA6; r &#x548C;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#x72B6;&#x6001;&#x8FDB;&#x7A0B;&#x6570; b &#x90FD;&#x662F; 0&#x3002;</p>
+<p>vmstat &#x53EA;&#x7ED9;&#x51FA;&#x4E86;&#x7CFB;&#x7EDF;&#x603B;&#x4F53;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x60C5;&#x51B5;&#xFF0C;&#x8981;&#x60F3;&#x67E5;&#x770B;&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x8BE6;&#x7EC6;&#x60C5;&#x51B5;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x6211;&#x4EEC;&#x524D;&#x9762;&#x63D0;&#x5230;&#x8FC7;&#x7684; pidstat &#x4E86;&#x3002;&#x7ED9;&#x5B83;&#x52A0;&#x4E0A; -w &#x9009;&#x9879;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x7684;&#x60C5;&#x51B5;&#x4E86;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x8BF4;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x6BCF;&#x9694; 5 &#x79D2;&#x8F93;&#x51FA; 1 &#x7EC4;&#x6570;&#x636E;</span>
+$ pidstat -w 5
+Linux 4.15.0 <span class="token punctuation">(</span>ubuntu<span class="token punctuation">)</span>  09/23/18  _x86_64_  <span class="token punctuation">(</span>2 CPU<span class="token punctuation">)</span>
+
+08:18:26      UID       PID   cswch/s nvcswch/s  Command
+08:18:31        0         1      0.20      0.00  systemd
+08:18:31        0         8      5.40      0.00  rcu_sched
+<span class="token punctuation">..</span>.
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#x4E2D;&#x6709;&#x4E24;&#x5217;&#x5185;&#x5BB9;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x91CD;&#x70B9;&#x5173;&#x6CE8;&#x5BF9;&#x8C61;&#x3002;&#x4E00;&#x4E2A;&#x662F; cswch &#xFF0C;&#x8868;&#x793A;&#x6BCF;&#x79D2;&#x81EA;&#x613F;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#xFF08;voluntary context switches&#xFF09;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x5219;&#x662F; nvcswch &#xFF0C;&#x8868;&#x793A;&#x6BCF;&#x79D2;&#x975E;&#x81EA;&#x613F;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#xFF08;non voluntary context switches&#xFF09;&#x7684;&#x6B21;&#x6570;&#x3002;</p>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x6982;&#x5FF5;&#x4F60;&#x4E00;&#x5B9A;&#x8981;&#x7262;&#x7262;&#x8BB0;&#x4F4F;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x610F;&#x5473;&#x7740;&#x4E0D;&#x540C;&#x7684;&#x6027;&#x80FD;&#x95EE;&#x9898;&#xFF1A;</p>
+<ul>
+<li><p>&#x6240;&#x8C13;<strong>&#x81EA;&#x613F;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#xFF0C;&#x662F;&#x6307;&#x8FDB;&#x7A0B;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x6240;&#x9700;&#x8D44;&#x6E90;&#xFF0C;&#x5BFC;&#x81F4;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;</strong>&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C; I/O&#x3001;&#x5185;&#x5B58;&#x7B49;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x4E0D;&#x8DB3;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x53D1;&#x751F;&#x81EA;&#x613F;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x3002;</p>
+</li>
+<li><p>&#x800C;<strong>&#x975E;&#x81EA;&#x613F;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#xFF0C;&#x5219;&#x662F;&#x6307;&#x8FDB;&#x7A0B;&#x7531;&#x4E8E;&#x65F6;&#x95F4;&#x7247;&#x5DF2;&#x5230;&#x7B49;&#x539F;&#x56E0;&#xFF0C;&#x88AB;&#x7CFB;&#x7EDF;&#x5F3A;&#x5236;&#x8C03;&#x5EA6;&#xFF0C;&#x8FDB;&#x800C;&#x53D1;&#x751F;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;</strong>&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x5927;&#x91CF;&#x8FDB;&#x7A0B;&#x90FD;&#x5728;&#x4E89;&#x62A2; CPU &#x65F6;&#xFF0C;&#x5C31;&#x5BB9;&#x6613;&#x53D1;&#x751F;&#x975E;&#x81EA;&#x613F;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x3002;</p>
+</li>
+</ul>
+<h1 id="&#x6848;&#x4F8B;&#x5206;&#x6790;"><a name="&#x6848;&#x4F8B;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#x6848;&#x4F8B;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x6848;&#x4F8B;&#x5206;&#x6790;</h1>
+<p>&#x77E5;&#x9053;&#x4E86;&#x600E;&#x4E48;&#x67E5;&#x770B;&#x8FD9;&#x4E9B;&#x6307;&#x6807;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x53C8;&#x6765;&#x4E86;&#xFF0C;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x9891;&#x7387;&#x662F;&#x591A;&#x5C11;&#x6B21;&#x624D;&#x7B97;&#x6B63;&#x5E38;&#x5462;&#xFF1F;&#x522B;&#x6025;&#x7740;&#x8981;&#x7B54;&#x6848;&#xFF0C;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x7684;&#x6848;&#x4F8B;&#x3002;&#x901A;&#x8FC7;&#x6848;&#x4F8B;&#x5B9E;&#x6218;&#x6F14;&#x7EC3;&#xFF0C;&#x4F60;&#x81EA;&#x5DF1;&#x5C31;&#x53EF;&#x4EE5;&#x5206;&#x6790;&#x5E76;&#x627E;&#x51FA;&#x8FD9;&#x4E2A;&#x6807;&#x51C6;&#x4E86;&#x3002;</p>
+<h2 id="&#x4F60;&#x7684;&#x51C6;&#x5907;"><a name="&#x4F60;&#x7684;&#x51C6;&#x5907;" class="anchor-navigation-ex-anchor" href="#&#x4F60;&#x7684;&#x51C6;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. &#x4F60;&#x7684;&#x51C6;&#x5907;</h2>
+<p>&#x4ECA;&#x5929;&#x7684;&#x6848;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528; sysbench &#x6765;&#x6A21;&#x62DF;&#x7CFB;&#x7EDF;&#x591A;&#x7EBF;&#x7A0B;&#x8C03;&#x5EA6;&#x5207;&#x6362;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p>sysbench &#x662F;&#x4E00;&#x4E2A;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x57FA;&#x51C6;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x6765;&#x8BC4;&#x4F30;&#x4E0D;&#x540C;&#x7CFB;&#x7EDF;&#x53C2;&#x6570;&#x4E0B;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8D1F;&#x8F7D;&#x60C5;&#x51B5;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x5728;&#x8FD9;&#x6B21;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x628A;&#x5B83;&#x5F53;&#x6210;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x8FDB;&#x7A0B;&#x6765;&#x770B;&#xFF0C;&#x4F5C;&#x7528;&#x662F;&#x6A21;&#x62DF;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x8FC7;&#x591A;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x6848;&#x4F8B;&#x57FA;&#x4E8E; Ubuntu 18.04&#xFF0C;&#x5F53;&#x7136;&#xFF0C;&#x5176;&#x4ED6;&#x7684; Linux &#x7CFB;&#x7EDF;&#x540C;&#x6837;&#x9002;&#x7528;&#x3002;&#x6211;&#x4F7F;&#x7528;&#x7684;&#x6848;&#x4F8B;&#x73AF;&#x5883;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<ul>
+<li><p>&#x673A;&#x5668;&#x914D;&#x7F6E;&#xFF1A;2 CPU&#xFF0C;8GB &#x5185;&#x5B58;</p>
+</li>
+<li><p>&#x9884;&#x5148;&#x5B89;&#x88C5; sysbench &#x548C; sysstat &#x5305;&#xFF0C;&#x5982; apt install sysbench sysstat</p>
+</li>
+</ul>
+<p>&#x6B63;&#x5F0F;&#x64CD;&#x4F5C;&#x5F00;&#x59CB;&#x524D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x6253;&#x5F00;&#x4E09;&#x4E2A;&#x7EC8;&#x7AEF;&#xFF0C;&#x767B;&#x5F55;&#x5230;&#x540C;&#x4E00;&#x53F0; Linux &#x673A;&#x5668;&#x4E2D;&#xFF0C;&#x5E76;&#x5B89;&#x88C5;&#x597D;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#x4E24;&#x4E2A;&#x8F6F;&#x4EF6;&#x5305;&#x3002;&#x5305;&#x7684;&#x5B89;&#x88C5;&#xFF0C;&#x53EF;&#x4EE5;&#x5148; Google &#x4E00;&#x4E0B;&#x81EA;&#x884C;&#x89E3;&#x51B3;&#xFF0C;&#x5982;&#x679C;&#x4ECD;&#x7136;&#x6709;&#x95EE;&#x9898;&#x7684;&#xFF0C;&#x5728;&#x7559;&#x8A00;&#x533A;&#x5199;&#x4E0B;&#x4F60;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#x6CE8;&#x610F;&#xFF0C;&#x4E0B;&#x9762;&#x6240;&#x6709;&#x547D;&#x4EE4;&#xFF0C;&#x90FD;<strong>&#x9ED8;&#x8BA4;&#x4EE5; root &#x7528;&#x6237;</strong>&#x8FD0;&#x884C;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x662F;&#x7528;&#x666E;&#x901A;&#x7528;&#x6237;&#x767B;&#x9646;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x8BB0;&#x4F4F;&#x5148;&#x8FD0;&#x884C; sudo su root &#x547D;&#x4EE4;&#x5207;&#x6362;&#x5230; root &#x7528;&#x6237;&#x3002;</p>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5148;&#x7528; vmstat &#x770B;&#x4E00;&#x4E0B;&#x7A7A;&#x95F2;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x95F4;&#x9694; 1 &#x79D2;&#x540E;&#x8F93;&#x51FA; 1 &#x7EC4;&#x6570;&#x636E;</span>
+$ <span class="token function">vmstat</span> 1 1
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   <span class="token function">free</span>   buff  cache   si   so    bi    bo   <span class="token keyword">in</span>   cs us sy <span class="token function">id</span> wa st
+ 0  0      0 6984064  92668 830896    0    0     2    19   19   35  1  0 99  0  0
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x73B0;&#x5728;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570; cs &#x662F; 35&#xFF0C;&#x800C;&#x4E2D;&#x65AD;&#x6B21;&#x6570; in &#x662F; 19&#xFF0C;r &#x548C; b &#x90FD;&#x662F; 0&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x4F1A;&#x513F;&#x6211;&#x5E76;&#x6CA1;&#x6709;&#x8FD0;&#x884C;&#x5176;&#x4ED6;&#x4EFB;&#x52A1;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x5C31;&#x662F;&#x7A7A;&#x95F2;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570;&#x3002;</p>
+<h2 id="&#x64CD;&#x4F5C;&#x548C;&#x5206;&#x6790;"><a name="&#x64CD;&#x4F5C;&#x548C;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#x64CD;&#x4F5C;&#x548C;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x64CD;&#x4F5C;&#x548C;&#x5206;&#x6790;</h2>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x6B63;&#x5F0F;&#x8FDB;&#x5165;&#x5B9E;&#x6218;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x5728;&#x7B2C;&#x4E00;&#x4E2A;&#x7EC8;&#x7AEF;&#x91CC;&#x8FD0;&#x884C; sysbench &#xFF0C;&#x6A21;&#x62DF;&#x7CFB;&#x7EDF;&#x591A;&#x7EBF;&#x7A0B;&#x8C03;&#x5EA6;&#x7684;&#x74F6;&#x9888;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x4EE5; 10 &#x4E2A;&#x7EBF;&#x7A0B;&#x8FD0;&#x884C; 5 &#x5206;&#x949F;&#x7684;&#x57FA;&#x51C6;&#x6D4B;&#x8BD5;&#xFF0C;&#x6A21;&#x62DF;&#x591A;&#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x7684;&#x95EE;&#x9898;</span>
+$ sysbench --threads<span class="token operator">=</span>10 --max-time<span class="token operator">=</span>300 threads run
+</code></pre>
+<p>&#x63A5;&#x7740;&#xFF0C;&#x5728;&#x7B2C;&#x4E8C;&#x4E2A;&#x7EC8;&#x7AEF;&#x8FD0;&#x884C; vmstat &#xFF0C;&#x89C2;&#x5BDF;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x60C5;&#x51B5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x6BCF;&#x9694; 1 &#x79D2;&#x8F93;&#x51FA; 1 &#x7EC4;&#x6570;&#x636E;&#xFF08;&#x9700;&#x8981; Ctrl+C &#x624D;&#x7ED3;&#x675F;&#xFF09;</span>
+$ <span class="token function">vmstat</span> 1
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   <span class="token function">free</span>   buff  cache   si   so    bi    bo   <span class="token keyword">in</span>   cs us sy <span class="token function">id</span> wa st
+ 6  0      0 6487428 118240 1292772    0    0     0     0 9019 1398830 16 84  0  0  0
+ 8  0      0 6487428 118240 1292772    0    0     0     0 10191 1392312 16 84  0  0  0
+</code></pre>
+<p>&#x4F60;&#x5E94;&#x8BE5;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;cs &#x5217;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570;&#x4ECE;&#x4E4B;&#x524D;&#x7684; 35 &#x9AA4;&#x7136;&#x4E0A;&#x5347;&#x5230;&#x4E86; 139 &#x4E07;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x6CE8;&#x610F;&#x89C2;&#x5BDF;&#x5176;&#x4ED6;&#x51E0;&#x4E2A;&#x6307;&#x6807;&#xFF1A;</p>
+<ul>
+<li><p>r &#x5217;&#xFF1A;&#x5C31;&#x7EEA;&#x961F;&#x5217;&#x7684;&#x957F;&#x5EA6;&#x5DF2;&#x7ECF;&#x5230;&#x4E86; 8&#xFF0C;&#x8FDC;&#x8FDC;&#x8D85;&#x8FC7;&#x4E86;&#x7CFB;&#x7EDF; CPU &#x7684;&#x4E2A;&#x6570; 2&#xFF0C;&#x6240;&#x4EE5;&#x80AF;&#x5B9A;&#x4F1A;&#x6709;&#x5927;&#x91CF;&#x7684; CPU &#x7ADE;&#x4E89;&#x3002;</p>
+</li>
+<li><p>us&#xFF08;user&#xFF09;&#x548C; sy&#xFF08;system&#xFF09;&#x5217;&#xFF1A;&#x8FD9;&#x4E24;&#x5217;&#x7684; CPU &#x4F7F;&#x7528;&#x7387;&#x52A0;&#x8D77;&#x6765;&#x4E0A;&#x5347;&#x5230;&#x4E86; 100%&#xFF0C;&#x5176;&#x4E2D;&#x7CFB;&#x7EDF; CPU &#x4F7F;&#x7528;&#x7387;&#xFF0C;&#x4E5F;&#x5C31;&#x662F; sy &#x5217;&#x9AD8;&#x8FBE; 84%&#xFF0C;&#x8BF4;&#x660E; CPU &#x4E3B;&#x8981;&#x662F;&#x88AB;&#x5185;&#x6838;&#x5360;&#x7528;&#x4E86;&#x3002;</p>
+</li>
+<li><p>in &#x5217;&#xFF1A;&#x4E2D;&#x65AD;&#x6B21;&#x6570;&#x4E5F;&#x4E0A;&#x5347;&#x5230;&#x4E86; 1 &#x4E07;&#x5DE6;&#x53F3;&#xFF0C;&#x8BF4;&#x660E;&#x4E2D;&#x65AD;&#x5904;&#x7406;&#x4E5F;&#x662F;&#x4E2A;&#x6F5C;&#x5728;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+</li>
+</ul>
+<p>&#x7EFC;&#x5408;&#x8FD9;&#x51E0;&#x4E2A;&#x6307;&#x6807;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#xFF0C;&#x7CFB;&#x7EDF;&#x7684;&#x5C31;&#x7EEA;&#x961F;&#x5217;&#x8FC7;&#x957F;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x548C;&#x7B49;&#x5F85; CPU &#x7684;&#x8FDB;&#x7A0B;&#x6570;&#x8FC7;&#x591A;&#xFF0C;&#x5BFC;&#x81F4;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#xFF0C;&#x800C;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x53C8;&#x5BFC;&#x81F4;&#x4E86;&#x7CFB;&#x7EDF; CPU &#x7684;&#x5360;&#x7528;&#x7387;&#x5347;&#x9AD8;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#x8FDB;&#x7A0B;&#x5BFC;&#x81F4;&#x4E86;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#x5462;&#xFF1F;</p>
+<p>&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x5206;&#x6790;&#xFF0C;&#x5728;&#x7B2C;&#x4E09;&#x4E2A;&#x7EC8;&#x7AEF;&#x518D;&#x7528; pidstat &#x6765;&#x770B;&#x4E00;&#x4E0B;&#xFF0C; CPU &#x548C;&#x8FDB;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x7684;&#x60C5;&#x51B5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x6BCF;&#x9694; 1 &#x79D2;&#x8F93;&#x51FA; 1 &#x7EC4;&#x6570;&#x636E;&#xFF08;&#x9700;&#x8981; Ctrl+C &#x624D;&#x7ED3;&#x675F;&#xFF09;</span>
+<span class="token comment"># -w &#x53C2;&#x6570;&#x8868;&#x793A;&#x8F93;&#x51FA;&#x8FDB;&#x7A0B;&#x5207;&#x6362;&#x6307;&#x6807;&#xFF0C;&#x800C; -u &#x53C2;&#x6570;&#x5219;&#x8868;&#x793A;&#x8F93;&#x51FA; CPU &#x4F7F;&#x7528;&#x6307;&#x6807;</span>
+$ pidstat -w -u 1
+08:06:33      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+08:06:34        0     10488   30.00  100.00    0.00    0.00  100.00     0  sysbench
+08:06:34        0     26326    0.00    1.00    0.00    0.00    1.00     0  kworker/u4:2
+
+08:06:33      UID       PID   cswch/s nvcswch/s  Command
+08:06:34        0         8     11.00      0.00  rcu_sched
+08:06:34        0        16      1.00      0.00  ksoftirqd/1
+08:06:34        0       471      1.00      0.00  hv_balloon
+08:06:34        0      1230      1.00      0.00  iscsid
+08:06:34        0      4089      1.00      0.00  kworker/1:5
+08:06:34        0      4333      1.00      0.00  kworker/0:3
+08:06:34        0     10499      1.00    224.00  pidstat
+08:06:34        0     26326    236.00      0.00  kworker/u4:2
+08:06:34     1000     26784    223.00      0.00  sshd
+</code></pre>
+<p>&#x4ECE; pidstat &#x7684;&#x8F93;&#x51FA;&#x4F60;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;CPU &#x4F7F;&#x7528;&#x7387;&#x7684;&#x5347;&#x9AD8;&#x679C;&#x7136;&#x662F; sysbench &#x5BFC;&#x81F4;&#x7684;&#xFF0C;&#x5B83;&#x7684; CPU &#x4F7F;&#x7528;&#x7387;&#x5DF2;&#x7ECF;&#x8FBE;&#x5230;&#x4E86; 100%&#x3002;&#x4F46;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x5219;&#x662F;&#x6765;&#x81EA;&#x5176;&#x4ED6;&#x8FDB;&#x7A0B;&#xFF0C;&#x5305;&#x62EC;&#x975E;&#x81EA;&#x613F;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x9891;&#x7387;&#x6700;&#x9AD8;&#x7684; pidstat &#xFF0C;&#x4EE5;&#x53CA;&#x81EA;&#x613F;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x9891;&#x7387;&#x6700;&#x9AD8;&#x7684;&#x5185;&#x6838;&#x7EBF;&#x7A0B; kworker &#x548C; sshd&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#xFF0C;&#x7EC6;&#x5FC3;&#x7684;&#x4F60;&#x80AF;&#x5B9A;&#x4E5F;&#x53D1;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x602A;&#x5F02;&#x7684;&#x4E8B;&#x513F;&#xFF1A;pidstat &#x8F93;&#x51FA;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570;&#xFF0C;&#x52A0;&#x8D77;&#x6765;&#x4E5F;&#x5C31;&#x51E0;&#x767E;&#xFF0C;&#x6BD4; vmstat &#x7684; 139 &#x4E07;&#x660E;&#x663E;&#x5C0F;&#x4E86;&#x592A;&#x591A;&#x3002;&#x8FD9;&#x662F;&#x600E;&#x4E48;&#x56DE;&#x4E8B;&#x5462;&#xFF1F;&#x96BE;&#x9053;&#x662F;&#x5DE5;&#x5177;&#x672C;&#x8EAB;&#x51FA;&#x4E86;&#x9519;&#x5417;&#xFF1F;</p>
+<p>&#x522B;&#x7740;&#x6025;&#xFF0C;&#x5728;&#x6000;&#x7591;&#x5DE5;&#x5177;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x6765;&#x56DE;&#x60F3;&#x4E00;&#x4E0B;&#xFF0C;&#x524D;&#x9762;&#x8BB2;&#x5230;&#x7684;&#x51E0;&#x79CD;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x573A;&#x666F;&#x3002;&#x5176;&#x4E2D;&#x6709;&#x4E00;&#x70B9;&#x63D0;&#x5230;&#xFF0C; Linux &#x8C03;&#x5EA6;&#x7684;&#x57FA;&#x672C;&#x5355;&#x4F4D;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x7EBF;&#x7A0B;&#xFF0C;&#x800C;&#x6211;&#x4EEC;&#x7684;&#x573A;&#x666F; sysbench &#x6A21;&#x62DF;&#x7684;&#x4E5F;&#x662F;&#x7EBF;&#x7A0B;&#x7684;&#x8C03;&#x5EA6;&#x95EE;&#x9898;&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x662F;&#x4E0D;&#x662F; pidstat &#x5FFD;&#x7565;&#x4E86;&#x7EBF;&#x7A0B;&#x7684;&#x6570;&#x636E;&#x5462;&#xFF1F;</p>
+<p>&#x901A;&#x8FC7;&#x8FD0;&#x884C; man pidstat &#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;pidstat &#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x7684;&#x6307;&#x6807;&#x6570;&#x636E;&#xFF0C;&#x52A0;&#x4E0A; -t &#x53C2;&#x6570;&#x540E;&#xFF0C;&#x624D;&#x4F1A;&#x8F93;&#x51FA;&#x7EBF;&#x7A0B;&#x7684;&#x6307;&#x6807;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x7B2C;&#x4E09;&#x4E2A;&#x7EC8;&#x7AEF;&#x91CC;&#xFF0C; Ctrl+C &#x505C;&#x6B62;&#x521A;&#x624D;&#x7684; pidstat &#x547D;&#x4EE4;&#xFF0C;&#x518D;&#x52A0;&#x4E0A; -t &#x53C2;&#x6570;&#xFF0C;&#x91CD;&#x8BD5;&#x4E00;&#x4E0B;&#x770B;&#x770B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># &#x6BCF;&#x9694; 1 &#x79D2;&#x8F93;&#x51FA;&#x4E00;&#x7EC4;&#x6570;&#x636E;&#xFF08;&#x9700;&#x8981; Ctrl+C &#x624D;&#x7ED3;&#x675F;&#xFF09;</span>
+<span class="token comment"># -wt &#x53C2;&#x6570;&#x8868;&#x793A;&#x8F93;&#x51FA;&#x7EBF;&#x7A0B;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6307;&#x6807;</span>
+$ pidstat -wt 1
+08:14:05      UID      TGID       TID   cswch/s nvcswch/s  Command
+<span class="token punctuation">..</span>.
+08:14:05        0     10551         -      6.00      0.00  sysbench
+08:14:05        0         -     10551      6.00      0.00  <span class="token operator">|</span>__sysbench
+08:14:05        0         -     10552  18911.00 103740.00  <span class="token operator">|</span>__sysbench
+08:14:05        0         -     10553  18915.00 100955.00  <span class="token operator">|</span>__sysbench
+08:14:05        0         -     10554  18827.00 103954.00  <span class="token operator">|</span>__sysbench
+<span class="token punctuation">..</span>.
+</code></pre>
+<p>&#x73B0;&#x5728;&#x4F60;&#x5C31;&#x80FD;&#x770B;&#x5230;&#x4E86;&#xFF0C;&#x867D;&#x7136; sysbench &#x8FDB;&#x7A0B;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x4E3B;&#x7EBF;&#x7A0B;&#xFF09;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570;&#x770B;&#x8D77;&#x6765;&#x5E76;&#x4E0D;&#x591A;&#xFF0C;&#x4F46;&#x5B83;&#x7684;&#x5B50;&#x7EBF;&#x7A0B;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570;&#x5374;&#x6709;&#x5F88;&#x591A;&#x3002;&#x770B;&#x6765;&#xFF0C;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x7F6A;&#x9B41;&#x7978;&#x9996;&#xFF0C;&#x8FD8;&#x662F;&#x8FC7;&#x591A;&#x7684; sysbench &#x7EBF;&#x7A0B;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x627E;&#x5230;&#x4E86;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570;&#x589E;&#x591A;&#x7684;&#x6839;&#x6E90;&#xFF0C;&#x90A3;&#x662F;&#x4E0D;&#x662F;&#x5230;&#x8FD9;&#x513F;&#x5C31;&#x53EF;&#x4EE5;&#x7ED3;&#x675F;&#x4E86;&#x5462;&#xFF1F;</p>
+<p>&#x5F53;&#x7136;&#x4E0D;&#x662F;&#x3002;&#x4E0D;&#x77E5;&#x9053;&#x4F60;&#x8FD8;&#x8BB0;&#x4E0D;&#x8BB0;&#x5F97;&#xFF0C;&#x524D;&#x9762;&#x5728;&#x89C2;&#x5BDF;&#x7CFB;&#x7EDF;&#x6307;&#x6807;&#x65F6;&#xFF0C;&#x9664;&#x4E86;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x9891;&#x7387;&#x9AA4;&#x7136;&#x5347;&#x9AD8;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x6307;&#x6807;&#x4E5F;&#x6709;&#x5F88;&#x5927;&#x7684;&#x53D8;&#x5316;&#x3002;&#x662F;&#x7684;&#xFF0C;&#x6B63;&#x662F;&#x4E2D;&#x65AD;&#x6B21;&#x6570;&#x3002;&#x4E2D;&#x65AD;&#x6B21;&#x6570;&#x4E5F;&#x4E0A;&#x5347;&#x5230;&#x4E86; 1 &#x4E07;&#xFF0C;&#x4F46;&#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x4E2D;&#x65AD;&#x4E0A;&#x5347;&#x4E86;&#xFF0C;&#x73B0;&#x5728;&#x8FD8;&#x4E0D;&#x6E05;&#x695A;&#x3002;&#x6211;&#x4EEC;&#x63A5;&#x4E0B;&#x6765;&#x7EE7;&#x7EED;&#x62BD;&#x4E1D;&#x5265;&#x8327;&#x627E;&#x6E90;&#x5934;&#x3002;</p>
+<p>&#x65E2;&#x7136;&#x662F;&#x4E2D;&#x65AD;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x77E5;&#x9053;&#xFF0C;&#x5B83;&#x53EA;&#x53D1;&#x751F;&#x5728;&#x5185;&#x6838;&#x6001;&#xFF0C;&#x800C; pidstat &#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x6027;&#x80FD;&#x5206;&#x6790;&#x5DE5;&#x5177;&#xFF0C;&#x5E76;&#x4E0D;&#x63D0;&#x4F9B;&#x4EFB;&#x4F55;&#x5173;&#x4E8E;&#x4E2D;&#x65AD;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x600E;&#x6837;&#x624D;&#x80FD;&#x77E5;&#x9053;&#x4E2D;&#x65AD;&#x53D1;&#x751F;&#x7684;&#x7C7B;&#x578B;&#x5462;&#xFF1F;</p>
+<p>&#x6CA1;&#x9519;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x4ECE; /proc/interrupts &#x8FD9;&#x4E2A;&#x53EA;&#x8BFB;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x3002;/proc &#x5B9E;&#x9645;&#x4E0A;&#x662F; Linux &#x7684;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x7528;&#x4E8E;&#x5185;&#x6838;&#x7A7A;&#x95F4;&#x4E0E;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x3002;/proc/interrupts &#x5C31;&#x662F;&#x8FD9;&#x79CD;&#x901A;&#x4FE1;&#x673A;&#x5236;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53EA;&#x8BFB;&#x7684;&#x4E2D;&#x65AD;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x5728;&#x7B2C;&#x4E09;&#x4E2A;&#x7EC8;&#x7AEF;&#x91CC;&#xFF0C; Ctrl+C &#x505C;&#x6B62;&#x521A;&#x624D;&#x7684; pidstat &#x547D;&#x4EE4;&#xFF0C;&#x7136;&#x540E;&#x8FD0;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x89C2;&#x5BDF;&#x4E2D;&#x65AD;&#x7684;&#x53D8;&#x5316;&#x60C5;&#x51B5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sh"><span class="token comment"># -d &#x53C2;&#x6570;&#x8868;&#x793A;&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x53D8;&#x5316;&#x7684;&#x533A;&#x57DF;</span>
+$ <span class="token function">watch</span> -d <span class="token function">cat</span> /proc/interrupts
+           CPU0       CPU1
+<span class="token punctuation">..</span>.
+RES:    2450431    5279697   Rescheduling interrupts
+<span class="token punctuation">..</span>.
+</code></pre>
+<p>&#x89C2;&#x5BDF;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;&#x53D8;&#x5316;&#x901F;&#x5EA6;&#x6700;&#x5FEB;&#x7684;&#x662F;<strong>&#x91CD;&#x8C03;&#x5EA6;&#x4E2D;&#x65AD;&#xFF08;RES&#xFF09;</strong>&#xFF0C;&#x8FD9;&#x4E2A;&#x4E2D;&#x65AD;&#x7C7B;&#x578B;&#x8868;&#x793A;&#xFF0C;&#x5524;&#x9192;&#x7A7A;&#x95F2;&#x72B6;&#x6001;&#x7684; CPU &#x6765;&#x8C03;&#x5EA6;&#x65B0;&#x7684;&#x4EFB;&#x52A1;&#x8FD0;&#x884C;&#x3002;&#x8FD9;&#x662F;&#x591A;&#x5904;&#x7406;&#x5668;&#x7CFB;&#x7EDF;&#xFF08;SMP&#xFF09;&#x4E2D;&#xFF0C;&#x8C03;&#x5EA6;&#x5668;&#x7528;&#x6765;&#x5206;&#x6563;&#x4EFB;&#x52A1;&#x5230;&#x4E0D;&#x540C; CPU &#x7684;&#x673A;&#x5236;&#xFF0C;&#x901A;&#x5E38;&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;<strong>&#x5904;&#x7406;&#x5668;&#x95F4;&#x4E2D;&#x65AD;&#xFF08;Inter-Processor Interrupts&#xFF0C;IPI&#xFF09;</strong>&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x4E2D;&#x65AD;&#x5347;&#x9AD8;&#x8FD8;&#x662F;&#x56E0;&#x4E3A;&#x8FC7;&#x591A;&#x4EFB;&#x52A1;&#x7684;&#x8C03;&#x5EA6;&#x95EE;&#x9898;&#xFF0C;&#x8DDF;&#x524D;&#x9762;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570;&#x7684;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x81F4;&#x7684;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6848;&#x4F8B;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x4E5F;&#x53D1;&#x73B0;&#x4E86;&#x591A;&#x5DE5;&#x5177;&#x3001;&#x591A;&#x65B9;&#x9762;&#x6307;&#x6807;&#x5BF9;&#x6BD4;&#x89C2;&#x6D4B;&#x7684;&#x597D;&#x5904;&#x3002;&#x5982;&#x679C;&#x6700;&#x5F00;&#x59CB;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x7528;&#x4E86; pidstat &#x89C2;&#x6D4B;&#xFF0C;&#x8FD9;&#x4E9B;&#x5F88;&#x4E25;&#x91CD;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x7EBF;&#x7A0B;&#xFF0C;&#x538B;&#x6839;&#x513F;&#x5C31;&#x53D1;&#x73B0;&#x4E0D;&#x4E86;&#x4E86;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x518D;&#x56DE;&#x5230;&#x6700;&#x521D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6BCF;&#x79D2;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x591A;&#x5C11;&#x6B21;&#x624D;&#x7B97;&#x6B63;&#x5E38;&#x5462;&#xFF1F;</p>
+<p><strong>&#x8FD9;&#x4E2A;&#x6570;&#x503C;&#x5176;&#x5B9E;&#x53D6;&#x51B3;&#x4E8E;&#x7CFB;&#x7EDF;&#x672C;&#x8EAB;&#x7684; CPU &#x6027;&#x80FD;</strong>&#x3002;&#x5728;&#x6211;&#x770B;&#x6765;&#xFF0C;&#x5982;&#x679C;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570;&#x6BD4;&#x8F83;&#x7A33;&#x5B9A;&#xFF0C;&#x90A3;&#x4E48;&#x4ECE;&#x6570;&#x767E;&#x5230;&#x4E00;&#x4E07;&#x4EE5;&#x5185;&#xFF0C;&#x90FD;&#x5E94;&#x8BE5;&#x7B97;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x3002;&#x4F46;&#x5F53;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570;&#x8D85;&#x8FC7;&#x4E00;&#x4E07;&#x6B21;&#xFF0C;&#x6216;&#x8005;&#x5207;&#x6362;&#x6B21;&#x6570;&#x51FA;&#x73B0;&#x6570;&#x91CF;&#x7EA7;&#x7684;&#x589E;&#x957F;&#x65F6;&#xFF0C;&#x5C31;&#x5F88;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x51FA;&#x73B0;&#x4E86;&#x6027;&#x80FD;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x8FD9;&#x65F6;&#xFF0C;&#x4F60;&#x8FD8;&#x9700;&#x8981;&#x6839;&#x636E;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x518D;&#x505A;&#x5177;&#x4F53;&#x5206;&#x6790;&#x3002;&#x6BD4;&#x65B9;&#x8BF4;&#xFF1A;</p>
+<ul>
+<li><p>&#x81EA;&#x613F;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x53D8;&#x591A;&#x4E86;&#xFF0C;&#x8BF4;&#x660E;&#x8FDB;&#x7A0B;&#x90FD;&#x5728;&#x7B49;&#x5F85;&#x8D44;&#x6E90;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x4E86; I/O &#x7B49;&#x5176;&#x4ED6;&#x95EE;&#x9898;&#xFF1B;</p>
+</li>
+<li><p>&#x975E;&#x81EA;&#x613F;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x53D8;&#x591A;&#x4E86;&#xFF0C;&#x8BF4;&#x660E;&#x8FDB;&#x7A0B;&#x90FD;&#x5728;&#x88AB;&#x5F3A;&#x5236;&#x8C03;&#x5EA6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x90FD;&#x5728;&#x4E89;&#x62A2; CPU&#xFF0C;&#x8BF4;&#x660E; CPU &#x7684;&#x786E;&#x6210;&#x4E86;&#x74F6;&#x9888;&#xFF1B;</p>
+</li>
+<li><p>&#x4E2D;&#x65AD;&#x6B21;&#x6570;&#x53D8;&#x591A;&#x4E86;&#xFF0C;&#x8BF4;&#x660E; CPU &#x88AB;&#x4E2D;&#x65AD;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x5360;&#x7528;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x67E5;&#x770B; /proc/interrupts &#x6587;&#x4EF6;&#x6765;&#x5206;&#x6790;&#x5177;&#x4F53;&#x7684;&#x4E2D;&#x65AD;&#x7C7B;&#x578B;&#x3002;</p>
+</li>
+</ul>
+<h1 id="&#x5C0F;&#x7ED3;"><a name="&#x5C0F;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#&#x5C0F;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x5C0F;&#x7ED3;</h1>
+<p>&#x4ECA;&#x5929;&#xFF0C;&#x6211;&#x901A;&#x8FC7;&#x4E00;&#x4E2A; sysbench &#x7684;&#x6848;&#x4F8B;&#xFF0C;&#x7ED9;&#x4F60;&#x8BB2;&#x4E86;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x95EE;&#x9898;&#x7684;&#x5206;&#x6790;&#x601D;&#x8DEF;&#x3002;&#x78B0;&#x5230;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x6B21;&#x6570;&#x8FC7;&#x591A;&#x7684;&#x95EE;&#x9898;&#x65F6;&#xFF0C;<strong>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x501F;&#x52A9; vmstat &#x3001; pidstat &#x548C; /proc/interrupts &#x7B49;&#x5DE5;&#x5177;</strong>&#xFF0C;&#x6765;&#x8F85;&#x52A9;&#x6392;&#x67E5;&#x6027;&#x80FD;&#x95EE;&#x9898;&#x7684;&#x6839;&#x6E90;&#x3002;</p>
+<h1 id="&#x601D;&#x8003;"><a name="&#x601D;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x601D;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x601D;&#x8003;</h1>
+<p>&#x6700;&#x540E;&#xFF0C;&#x6211;&#x60F3;&#x8BF7;&#x4F60;&#x4E00;&#x8D77;&#x6765;&#x804A;&#x804A;&#xFF0C;&#x4F60;&#x4E4B;&#x524D;&#x662F;&#x600E;&#x4E48;&#x5206;&#x6790;&#x548C;&#x6392;&#x67E5;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x95EE;&#x9898;&#x7684;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x7ED3;&#x5408;&#x8FD9;&#x4E24;&#x8282;&#x7684;&#x5185;&#x5BB9;&#x548C;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x9645;&#x64CD;&#x4F5C;&#xFF0C;&#x6765;&#x603B;&#x7ED3;&#x81EA;&#x5DF1;&#x7684;&#x601D;&#x8DEF;&#x3002;</p>
+<p>&#x6B22;&#x8FCE;&#x5728;&#x7559;&#x8A00;&#x533A;&#x548C;&#x6211;&#x8BA8;&#x8BBA;&#xFF0C;&#x4E5F;&#x6B22;&#x8FCE;&#x628A;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x5206;&#x4EAB;&#x7ED9;&#x4F60;&#x7684;&#x540C;&#x4E8B;&#x3001;&#x670B;&#x53CB;&#x3002;&#x6211;&#x4EEC;&#x4E00;&#x8D77;&#x5728;&#x5B9E;&#x6218;&#x4E2D;&#x6F14;&#x7EC3;&#xFF0C;&#x5728;&#x4EA4;&#x6D41;&#x4E2D;&#x5B66;&#x4E60;&#x3002;</p>
+<p>&#xA9;&#x7248;&#x6743;&#x5F52;&#x6781;&#x5BA2;&#x90A6;&#x79D1;&#x6280;&#x6240;&#x6709;&#xFF0C;&#x672A;&#x7ECF;&#x8BB8;&#x53EF;&#x4E0D;&#x5F97;&#x8F6C;&#x8F7D; </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; one 2014-2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6700;&#x540E;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-01-04 17:42:24
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="book-000.html" class="navigation navigation-prev " aria-label="Previous page: 00 | &#x5F00;&#x7BC7;&#x8BCD;&#xFF1A;&#x522B;&#x518D;&#x8BA9;Linux&#x6027;&#x80FD;&#x95EE;&#x9898;&#x6210;&#x4E3A;&#x4F60;&#x7684;&#x7ECA;&#x811A;&#x77F3;">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="book-006.html" class="navigation navigation-next " aria-label="Next page: 06 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x7684; CPU &#x4F7F;&#x7528;&#x7387;&#x5F88;&#x9AD8;&#xFF0C;&#x4F46;&#x4E3A;&#x5565;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x9AD8; CPU &#x7684;&#x5E94;&#x7528;&#xFF1F;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"04 | 基础篇：经常说的 CPU 上下文切换是什么意思？（下）","level":"1.7.2.5.2","depth":4,"next":{"title":"06 | 案例篇：系统的 CPU 使用率很高，但为啥却找不到高 CPU 的应用？","level":"1.7.2.5.3","depth":4,"path":"linux/linux-book-xingnengyouhua/book-006.md","ref":"linux/linux-book-xingnengyouhua/book-006.md","articles":[]},"previous":{"title":"00 | 开篇词：别再让Linux性能问题成为你的绊脚石","level":"1.7.2.5.1","depth":4,"path":"linux/linux-book-xingnengyouhua/book-000.md","ref":"linux/linux-book-xingnengyouhua/book-000.md","articles":[]},"dir":"ltr"},"config":{"plugins":["tbfed-pagefooter","expandable-chapters","-sharing","sharing-plus","splitter","header","anchor-navigation-ex-toc","prism","-highlight","include-codeblock","ace","livereload"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy one 2014-2018","modify_label":"最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"ace":{},"livereload":{},"splitter":{},"search":{},"layout":{"headerPath":"layouts/header.html"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"header":{},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"multipleH1":true,"showLevel":true,"float":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"monokai","unindent":true},"sharing":{"qq":true,"all":[],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"S1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"学习中心","language":"zh-hans","links":{"sidebar":{"码云":"https://gitee.com/3017677"},"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"学习中心"},"file":{"path":"linux/linux-book-xingnengyouhua/book-004.md","mtime":"2019-01-04T09:42:24.153Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-05T10:24:09.483Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
