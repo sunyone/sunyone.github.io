@@ -1,5 +1,0 @@
-2018-09-29 23:09:35,048 - young - DEBUG - This is level 1 info log
-2018-09-29 23:09:36,115 - young - DEBUG - This is level 1 info log
-2018-09-29 23:09:36,322 - young - DEBUG - This is level 1 info log
-2018-09-29 23:09:36,512 - young - DEBUG - This is level 1 info log
-2018-09-29 23:09:36,668 - young - DEBUG - This is level 1 info log
