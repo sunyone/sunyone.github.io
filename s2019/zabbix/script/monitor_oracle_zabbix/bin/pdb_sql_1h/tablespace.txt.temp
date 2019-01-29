@@ -1,0 +1,51 @@
+set pagesize 0; 
+set feedback off; 
+set verify off;
+set echo off;
+set line 1000;
+SELECT tablespace_name,
+       round(maxsize / 1024 / 1024 / 1024, 3) "maxSize(G)",
+       round(createsize / 1024 / 1024 / 1024, 3) "createSize(G)",
+       round(usedsize / 1024 / 1024 / 1024, 3) "usedSize(G)",
+       round(freesize / 1024 / 1024 / 1024, 3) "freeSize(G)",
+       decode(usedperc, NULL, 0, round(usedperc * 100, 2)) "usedPerc(%)",
+       historyusedperc "historyUsedPerc(%)"
+  FROM (
+        SELECT b.tablespace_name,
+                b.max_bytes maxsize,
+                b.user_bytes AS createsize,
+                nvl(a.used_bytes, 0) AS usedsize,
+                decode(a.free_bytes, NULL, b.user_bytes, nvl(a.free_bytes, 0))
+AS freesize,
+                decode(a.used_bytes, NULL, 0, round(a.used_bytes /
+b.user_bytes * 100, 2)) AS usedperc,
+                round(h_used_bytes / b.user_bytes * 100, 2) AS historyusedperc
+          FROM (SELECT s.tablespace_name,
+                        s.max_blocks * p.value max_bytes,
+                        s.total_blocks * p.value AS total_bytes,
+                        s.free_blocks * p.value AS free_bytes,
+                        s.used_blocks * p.value AS used_bytes
+                   FROM v$sort_segment s, v$parameter p
+                  WHERE p.name = 'db_block_size') a,
+                (SELECT tablespace_name, SUM(maxbytes) max_bytes,
+SUM(user_bytes) AS user_bytes FROM dba_temp_files GROUP BY tablespace_name) b,
+                (SELECT tablespace_name, SUM(bytes_used) AS h_used_bytes FROM
+v$temp_space_header GROUP BY tablespace_name) c
+         WHERE b.tablespace_name = a.tablespace_name(+)
+           AND b.tablespace_name = c.tablespace_name(+)
+        UNION ALL
+        SELECT ddf.tablespace_name tablespace_name,
+               ddf.maxbytes maxsize,
+               ddf.createsize createsize,
+               (ddf.createsize - dfs.freesize) usedsize,
+               dfs.freesize freesize,
+               (ddf.createsize - dfs.freesize) / ddf.createsize usedperc,
+               NULL historyusedperc
+          FROM (SELECT tablespace_name, SUM(maxbytes) maxbytes, SUM(bytes)
+createsize FROM dba_data_files GROUP BY tablespace_name) ddf,
+               (SELECT tablespace_name, SUM(bytes) freesize FROM
+dba_free_space GROUP BY tablespace_name) dfs
+         WHERE ddf.tablespace_name = dfs.tablespace_name(+)
+        )
+ ORDER BY "usedPerc(%)" DESC, "historyUsedPerc(%)" DESC;
+exit

@@ -1,0 +1,2122 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>mysql&#x5B58;&#x50A8;&#x8FC7;&#x7A0B; &#xB7; &#x5B66;&#x4E60;&#x4E2D;&#x5FC3;</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="S1">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="mysql_event.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitee.com/3017677" target="_blank" class="custom-link">&#x7801;&#x4E91;</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    &#x4ECB;&#x7ECD;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../chang_yong_url.html">
+            
+                <a href="../../chang_yong_url.html">
+            
+                    
+                    &#x5E38;&#x7528;URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3">
+            
+                <span>
+            
+                    
+                    ANSIBLE
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../ansible/ab_readme.html">
+            
+                <a href="../../ansible/ab_readme.html">
+            
+                    
+                    ansible
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../ansible/ab_proxy.html">
+            
+                <a href="../../ansible/ab_proxy.html">
+            
+                    
+                    ssh&#x8DF3;&#x8F6C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4">
+            
+                <span>
+            
+                    
+                    work
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../work/cai_ji.html">
+            
+                <a href="../../work/cai_ji.html">
+            
+                    
+                    &#x91C7;&#x96C6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../git/git.html">
+            
+                <a href="../../git/git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../git/github.html">
+            
+                <a href="../../git/github.html">
+            
+                    
+                    github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../git/gitlab.html">
+            
+                <a href="../../git/gitlab.html">
+            
+                    
+                    gitlab
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6">
+            
+                <span>
+            
+                    
+                    gitbook&#x64CD;&#x4F5C;&#x6307;&#x5357;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../gitbook_readme.html">
+            
+                <a href="../../gitbook_readme.html">
+            
+                    
+                    &#x5E38;&#x7528;&#x64CD;&#x4F5C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../gitbook_plugins.html">
+            
+                <a href="../../gitbook_plugins.html">
+            
+                    
+                    &#x63D2;&#x4EF6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../gitbook-convert.html">
+            
+                <a href="../../gitbook-convert.html">
+            
+                    
+                    &#x6587;&#x6863;&#x8F6C;&#x6362;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7">
+            
+                <span>
+            
+                    
+                    &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1">
+            
+                <span>
+            
+                    
+                    Windows
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../../windows/win_readme.html">
+            
+                <a href="../../windows/win_readme.html">
+            
+                    
+                    Windows&#x5E38;&#x7528;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2">
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../../linux/linux_systemctl.html">
+            
+                <a href="../../linux/linux_systemctl.html">
+            
+                    
+                    systemctl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../../linux/ssh.html">
+            
+                <a href="../../linux/ssh.html">
+            
+                    
+                    SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../../linux/linux_hardware_cmd.html">
+            
+                <a href="../../linux/linux_hardware_cmd.html">
+            
+                    
+                    Linux&#x786C;&#x4EF6;&#x5E38;&#x7528;&#x547D;&#x4EE4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="../../linux/linux_performance_cmd.html">
+            
+                <a href="../../linux/linux_performance_cmd.html">
+            
+                    
+                    Linux&#x6027;&#x80FD;&#x5E38;&#x7528;&#x547D;&#x4EE4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="../../linux/linux-book-xingnengyouhua/toc.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/toc.html">
+            
+                    
+                    Linux&#x6027;&#x80FD;&#x4F18;&#x5316;&#x5B9E;&#x6218;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.5.1" data-path="../../linux/linux-book-xingnengyouhua/book-000.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-000.html">
+            
+                    
+                    00 | &#x5F00;&#x7BC7;&#x8BCD;&#xFF1A;&#x522B;&#x518D;&#x8BA9;Linux&#x6027;&#x80FD;&#x95EE;&#x9898;&#x6210;&#x4E3A;&#x4F60;&#x7684;&#x7ECA;&#x811A;&#x77F3;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.2" data-path="../../linux/linux-book-xingnengyouhua/book-001.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-001.html">
+            
+                    
+                    01 | &#x5982;&#x4F55;&#x5B66;&#x4E60;Linux&#x6027;&#x80FD;&#x4F18;&#x5316;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.3" data-path="../../linux/linux-book-xingnengyouhua/book-002.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-002.html">
+            
+                    
+                    02 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x5230;&#x5E95;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x7406;&#x89E3;&#x201C;&#x5E73;&#x5747;&#x8D1F;&#x8F7D;&#x201D;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.4" data-path="../../linux/linux-book-xingnengyouhua/book-003.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-003.html">
+            
+                    
+                    03 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x7ECF;&#x5E38;&#x8BF4;&#x7684; CPU &#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;&#xFF08;&#x4E0A;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.5" data-path="../../linux/linux-book-xingnengyouhua/book-004.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-004.html">
+            
+                    
+                    04 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x7ECF;&#x5E38;&#x8BF4;&#x7684; CPU &#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.6" data-path="../../linux/linux-book-xingnengyouhua/book-005.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-005.html">
+            
+                    
+                    05 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x67D0;&#x4E2A;&#x5E94;&#x7528;&#x7684;CPU&#x4F7F;&#x7528;&#x7387;&#x5C45;&#x7136;&#x8FBE;&#x5230;100%&#xFF0C;&#x6211;&#x8BE5;&#x600E;&#x4E48;&#x529E;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.7" data-path="../../linux/linux-book-xingnengyouhua/book-006.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-006.html">
+            
+                    
+                    06 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x7684; CPU &#x4F7F;&#x7528;&#x7387;&#x5F88;&#x9AD8;&#xFF0C;&#x4F46;&#x4E3A;&#x5565;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x9AD8; CPU &#x7684;&#x5E94;&#x7528;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.8" data-path="../../linux/linux-book-xingnengyouhua/book-007.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-007.html">
+            
+                    
+                    07 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x4E2D;&#x51FA;&#x73B0;&#x5927;&#x91CF;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#x8FDB;&#x7A0B;&#x548C;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#xFF08;&#x4E0A;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.9" data-path="../../linux/linux-book-xingnengyouhua/book-008.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-008.html">
+            
+                    
+                    08 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x4E2D;&#x51FA;&#x73B0;&#x5927;&#x91CF;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#x8FDB;&#x7A0B;&#x548C;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.10" data-path="../../linux/linux-book-xingnengyouhua/book-009.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-009.html">
+            
+                    
+                    09 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x600E;&#x4E48;&#x7406;&#x89E3;Linux&#x8F6F;&#x4E2D;&#x65AD;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.11" data-path="../../linux/linux-book-xingnengyouhua/book-010.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-010.html">
+            
+                    
+                    10 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x7CFB;&#x7EDF;&#x7684;&#x8F6F;&#x4E2D;&#x65AD;CPU&#x4F7F;&#x7528;&#x7387;&#x5347;&#x9AD8;&#xFF0C;&#x6211;&#x8BE5;&#x600E;&#x4E48;&#x529E;?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.12" data-path="../../linux/linux-book-xingnengyouhua/book-011.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-011.html">
+            
+                    
+                    11 | &#x5957;&#x8DEF;&#x7BC7;&#xFF1A;&#x5982;&#x4F55;&#x8FC5;&#x901F;&#x5206;&#x6790;&#x51FA;&#x7CFB;&#x7EDF;CPU&#x7684;&#x74F6;&#x9888;&#x5728;&#x54EA;&#x91CC;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.13" data-path="../../linux/linux-book-xingnengyouhua/book-012.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-012.html">
+            
+                    
+                    12 | &#x5957;&#x8DEF;&#x7BC7;&#xFF1A;CPU &#x6027;&#x80FD;&#x4F18;&#x5316;&#x7684;&#x51E0;&#x4E2A;&#x601D;&#x8DEF;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.14" data-path="../../linux/linux-book-xingnengyouhua/book-013.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-013.html">
+            
+                    
+                    13 | Linux &#x6027;&#x80FD;&#x4F18;&#x5316;&#x7B54;&#x7591;&#xFF08;&#x4E00;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.15" data-path="../../linux/linux-book-xingnengyouhua/book-014.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-014.html">
+            
+                    
+                    14 | Linux &#x6027;&#x80FD;&#x4F18;&#x5316;&#x7B54;&#x7591;&#xFF08;&#x4E8C;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.16" data-path="../../linux/linux-book-xingnengyouhua/book-015.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-015.html">
+            
+                    
+                    15 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;Linux&#x5185;&#x5B58;&#x662F;&#x600E;&#x4E48;&#x5DE5;&#x4F5C;&#x7684;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.17" data-path="../../linux/linux-book-xingnengyouhua/book-016.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-016.html">
+            
+                    
+                    16 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;&#x600E;&#x4E48;&#x7406;&#x89E3;&#x5185;&#x5B58;&#x4E2D;&#x7684;Buffer&#x548C;Cache&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.18" data-path="../../linux/linux-book-xingnengyouhua/book-017.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-017.html">
+            
+                    
+                    17 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x5982;&#x4F55;&#x5229;&#x7528;&#x7CFB;&#x7EDF;&#x7F13;&#x5B58;&#x4F18;&#x5316;&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;&#x6548;&#x7387;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.19" data-path="../../linux/linux-book-xingnengyouhua/book-018.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-018.html">
+            
+                    
+                    18 | &#x6848;&#xF9B5;&#x7BC7;&#xFF1A;&#x5185;&#x5B58;&#x6CC4;&#xF94E;&#xF9BA;&#xFF0C;&#x6211;&#x8BE5;&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x548C;&#x5904;&#xF9E4;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.20" data-path="../../linux/linux-book-xingnengyouhua/book-019.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-019.html">
+            
+                    
+                    19 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x4E3A;&#x4EC0;&#x4E48;&#x7CFB;&#x7EDF;&#x7684;Swap&#x53D8;&#x9AD8;&#x4E86;&#xFF1F;&#xFF08;&#x4E0A;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.21" data-path="../../linux/linux-book-xingnengyouhua/book-020.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-020.html">
+            
+                    
+                    20 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x4E3A;&#x4EC0;&#x4E48;&#x7CFB;&#x7EDF;&#x7684;Swap&#x53D8;&#x9AD8;&#x4E86;&#xFF1F;&#xFF08;&#x4E0B;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.22" data-path="../../linux/linux-book-xingnengyouhua/book-021.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-021.html">
+            
+                    
+                    21 | &#x5957;&#x8DEF;&#x7BC7;&#xFF1A;&#x5982;&#x4F55;&#x201C;&#x5FEB;&#x51C6;&#x72E0;&#x201D;&#x627E;&#x5230;&#x7CFB;&#x7EDF;&#x5185;&#x5B58;&#x7684;&#x95EE;&#x9898;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.23" data-path="../../linux/linux-book-xingnengyouhua/book-022.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-022.html">
+            
+                    
+                    22 | Linux &#x6027;&#x80FD;&#x4F18;&#x5316;&#x7B54;&#x7591;&#xFF08;&#x4E09;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.24" data-path="../../linux/linux-book-xingnengyouhua/book-023.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-023.html">
+            
+                    
+                    23 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;Linux &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x662F;&#x600E;&#x4E48;&#x5DE5;&#x4F5C;&#x7684;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.25" data-path="../../linux/linux-book-xingnengyouhua/book-024.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-024.html">
+            
+                    
+                    24 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;Linux &#x78C1;&#x76D8;I/O&#x662F;&#x600E;&#x4E48;&#x5DE5;&#x4F5C;&#x7684;&#xFF08;&#x4E0A;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.26" data-path="../../linux/linux-book-xingnengyouhua/book-025.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-025.html">
+            
+                    
+                    25 | &#x57FA;&#x7840;&#x7BC7;&#xFF1A;Linux &#x78C1;&#x76D8;I/O&#x662F;&#x600E;&#x4E48;&#x5DE5;&#x4F5C;&#x7684;&#xFF08;&#x4E0B;&#xFF09;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.27" data-path="../../linux/linux-book-xingnengyouhua/book-026.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-026.html">
+            
+                    
+                    26 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x5982;&#x4F55;&#x627E;&#x51FA;&#x72C2;&#x6253;&#x65E5;&#x5FD7;&#x7684;&#x201C;&#x5185;&#x9B3C;&#x201D;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.28" data-path="../../linux/linux-book-xingnengyouhua/book-027.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-027.html">
+            
+                    
+                    27 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x7684;&#x78C1;&#x76D8;I/O&#x5EF6;&#x8FDF;&#x5F88;&#x9AD8;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.29" data-path="../../linux/linux-book-xingnengyouhua/book-028.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-028.html">
+            
+                    
+                    28 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;&#x4E00;&#x4E2A;SQL&#x67E5;&#x8BE2;&#x8981;15&#x79D2;&#xFF0C;&#x8FD9;&#x662F;&#x600E;&#x4E48;&#x56DE;&#x4E8B;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.30" data-path="../../linux/linux-book-xingnengyouhua/book-029.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-029.html">
+            
+                    
+                    29 | &#x6848;&#x4F8B;&#x7BC7;&#xFF1A;Redis&#x54CD;&#x5E94;&#x4E25;&#x91CD;&#x5EF6;&#x8FDF;&#xFF0C;&#x5982;&#x4F55;&#x89E3;&#x51B3;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.31" data-path="../../linux/linux-book-xingnengyouhua/book-030.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-030.html">
+            
+                    
+                    30 | &#x5957;&#x8DEF;&#x7BC7;&#xFF1A;&#x5982;&#x4F55;&#x8FC5;&#x901F;&#x5206;&#x6790;&#x51FA;&#x7CFB;&#x7EDF;I/O&#x7684;&#x74F6;&#x9888;&#x5728;&#x54EA;&#x91CC;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5.32" data-path="../../linux/linux-book-xingnengyouhua/book-fulu-001.html">
+            
+                <a href="../../linux/linux-book-xingnengyouhua/book-fulu-001.html">
+            
+                    
+                    &#x9644;&#x5F55;&#xFF1A;CPU&#x5229;&#x7528;&#x7387;&#x80CC;&#x540E;&#x7684;&#x771F;&#x76F8;&#xFF0C;&#x53EA;&#x6709;1%&#x7684;&#x4EBA;&#x77E5;&#x9053;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="../../linux/linux_other_cmd.html">
+            
+                <a href="../../linux/linux_other_cmd.html">
+            
+                    
+                    Linux&#x5176;&#x5B83;&#x5E38;&#x7528;&#x547D;&#x4EE4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7" data-path="../../linux/linux_res.html">
+            
+                <a href="../../linux/linux_res.html">
+            
+                    
+                    Linux&#x8D44;&#x6E90;&#x6C47;&#x603B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.8" data-path="../../linux/linux_syslog.html">
+            
+                <a href="../../linux/linux_syslog.html">
+            
+                    
+                    Linux&#x65E5;&#x5FD7;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.9" data-path="../../linux/linux_uuid.html">
+            
+                <a href="../../linux/linux_uuid.html">
+            
+                    
+                    Linux&#x5757;&#x8BBE;&#x5907;UUID&#x63A2;&#x7A76;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.10" data-path="../../linux/linux_tpcc.html">
+            
+                <a href="../../linux/linux_tpcc.html">
+            
+                    
+                    &#x670D;&#x52A1;&#x5668;&#x5904;&#x7406;&#x80FD;&#x529B;&#xFF0C;&#x4F60;&#x4F30;&#x7B97;&#x6B63;&#x786E;&#x8FC7;&#x5417;&#xFF1F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.11">
+            
+                <span>
+            
+                    
+                    &#x547D;&#x4EE4;&#x901F;&#x67E5;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.11.1" data-path="../../linux/command/lftp.html">
+            
+                <a href="../../linux/command/lftp.html">
+            
+                    
+                    lftp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8">
+            
+                <span>
+            
+                    
+                    shell
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../shell_script/get_ip.html">
+            
+                <a href="../../shell_script/get_ip.html">
+            
+                    
+                    &#x83B7;&#x53D6;&#x4E3B;&#x673A;&#x540D;&#x3001;IP&#x3001;&#x767B;&#x5F55;&#x7528;&#x6237;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../shell_script/shell-template.html">
+            
+                <a href="../../shell_script/shell-template.html">
+            
+                    
+                    &#x6A21;&#x677F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../shell_script/sed.html">
+            
+                <a href="../../shell_script/sed.html">
+            
+                    
+                    sed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../shell_script/shell-arrary.html">
+            
+                <a href="../../shell_script/shell-arrary.html">
+            
+                    
+                    &#x6570;&#x7EC4;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9">
+            
+                <span>
+            
+                    
+                    python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../python/python_readme.html">
+            
+                <a href="../../python/python_readme.html">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../python/python_template.html">
+            
+                <a href="../../python/python_template.html">
+            
+                    
+                    python&#x6A21;&#x677F;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../python/python_argparse.html">
+            
+                <a href="../../python/python_argparse.html">
+            
+                    
+                    python&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x89E3;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../python/python_zhengze.html">
+            
+                <a href="../../python/python_zhengze.html">
+            
+                    
+                    python&#x6B63;&#x5219;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../python/han_shu_shi.html">
+            
+                <a href="../../python/han_shu_shi.html">
+            
+                    
+                    &#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../../python/python_logging.html">
+            
+                <a href="../../python/python_logging.html">
+            
+                    
+                    &#x5185;&#x90E8;&#x6A21;&#x5757;logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../../python/import_bs4.html">
+            
+                <a href="../../python/import_bs4.html">
+            
+                    
+                    BeautifulSoup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../../python/leaning_log.html">
+            
+                <a href="../../python/leaning_log.html">
+            
+                    
+                    &#x9879;&#x76EE;1leaning_log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../../python/leaning_log_user.html">
+            
+                <a href="../../python/leaning_log_user.html">
+            
+                    
+                    &#x521B;&#x5EFA;&#x7528;&#x6237;&#x8D26;&#x53F7;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10">
+            
+                <span>
+            
+                    
+                    Zabbix
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../zabbix/zbx_readme.html">
+            
+                <a href="../../zabbix/zbx_readme.html">
+            
+                    
+                    zabbix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../zabbix/zbx_agt_conf.html">
+            
+                <a href="../../zabbix/zbx_agt_conf.html">
+            
+                    
+                    agent&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BF4;&#x660E;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../zabbix/zbx-triger.html">
+            
+                <a href="../../zabbix/zbx-triger.html">
+            
+                    
+                    zabbix&#x89E6;&#x53D1;&#x5668;&#x51FD;&#x6570;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../zabbix/z4-db-readme.html">
+            
+                <a href="../../zabbix/z4-db-readme.html">
+            
+                    
+                    Z4.0&#x6570;&#x636E;&#x5E93;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../../zabbix/zbx_tables.html">
+            
+                <a href="../../zabbix/zbx_tables.html">
+            
+                    
+                    &#x8868;&#x7ED3;&#x6784;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../../zabbix/get_data_from_mysql.html">
+            
+                <a href="../../zabbix/get_data_from_mysql.html">
+            
+                    
+                    &#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x83B7;&#x53D6;&#x76D1;&#x63A7;&#x6570;&#x636E;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../../zabbix/zbx_patrol.html">
+            
+                <a href="../../zabbix/zbx_patrol.html">
+            
+                    
+                    &#x68C0;&#x67E5;zabbix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../../zabbix/zbx_autoreg.html">
+            
+                <a href="../../zabbix/zbx_autoreg.html">
+            
+                    
+                    &#x81EA;&#x52A8;&#x6CE8;&#x518C;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../../zabbix/zabbix_kpi.html">
+            
+                <a href="../../zabbix/zabbix_kpi.html">
+            
+                    
+                    &#x76D1;&#x63A7;&#x6307;&#x6807;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../../zabbix/zabbix_linux.html">
+            
+                <a href="../../zabbix/zabbix_linux.html">
+            
+                    
+                    &#x76D1;&#x63A7;Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../../zabbix/zabbix_windows.html">
+            
+                <a href="../../zabbix/zabbix_windows.html">
+            
+                    
+                    &#x76D1;&#x63A7;Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="../../zabbix/zabbix_network_devices.html">
+            
+                <a href="../../zabbix/zabbix_network_devices.html">
+            
+                    
+                    &#x76D1;&#x63A7;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="../../zabbix/zabbix_oracle.html">
+            
+                <a href="../../zabbix/zabbix_oracle.html">
+            
+                    
+                    &#x76D1;&#x63A7;ORACLE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.14" data-path="../../zabbix/zabbix_zk_UserParameter.html">
+            
+                <a href="../../zabbix/zabbix_zk_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.15" data-path="../../zabbix/zabbix_redis_UserParameter.html">
+            
+                <a href="../../zabbix/zabbix_redis_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.16" data-path="../../zabbix/zabbix_kafka_UserParameter.html">
+            
+                <a href="../../zabbix/zabbix_kafka_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.17" data-path="../../zabbix/zabbix_storm_UserParameter.html">
+            
+                <a href="../../zabbix/zabbix_storm_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;storm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.18" data-path="../../zabbix/zabbix_sparkstreaming_UserParameter.html">
+            
+                <a href="../../zabbix/zabbix_sparkstreaming_UserParameter.html">
+            
+                    
+                    &#x76D1;&#x63A7;spark streaming
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11">
+            
+                <span>
+            
+                    
+                    &#x6570;&#x636E;&#x5E93;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../oracle/oracle.html">
+            
+                <a href="../oracle/oracle.html">
+            
+                    
+                    ORACLE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="../oracle/ora-10g-001.html">
+            
+                <a href="../oracle/ora-10g-001.html">
+            
+                    
+                    &#x5728;10g&#x4E2D;&#x8F7B;&#x677E;&#x8FDB;&#x884C;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x5206;&#x6790;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2">
+            
+                <span>
+            
+                    
+                    [mysql]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.2.1" data-path="mysql_readme.html">
+            
+                <a href="mysql_readme.html">
+            
+                    
+                    mysql&#x57FA;&#x7840;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.2" data-path="mysql_datatype.html">
+            
+                <a href="mysql_datatype.html">
+            
+                    
+                    mysql&#x5B57;&#x6BB5;&#x7C7B;&#x578B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.3" data-path="mysql_query.html">
+            
+                <a href="mysql_query.html">
+            
+                    
+                    mysql&#x5173;&#x8054;&#x67E5;&#x8BE2;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.4" data-path="mysql_event.html">
+            
+                <a href="mysql_event.html">
+            
+                    
+                    mysql&#x4E8B;&#x4EF6;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2.5" data-path="mysql_procedure.html">
+            
+                <a href="mysql_procedure.html">
+            
+                    
+                    mysql&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12">
+            
+                <span>
+            
+                    
+                    Hadoop
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../hadoop/hdfs.html">
+            
+                <a href="../../hadoop/hdfs.html">
+            
+                    
+                    HDFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../hadoop/yarn.html">
+            
+                <a href="../../hadoop/yarn.html">
+            
+                    
+                    Yarn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../kafka/kafka_readme.html">
+            
+                <a href="../../kafka/kafka_readme.html">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../elk/elk_readme.html">
+            
+                <a href="../../elk/elk_readme.html">
+            
+                    
+                    ELK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../elk/elk_logstash_rabbitmq.html">
+            
+                <a href="../../elk/elk_logstash_rabbitmq.html">
+            
+                    
+                    logstash&#x8F93;&#x51FA;&#x5230;rabbitmq
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15">
+            
+                <span>
+            
+                    
+                    Docker
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../docker/docker-install.html">
+            
+                <a href="../../docker/docker-install.html">
+            
+                    
+                    &#x5B89;&#x88C5;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16">
+            
+                <span>
+            
+                    
+                    &#x5176;&#x5B83;&#x5E38;&#x7528;
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../grafana_readme.html">
+            
+                <a href="../../grafana_readme.html">
+            
+                    
+                    grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../../sublime_readme.html">
+            
+                <a href="../../sublime_readme.html">
+            
+                    
+                    sublime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../../markdown_readme.html">
+            
+                <a href="../../markdown_readme.html">
+            
+                    
+                    markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../../NavicatPremium_readme.html">
+            
+                <a href="../../NavicatPremium_readme.html">
+            
+                    
+                    NavicatPremium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5" data-path="../../RemoteDesktopManager_readme.html">
+            
+                <a href="../../RemoteDesktopManager_readme.html">
+            
+                    
+                    RemoteDesktopManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.6" data-path="../../other_app/vsc_readme.html">
+            
+                <a href="../../other_app/vsc_readme.html">
+            
+                    
+                    VSC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.7" data-path="../../other_app/dbeaver_readme.html">
+            
+                <a href="../../other_app/dbeaver_readme.html">
+            
+                    
+                    DBeaver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.8" data-path="../../other_app/lanjing-readme.html">
+            
+                <a href="../../other_app/lanjing-readme.html">
+            
+                    
+                    &#x84DD;&#x9CB8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17">
+            
+                <span>
+            
+                    
+                    PM
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../../manager/Linux&#x9762;&#x8BD5;&#x9898;.html">
+            
+                <a href="../../manager/Linux&#x9762;&#x8BD5;&#x9898;.html">
+            
+                    
+                    Linux&#x9762;&#x8BD5;&#x9898;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../../manager/ruan_jian_ce_shi_mian_shi.html">
+            
+                <a href="../../manager/ruan_jian_ce_shi_mian_shi.html">
+            
+                    
+                    &#x8F6F;&#x4EF6;&#x6D4B;&#x8BD5;&#x9762;&#x8BD5;&#x9898;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../../manager/hr-ji_neng.html">
+            
+                <a href="../../manager/hr-ji_neng.html">
+            
+                    
+                    &#x4EBA;&#x5458;&#x6280;&#x80FD;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../../manager/ri_chang.html">
+            
+                <a href="../../manager/ri_chang.html">
+            
+                    
+                    &#x65E5;&#x5E38;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.5" data-path="../../manager/ren_zhi_jue_se_hjfz.html">
+            
+                <a href="../../manager/ren_zhi_jue_se_hjfz.html">
+            
+                    
+                    &#x9EC4;&#x91D1;&#x6CD5;&#x5219;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            &#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../..">mysql&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x6E38;&#x6807;&#x53D6;&#x5355;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;"><b>1. </b>&#x6E38;&#x6807;&#x53D6;&#x5355;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#&#x6E38;&#x6807;&#x53D6;&#x591A;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;"><b>2. </b>&#x6E38;&#x6807;&#x53D6;&#x591A;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#&#x5224;&#x65AD;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5217;"><b>3. </b>&#x5224;&#x65AD;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5217;</a></li><li><span class="title-icon "></span><a href="#&#x9519;&#x8BEF;&#x5904;&#x7406;declarehandler&#x8BED;&#x53E5;"><b>4. </b>&#x9519;&#x8BEF;&#x5904;&#x7406;(DECLARE....HANDLER&#x8BED;&#x53E5;)</a></li><li><span class="title-icon "></span><a href="#mysql-&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x591A;&#x6E38;&#x6807;"><b>5. </b>mysql &#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x591A;&#x6E38;&#x6807;</a></li></ul></div><a href="#&#x6E38;&#x6807;&#x53D6;&#x5355;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6E38;&#x6807;&#x53D6;&#x5355;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;"><a name="&#x6E38;&#x6807;&#x53D6;&#x5355;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x6E38;&#x6807;&#x53D6;&#x5355;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6E38;&#x6807;&#x53D6;&#x5355;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;</h1>
+<pre class="language-"><code class="lang-sql"><span class="token comment">-- &#x904D;&#x5386;&#x6570;&#x636E;&#x7ED3;&#x675F;&#x6807;&#x5FD7;</span>
+<span class="token keyword">DECLARE</span> done <span class="token keyword">INT</span> <span class="token keyword">DEFAULT</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token comment">-- &#x6E38;&#x6807;</span>
+<span class="token keyword">DECLARE</span> cur <span class="token keyword">CURSOR</span> <span class="token keyword">FOR</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> t<span class="token punctuation">.</span>id<span class="token punctuation">,</span> d<span class="token punctuation">.</span>c
+    <span class="token keyword">FROM</span> up_zbx_ck_type t
+        <span class="token keyword">JOIN</span>
+        <span class="token punctuation">(</span> <span class="token keyword">SELECT</span> typeid<span class="token punctuation">,</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> c<span class="token punctuation">,</span> collect_time <span class="token keyword">FROM</span> up_zbx_ck_data <span class="token keyword">WHERE</span> collect_time <span class="token operator">=</span> <span class="token punctuation">(</span> <span class="token keyword">SELECT</span> <span class="token function">max</span><span class="token punctuation">(</span>collect_time<span class="token punctuation">)</span> <span class="token keyword">FROM</span> up_zbx_ck_data <span class="token keyword">WHERE</span> typeid <span class="token operator">=</span> <span class="token number">15</span> <span class="token punctuation">)</span> <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> typeid<span class="token punctuation">)</span> d <span class="token keyword">ON</span> t<span class="token punctuation">.</span>id <span class="token operator">=</span> d<span class="token punctuation">.</span>typeid
+    <span class="token keyword">WHERE</span> t<span class="token punctuation">.</span>id <span class="token operator">in</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">13</span><span class="token punctuation">,</span> <span class="token number">14</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- &#x5C06;&#x7ED3;&#x675F;&#x6807;&#x5FD7;&#x7ED1;&#x5B9A;&#x5230;&#x6E38;&#x6807;&#xFF0C;&#x5982;&#x679C;&#x6E38;&#x6807;&#x7ED3;&#x675F;&#x540E;&#x62A5;NOT FOUND&#x9519;&#x8BEF;&#xFF0C;&#x5219;&#x628A;done&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;true&#xFF0C;&#x4EE5;&#x4FBF;&#x9000;&#x51FA;WHILE&#x5FAA;&#x73AF;</span>
+<span class="token keyword">DECLARE</span> <span class="token keyword">CONTINUE</span> <span class="token keyword">HANDLER</span> <span class="token keyword">FOR</span> <span class="token operator">NOT</span> FOUND <span class="token keyword">SET</span> done <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token comment">-- &#x6253;&#x5F00;&#x6E38;&#x6807;</span>
+<span class="token keyword">OPEN</span> cur<span class="token punctuation">;</span>
+<span class="token comment">-- &#x88C5;&#x8F7D;&#x7B2C;&#x4E00;&#x4E2A;&#x6E38;&#x6807;&#x7684;&#x6570;&#x636E;</span>
+<span class="token keyword">FETCH</span> cur <span class="token keyword">INTO</span> typeid<span class="token punctuation">;</span>
+<span class="token comment">-- WHILE&#x904D;&#x5386;&#xFF0C;&#x5982;&#x679C;done&#x662F;true&#xFF0C;&#x5219;&#x8BF4;&#x660E;&#x6E38;&#x6807;&#x5DF2;&#x5230;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x9000;&#x51FA;&#x5FAA;&#x73AF;</span>
+<span class="token keyword">WHILE</span><span class="token punctuation">(</span><span class="token operator">NOT</span> done<span class="token punctuation">)</span>
+<span class="token keyword">DO</span>
+    <span class="token comment">-- &#x8981;&#x6267;&#x884C;&#x7684;&#x8BED;&#x53E5;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token comment">-- &#x88C5;&#x8F7D;&#x4E0B;&#x4E00;&#x4E2A;&#x6E38;&#x6807;&#x7684;&#x6570;&#x636E;</span>
+    <span class="token keyword">FETCH</span> cur <span class="token keyword">INTO</span> typeid<span class="token punctuation">,</span> sumcount<span class="token punctuation">;</span>
+<span class="token keyword">END</span> <span class="token keyword">WHILE</span><span class="token punctuation">;</span>
+<span class="token comment">-- &#x5173;&#x95ED;&#x6E38;&#x6807;</span>
+<span class="token keyword">CLOSE</span> cur<span class="token punctuation">;</span>
+</code></pre>
+<h1 id="&#x6E38;&#x6807;&#x53D6;&#x591A;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;"><a name="&#x6E38;&#x6807;&#x53D6;&#x591A;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x6E38;&#x6807;&#x53D6;&#x591A;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x6E38;&#x6807;&#x53D6;&#x591A;&#x5B57;&#x6BB5;&#x591A;&#x884C;&#x8BB0;&#x5F55;</h1>
+<h1 id="&#x5224;&#x65AD;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5217;"><a name="&#x5224;&#x65AD;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5217;" class="anchor-navigation-ex-anchor" href="#&#x5224;&#x65AD;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x5224;&#x65AD;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5217;</h1>
+<pre class="language-"><code class="lang-sql">
+<span class="token keyword">IF</span> <span class="token operator">NOT</span> <span class="token keyword">EXISTS</span> <span class="token punctuation">(</span> <span class="token keyword">select</span> <span class="token number">1</span> <span class="token keyword">from</span> information_schema<span class="token punctuation">.</span><span class="token keyword">columns</span> <span class="token keyword">where</span> table_schema<span class="token operator">=</span><span class="token string">&apos;zabbix&apos;</span> <span class="token operator">and</span> table_name<span class="token operator">=</span><span class="token string">&apos;up_zbx_ck_sum_data&apos;</span> <span class="token operator">AND</span> COLUMN_NAME<span class="token operator">=</span><span class="token string">&apos;col_aaa&apos;</span><span class="token punctuation">;</span> <span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+  <span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> up_zbx_ck_sum_data <span class="token keyword">ADD</span> col_aaa <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">128</span><span class="token punctuation">)</span>&#xFF1B;
+<span class="token keyword">END</span> <span class="token keyword">IF</span><span class="token punctuation">;</span>
+</code></pre>
+<h1 id="&#x9519;&#x8BEF;&#x5904;&#x7406;declarehandler&#x8BED;&#x53E5;"><a name="&#x9519;&#x8BEF;&#x5904;&#x7406;declarehandler&#x8BED;&#x53E5;" class="anchor-navigation-ex-anchor" href="#&#x9519;&#x8BEF;&#x5904;&#x7406;declarehandler&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x9519;&#x8BEF;&#x5904;&#x7406;(DECLARE....HANDLER&#x8BED;&#x53E5;)</h1>
+<p>&#x8FD9;&#x4E2A;&#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x5F53;&#x6570;&#x636E;&#x5E93;&#x51FA;&#x73B0;&#x67D0;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x65F6;&#x5019;(condition&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x6307;&#x53D1;&#x751F;&#x67D0;&#x79CD;&#x9519;&#x8BEF;&#x65F6;)&#xFF0C;&#x6765;&#x5B9A;&#x4E49;&#x5177;&#x4F53;&#x7684;&#x5904;&#x7406;&#x529E;&#x6CD5;(handler)&#xFF1B;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x6D89;&#x53CA;&#x5230;&#x5305;&#x62EC;&#xFF1A;a&#x3001;&#x662F;&#x4E2A;&#x4EC0;&#x4E48;&#x60C5;&#x51B5; b&#x3001;&#x5982;&#x4F55;&#x5904;&#x7406;&#x5B83;&#xFF1B;&#x4E0B;&#x9762;&#x662F;&#x5176;&#x683C;&#x5F0F;</p>
+<pre class="language-"><code class="lang-sql"><span class="token keyword">DECLARE</span> handler_action <span class="token keyword">HANDLER</span>
+    <span class="token keyword">FOR</span> condition_value <span class="token punctuation">[</span><span class="token punctuation">,</span> condition_value<span class="token punctuation">]</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    statement
+
+handler_action&#x90E8;&#x5206;&#x6709;&#x5982;&#x4E0B;<span class="token number">3</span>&#x4E2A;&#x503C;:
+    <span class="token keyword">CONTINUE</span>
+  <span class="token operator">|</span> <span class="token keyword">EXIT</span>
+  <span class="token operator">|</span> UNDO
+
+condition_value&#x90E8;&#x5206;&#x6709;&#x5982;&#x4E0B;<span class="token number">6</span>&#x79CD;&#xFF0C;&#x4E14;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;:
+    mysql_error_code
+  <span class="token operator">|</span> SQLSTATE <span class="token punctuation">[</span><span class="token keyword">VALUE</span><span class="token punctuation">]</span> sqlstate_value
+  <span class="token operator">|</span> condition_name
+  <span class="token operator">|</span> SQLWARNING
+  <span class="token operator">|</span> <span class="token operator">NOT</span> FOUND
+  <span class="token operator">|</span> SQLEXCEPTION
+</code></pre>
+<p>condition_value [,condition_value]&#xFF0C;&#x8FD9;&#x4E2A;&#x7684;&#x8BDD;&#x8BF4;&#x660E;&#x53EF;&#x4EE5;&#x5305;&#x62EC;&#x591A;&#x79CD;&#x60C5;&#x51B5;(&#x65B9;&#x62EC;&#x5F27;&#x8868;&#x793A;&#x53EF;&#x9009;&#x7684;)&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E00;&#x4E2A;handler&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x6210;&#x9488;&#x5BF9;&#x591A;&#x79CD;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x64CD;&#x4F5C;&#xFF1B;&#x53E6;&#x5916;condition_value&#x53EF;&#x4EE5;&#x5305;&#x62EC;&#x7684;&#x503C;&#x6709;&#x4E0A;&#x9762;&#x5217;&#x51FA;&#x6765;&#x7684;6&#x79CD;&#xFF1A;</p>
+<ul>
+<li>mysql_error_code&#xFF0C;&#x8FD9;&#x4E2A;&#x8868;&#x793A;mysql&#x7684;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#xFF0C;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x5B8C;&#x6210;&#x662F;&#x7531;mysql&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="http://dev.mysql.com/doc/refman/5.5/en/error-messages-server.html" target="_blank">mysql&#x6570;&#x636E;&#x5E93;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x53CA;&#x4FE1;&#x606F;</a>&#x3002;</li>
+<li>SQLSTATE [VALUE] sqlstate_value&#xFF0C;&#x8FD9;&#x4E2A;&#x540C;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x7C7B;&#x4F3C;&#x5F62;&#x6210;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;5&#x4E2A;&#x5B57;&#x7B26;&#x7EC4;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5173;&#x952E;&#x7684;&#x5730;&#x65B9;&#x662F;&#x5B83;&#x4ECE;ANSI SQL&#x548C;ODBC&#x8FD9;&#x4E9B;&#x6807;&#x51C6;&#x4E2D;&#x5F15;&#x7528;&#x8FC7;&#x6765;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x66F4;&#x52A0;&#x6807;&#x51C6;&#x5316;&#xFF0C;&#x800C;&#x4E0D;&#x50CF;&#x4E0A;&#x9762;&#x7684;error_code&#x5B8C;&#x5168;&#x662F;mysql&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7ED9;&#x81EA;&#x5DF1;&#x7528;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x548C;&#x7B2C;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x4E5F;&#x53EF;&#x4EE5;&#x53C2;&#x8003;m<a href="http://dev.mysql.com/doc/refman/5.5/en/error-messages-server.html" target="_blank">mysql&#x6570;&#x636E;&#x5E93;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x53CA;&#x4FE1;&#x606F;</a>&#x3002;</li>
+<li>condtion_name&#xFF0C;&#x8FD9;&#x4E2A;&#x662F;&#x6761;&#x4EF6;&#x540D;&#x79F0;&#xFF0C;&#x5B83;&#x4F7F;&#x7528;DECLARE...CONDITION&#x8BED;&#x53E5;&#x6765;&#x5B9A;&#x4E49;&#xFF0C;&#x8FD9;&#x4E2A;&#x540E;&#x9762;&#x6211;&#x4EEC;&#x4F1A;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#x81EA;&#x5DF1;&#x7684;condition_name&#x3002;</li>
+<li>SQLWARNING&#xFF0C;&#x8868;&#x793A;SQLTATE&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4EE5;&#x2018;01&#x2019;&#x8D77;&#x59CB;&#x7684;&#x90A3;&#x4E9B;&#x9519;&#x8BEF;&#xFF0C;&#x6BD4;&#x5982;Error: 1311 SQLSTATE: 01000 (ER_SP_UNINIT_VAR)</li>
+<li>NOT FOUND&#xFF0C;&#x8868;&#x793A;SQLTATE&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4EE5;&#x2018;02&#x2019;&#x8D77;&#x59CB;&#x7684;&#x90A3;&#x4E9B;&#x9519;&#x8BEF;&#xFF0C;&#x6BD4;&#x5982;Error: 1329 SQLSTATE: 02000 (ER_SP_FETCH_NO_DATA)&#xFF0C;&#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x5C31;&#x662F;&#x7528;&#x5728;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x6E38;&#x6807;&#x7684;&#x90A3;&#x4E2A;&#x95EE;&#x9898;&#x6240;&#x51FA;&#x73B0;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6CA1;&#x6709;fetch&#x5230;&#x8BB0;&#x5F55;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x6E38;&#x6807;&#x5230;&#x8BB0;&#x5F55;&#x7684;&#x5C3E;&#x5DF4;&#x4E86;&#x7684;&#x60C5;&#x51B5;&#x3002;</li>
+<li>SQLEXCEPTION&#xFF0C;&#x8868;&#x793A;SQLSTATE&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x662F;&#x4EE5;&apos;00&apos;&#x3001;&apos;01&apos;&#x3001;&apos;02&apos; &#x8D77;&#x59CB;&#x7684;&#x90A3;&#x4E9B;&#x9519;&#x8BEF;&#xFF0C;&#x8FD9;&#x91CC;&apos;00&apos;&#x8D77;&#x59CB;&#x7684;SQLSTATE&#x5176;&#x5B9E;&#x8868;&#x793A;&#x7684;&#x662F;&#x6210;&#x529F;&#x6267;&#x884C;&#x800C;&#x4E0D;&#x662F;&#x9519;&#x8BEF;&#xFF0C;&#x53E6;&#x5916;&#x4E24;&#x4E2A;&#x5C31;&#x662F;&#x4E0A;&#x9762;&#x7684;4&#x548C;5&#x7684;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x3002;</li>
+</ul>
+<p>&#x4E0A;&#x9762;&#x7684;6&#x79CD;&#x60C5;&#x51B5;&#x5176;&#x5B9E;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x7C7B;&#xFF0C;</p>
+<ul>
+<li>&#x4E00;&#x7C7B;&#x5C31;&#x662F;&#x6BD4;&#x8F83;&#x660E;&#x786E;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x5C31;&#x662F;&#x5BF9;&#x6307;&#x5B9A;&#x7684;&#x9519;&#x8BEF;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x5305;&#x62EC;1&#x3001;2&#x3001;3&#x8FD9;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#xFF1B;</li>
+<li>&#x53E6;&#x4E00;&#x7C7B;&#x662F;&#x5BF9;&#x5BF9;&#x5E94;&#x7C7B;&#x578B;&#x7684;&#x9519;&#x8BEF;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x5C31;&#x662F;&#x5BF9;&#x67D0;&#x4E00;&#x7FA4;&#x9519;&#x8BEF;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x5305;&#x62EC;4&#x3001;5&#x3001;6&#x8FD9;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</li>
+</ul>
+<p>&#x53E6;&#x5916;&#x8FD8;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x4E00;&#x4E2A;&#x5185;&#x5BB9;&#x662F;MySQL&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;(&#x4E5F;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x5904;&#x7406;&#x9519;&#x8BEF;&#x7684;&#x65B9;&#x6CD5;-handler)&#x81EA;&#x5DF1;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x673A;&#x5236;&#xFF1A;</p>
+<ul>
+<li>&#x5BF9;&#x4E8E;SQLWARNING&#x548C;NOT FOUND&#x7684;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x65E0;&#x89C6;&#x9519;&#x8BEF;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x6E38;&#x6807;&#x7684;&#x4F8B;&#x5B50;&#x91CC;&#x9762;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x5BF9;repeat&#x7684;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x7684;&#x90A3;&#x4E2A;&#x503C;&#x505A;&#x4E2A;no_more_products=1&#x7684;handler&#x6765;&#x5904;&#x7406;&#xFF0C;&#x90A3;&#x4E48;&#x5FAA;&#x73AF;&#x5C31;&#x4F1A;&#x4E00;&#x76F4;&#x4E0B;&#x53BB;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;SQLEXCEPTION&#x7684;&#x8BDD;&#xFF0C;&#x5176;&#x9ED8;&#x8BA4;&#x7684;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x662F;&#x5728;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x7EC8;&#x6B62;&#x6389;&#x4E86;&#x3002;</li>
+</ul>
+<p>b&#x3001;statement&#xFF0C;&#x8FD9;&#x4E2A;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x5C31;&#x662F;&#x5F53;&#x51FA;&#x73B0;&#x67D0;&#x79CD;&#x6761;&#x4EF6;/&#x9519;&#x8BEF;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x6267;&#x884C;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x7B80;&#x5355;&#x7684;&#x5982; SET  var = value&#x8FD9;&#x6837;&#x7684;&#x7B80;&#x5355;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x590D;&#x6742;&#x7684;&#x591A;&#x884C;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x591A;&#x884C;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;BEGIN  .....  END&#x8FD9;&#x91CC;&#x628A;&#x8BED;&#x53E5;&#x5305;&#x62EC;&#x5728;&#x91CC;&#x9762;(&#x8FD9;&#x4E2A;&#x597D;&#x6BD4;delphi&#x91CC;&#x9762;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6CE8;&#x610F;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x4E5F;&#x662F;&#x591A;&#x884C;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x8981;BEGIN .... END)&#x3002;</p>
+<p>c&#x3001;handler_action&#xFF0C;&#x8FD9;&#x4E2A;&#x8868;&#x793A;&#x5F53;&#x6267;&#x884C;&#x5B8C;&#x4E0A;&#x9762;&#x7684;statement&#x540E;&#xFF0C;&#x5E0C;&#x671B;&#x6267;&#x884C;&#x600E;&#x6837;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD9;&#x91CC;&#x5305;&#x62EC;CONTINUE&#x3001;EXIT&#x3001;UNDO&#xFF0C;&#x8868;&#x793A;&#x7EE7;&#x7EED;&#x3001;&#x9000;&#x51FA;&#x3001;&#x64A4;&#x9500;(&#x6682;&#x65F6;&#x4E0D;&#x652F;&#x6301;)&#x3002;&#x8FD9;&#x8FB9;&#x5C31;&#x662F;&#x4E24;&#x79CD;&#x52A8;&#x4F5C;&#xFF0C;&#x5176;&#x5B9E;&#x8FD9;&#x4E24;&#x79CD;&#x52A8;&#x4F5C;&#x5728;&#x4E0A;&#x9762;&#x4E5F;&#x8BF4;&#x8FC7;&#x4E86;&#xFF0C;CONTINUE&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x662F;SQLWARNING&#x548C;NOT FOUND&#x7684;&#x9ED8;&#x8BA4;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;EXIT&#x5C31;&#x662F;SQLEXCEPTION&#x7684;&#x9ED8;&#x8BA4;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x3002;</p>
+<h1 id="mysql-&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x591A;&#x6E38;&#x6807;"><a name="mysql-&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x591A;&#x6E38;&#x6807;" class="anchor-navigation-ex-anchor" href="#mysql-&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x591A;&#x6E38;&#x6807;"><i class="fa fa-link" aria-hidden="true"></i></a>5. mysql &#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x591A;&#x6E38;&#x6807;</h1>
+<p><a href="http://www.netingcn.com/mysql-procedure-muti-cursor.html" target="_blank">http://www.netingcn.com/mysql-procedure-muti-cursor.html</a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; one 2014-2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6700;&#x540E;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-11-15 18:12:31
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mysql_event.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: mysql&#x4E8B;&#x4EF6;">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"mysql存储过程","level":"1.11.2.5","depth":3,"next":{"title":"Hadoop","level":"1.12","depth":1,"ref":"","articles":[{"title":"HDFS","level":"1.12.1","depth":2,"path":"hadoop/hdfs.md","ref":"hadoop/hdfs.md","articles":[]},{"title":"Yarn","level":"1.12.2","depth":2,"path":"hadoop/yarn.md","ref":"hadoop/yarn.md","articles":[]}]},"previous":{"title":"mysql事件","level":"1.11.2.4","depth":3,"path":"database/mysql/mysql_event.md","ref":"database/mysql/mysql_event.md","articles":[]},"dir":"ltr"},"config":{"plugins":["tbfed-pagefooter","expandable-chapters","-sharing","sharing-plus","splitter","header","anchor-navigation-ex-toc","prism","-highlight","include-codeblock","ace","livereload"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy one 2014-2018","modify_label":"最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"ace":{},"livereload":{},"splitter":{},"search":{},"layout":{"headerPath":"layouts/header.html"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"header":{},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"multipleH1":true,"showLevel":true,"float":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"monokai","unindent":true},"sharing":{"qq":true,"all":[],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"S1","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"学习中心","language":"zh-hans","links":{"sidebar":{"码云":"https://gitee.com/3017677"},"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"学习中心"},"file":{"path":"database/mysql/mysql_procedure.md","mtime":"2018-11-15T10:12:31.063Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-29T09:26:29.447Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

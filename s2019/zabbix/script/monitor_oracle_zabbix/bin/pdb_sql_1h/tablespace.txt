@@ -1,0 +1,44 @@
+set pagesize 0; 
+set feedback off; 
+set verify off;
+set echo off;
+set line 1000;
+set numwidth 50;
+SELECT tablespace_name,
+  maxsize,
+  createsize,
+  usedsize,
+  freesize,
+  round(usedperc * 100, 2) pused
+FROM (
+  SELECT d.tablespace_name,
+    a.max_bytes maxsize,
+    a.user_bytes createsize,
+    t.bytes usedsize,
+    a.user_bytes-t.bytes freesize,
+    NVL (t.bytes/a.user_bytes, 0) usedperc
+  FROM sys.dba_tablespaces d,
+    (SELECT tablespace_name, SUM(maxbytes) max_bytes, SUM(user_bytes) AS
+user_bytes FROM dba_temp_files GROUP BY tablespace_name) a,
+    (SELECT ss.tablespace_name, SUM ((ss.used_blocks * ts.blocksize)) bytes
+     FROM gv$sort_segment ss, sys.ts$ ts
+     WHERE ss.tablespace_name = ts.name
+     GROUP BY ss.tablespace_name) t
+  WHERE d.tablespace_name = a.tablespace_name(+)
+    AND d.tablespace_name = t.tablespace_name(+)
+    AND d.extent_management = 'LOCAL'
+    AND d.contents = 'TEMPORARY'
+  UNION ALL 
+  SELECT ddf.tablespace_name tablespace_name, 
+    ddf.maxbytes maxsize, 
+    ddf.createsize createsize, 
+    (ddf.createsize - dfs.freesize) usedsize,
+    dfs.freesize freesize,
+    NVL((ddf.createsize - dfs.freesize) / ddf.createsize,0) usedperc
+  FROM
+    (SELECT tablespace_name, SUM(maxbytes) maxbytes, SUM(bytes) createsize
+FROM dba_data_files GROUP BY tablespace_name) ddf,
+    (SELECT tablespace_name, SUM(bytes) freesize FROM dba_free_space GROUP BY
+tablespace_name) dfs
+  WHERE ddf.tablespace_name = dfs.tablespace_name(+) );
+exit
