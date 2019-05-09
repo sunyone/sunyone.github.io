@@ -154,6 +154,38 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    [SAP认证辅导]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="SAP-Exam-Guide-module07.html">
+            
+                <a href="SAP-Exam-Guide-module07.html">
+            
+                    
+                    Module7:security
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -336,7 +368,7 @@ AWS KMS allows you to control the encryption keys used by your applications and 
 <p><img src="images/sap-student-guide-0712.png" alt="0712"></p>
 <p>Designate data as confidential and limit the number of users who can access it.</p>
 <p>Use AWS permissions to manage access to resources for services such as Amazon S3.</p>
-<p>Use encryption to protect confidential data. </p>
+<p>Use encryption to protect confidential data.</p>
 <p><img src="images/sap-student-guide-0713.png" alt="0713"></p>
 <p>To ensure that data integrity is not compromised through deliberate or accidental modification, use resource permissions to limit the scope of users who can modify the data.</p>
 <p>Even with resource permissions, accidental deletion by a privileged user is still a threat.
@@ -397,7 +429,7 @@ If you detect data compromise, restore the data from a backup, or, in the case o
 <p>The slide illustrates the SSE-S3 process where Amazon S3 manages the encryption keys.
 In this option, AWS generates a unique encryption key for each object and then encrypts the object using AES-256.</p>
 <p>The encryption key is then encrypted itself using AES-256 with a master key that is stored in a secure location.</p>
-<p>The master key is rotated on a regular basis. </p>
+<p>The master key is rotated on a regular basis.</p>
 <p><img src="images/sap-student-guide-0722.png" alt="0722"></p>
 <p>AWS KMS can be managed via the Encryption Keys section in the IAM console or via AWS KMS APIs. Use KMS to centrally create encryption keys, define the policies that control how keys can be used, and audit key usage to prove they are being used correctly.</p>
 <p>The first time an SSE-KMS-encrypted object is added to a bucket in a region, a default CMK is automatically created. This key is used for SSE-KMS encryption unless selecting a CMK that created separately using AWS KMS.</p>
@@ -436,7 +468,7 @@ In this option, AWS generates a unique encryption key for each object and then e
 <p><img src="images/sap-student-guide-0729.png" alt="0729"></p>
 <p>Encryption and data integrity authentication are important for protecting the communications channel. It is equally important to authenticate the identity of the remote end of the connection.</p>
 <p>An encrypted channel is worthless if the remote end happens to be an attacker or an imposter relaying the connection to the intended recipient.</p>
-<p>This is called a man-in-the-middle attack or identity spoofing. </p>
+<p>This is called a man-in-the-middle attack or identity spoofing.</p>
 <p><img src="images/sap-student-guide-0730.png" alt="0730"></p>
 <p><strong>HTTP/HTTPS traffic:</strong> By default, HTTP traffic is unprotected.</p>
 <p>SSL/TLS protection for HTTP traffic (HTTPS) is industry-standard and widely supported by web servers and browsers.</p>
@@ -460,7 +492,7 @@ In this option, AWS generates a unique encryption key for each object and then e
 <p>Use a load balancer in front of your architecture to act as your first line of defense because it is a highly available load balancing solution.</p>
 <p><img src="images/sap-student-guide-0735.png" alt="0735"></p>
 <p>Remote Desktop Protocol (RDP): Users who access Windows Terminal Services in the public cloud usually use the Microsoft Remote Desktop Protocol.</p>
-<p>By default, RDP connections establish an underlying SSL/TLS connection. </p>
+<p>By default, RDP connections establish an underlying SSL/TLS connection.</p>
 <p><img src="images/sap-student-guide-0736.png" alt="0736"></p>
 <p>Secure Shell (SSH): SSH is the preferred approach for establishing administrative connections to Linux servers.</p>
 <p>SSH is a protocol that, like SSL, provides a secure communications channel between the client and the server.</p>
@@ -478,7 +510,7 @@ In this option, AWS generates a unique encryption key for each object and then e
 <p>For more information about AWS Certificate Manager, see <a href="https://aws.amazon.com/certificate-manager/" target="_blank">https://aws.amazon.com/certificate-manager/</a>.</p>
 <p><img src="images/sap-student-guide-0741.png" alt="0741"> </p>
 <footer class="page-footer"><span class="copyright">@Copyright &#xA9; one 2014-2019, powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x6700;&#x540E;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-05-09 15:49:00
+2019-05-09 16:03:45
 </span></footer>
                                 
                                 </section>
@@ -514,7 +546,7 @@ In this option, AWS generates a unique encryption key for each object and then e
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Module7:Encryption and data security","level":"1.2.1","depth":2,"previous":{"title":"[SAP培训]","level":"1.2","depth":1,"ref":"","articles":[{"title":"Module7:Encryption and data security","level":"1.2.1","depth":2,"path":"SAP/SAP-Student-Guide-moudule07.md","ref":"SAP/SAP-Student-Guide-moudule07.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["local-pagefooter","expandable-menu","-sharing","sharing-plus","splitter","anchor-navigation-ex","prism","-highlight","include-codeblock","ace","-lunr","-search","search-pro","insert-logo-link-style","mermaid-flow"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"ignore":["mermaid","eval-js"]},"ace":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"insert-logo-link-style":{"link":"https://sunyone.github.io/AWS/book/","src":"data:image/png;base64,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","style":"background: none;","target":""},"local-pagefooter":{"copyright":"Copyright &copy one 2014-2019","islocal":true,"modify_label":"该文件最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-flow":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-menu":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"monokai","unindent":true},"sharing":{"qq":true,"all":[],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"AWS","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"AWS","language":"zh-hans","links":{"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"AWS"},"file":{"path":"SAP/SAP-Student-Guide-moudule07.md","mtime":"2019-05-09T07:49:00.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-09T07:50:07.853Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Module7:Encryption and data security","level":"1.2.1","depth":2,"next":{"title":"[SAP认证辅导]","level":"1.3","depth":1,"ref":"","articles":[{"title":"Module7:security","level":"1.3.1","depth":2,"path":"SAP/SAP-Exam-Guide-module07.md","ref":"SAP/SAP-Exam-Guide-module07.md","articles":[]}]},"previous":{"title":"[SAP培训]","level":"1.2","depth":1,"ref":"","articles":[{"title":"Module7:Encryption and data security","level":"1.2.1","depth":2,"path":"SAP/SAP-Student-Guide-moudule07.md","ref":"SAP/SAP-Student-Guide-moudule07.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["local-pagefooter","expandable-menu","-sharing","sharing-plus","splitter","anchor-navigation-ex","prism","-highlight","include-codeblock","ace","-lunr","-search","search-pro","insert-logo-link-style","mermaid-flow"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"ignore":["mermaid","eval-js"]},"ace":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"insert-logo-link-style":{"link":"https://sunyone.github.io/AWS/book/","src":"data:image/png;base64,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","style":"background: none;","target":""},"local-pagefooter":{"copyright":"Copyright &copy one 2014-2019","islocal":true,"modify_label":"该文件最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-flow":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-menu":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"monokai","unindent":true},"sharing":{"qq":true,"all":[],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"AWS","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"AWS","language":"zh-hans","links":{"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"AWS"},"file":{"path":"SAP/SAP-Student-Guide-moudule07.md","mtime":"2019-05-09T08:03:45.180Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-09T15:16:50.970Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
