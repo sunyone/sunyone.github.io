@@ -236,7 +236,7 @@ Designate data as confidential and limit the number of users who can access it.
 
 Use AWS permissions to manage access to resources for services such as Amazon S3.
 
-Use encryption to protect confidential data. 
+Use encryption to protect confidential data.
 
 ![0713](./images/sap-student-guide-0713.png)
 
@@ -343,7 +343,7 @@ In this option, AWS generates a unique encryption key for each object and then e
 
 The encryption key is then encrypted itself using AES-256 with a master key that is stored in a secure location.
 
-The master key is rotated on a regular basis. 
+The master key is rotated on a regular basis.
 
 ![0722](./images/sap-student-guide-0722.png)
 
@@ -380,7 +380,6 @@ Note: Another option is to perform these steps using the open source eCryptfs pa
 
 You do not need to worry about persistent storage of this encryption key, because the data it encrypts does not persist beyond the life of the HDFS instance.
 
-
 ![0735](./images/sap-student-guide-0735.png)
 
 Remote Desktop Protocol (RDP): Users who access Windows Terminal Services in the public cloud usually use the Microsoft Remote Desktop Protocol.
@@ -415,7 +414,7 @@ Encryption and data integrity authentication are important for protecting the co
 
 An encrypted channel is worthless if the remote end happens to be an attacker or an imposter relaying the connection to the intended recipient.
 
-This is called a man-in-the-middle attack or identity spoofing. 
+This is called a man-in-the-middle attack or identity spoofing.
 
 ![0730](./images/sap-student-guide-0730.png)
 
@@ -463,7 +462,7 @@ Use a load balancer in front of your architecture to act as your first line of d
 
 Remote Desktop Protocol (RDP): Users who access Windows Terminal Services in the public cloud usually use the Microsoft Remote Desktop Protocol.
 
-By default, RDP connections establish an underlying SSL/TLS connection. 
+By default, RDP connections establish an underlying SSL/TLS connection.
 
 ![0736](./images/sap-student-guide-0736.png)
 
