@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>SAP培训 · AWS</title>
+        <title>Module7:Encryption and data security · AWS</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -82,8 +82,6 @@
 
     
     
-    <link rel="prev" href="../" />
-    
 
     </head>
     <body>
@@ -124,16 +122,35 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="SAP-Student-Guide-moudule07.html">
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [SAP培训]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="SAP-Student-Guide-moudule07.html">
             
                 <a href="SAP-Student-Guide-moudule07.html">
             
                     
-                    SAP培训
+                    Module7:Encryption and data security
             
                 </a>
             
 
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -167,7 +184,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >SAP培训</a>
+        <a href=".." >Module7:Encryption and data security</a>
     </h1>
 </div>
 
@@ -183,6 +200,264 @@
                                 <section class="normal markdown-section">
                                 
                                 <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#module-7"><b> </b>module 7</a></li></ul></div><a href="#module-7" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="module-7"><a name="module-7" class="anchor-navigation-ex-anchor" href="#module-7"><i class="fa fa-link" aria-hidden="true"></i></a> module 7</h1>
+<p><img src="images/sap-student-guide-0684.png" alt="0684"></p>
+<p><img src="images/sap-student-guide-0685.png" alt="0685"></p>
+<p><img src="images/sap-student-guide-0686.png" alt="0686"></p>
+<p>Data encryption and key management</p>
+<p>A symmetric data key is generated from either a software or a hardware device. Symmetric keys are preferable to asymmetric keys when you want to quickly encrypt data of an arbitrary size. The key is used along with an encryption algorithm (like AES), and the resulting ciphertext is stored.</p>
+<p>You cannot store the symmetric key you just used with the encrypted data, it has to be protected. The best practice is to encrypt the data key with another key, called a key-encrypting key. It can be symmetric or asymmetric, but it needs to be derived and stored separately from the system in which data is processed. After the data key has been encrypted with the key-encrypting key, store the resulting ciphertext with the encrypted data.</p>
+<p>How is the key-encrypting key protected? It is possible to create a key hierarchy by to iterate enveloping the key with additional keys.</p>
+<p>Eventually, plaintext key that is needed to start the the &#x201C;unwrapping&#x201D; process to derive the final data key and decrypt the data. The location and access controls around this key should be distinct from the ones used with the original data.</p>
+<p><img src="images/sap-student-guide-0687.png" alt="0687"></p>
+<p>Let&#x2019;s start with the case where all the encryption happens in your data center on the systems you control.</p>
+<p>The code that performs the encryption has to get keys from somewhere; we&#x2019;ll call that system your key management infrastructure.</p>
+<p>Alternatively, the data and the code that performs the encryption may be in an Amazon EC2 instance. This code may call back to the key management infrastructure in a data center or to a solution running on another Amazon EC2 instance.</p>
+<p>After the data is encrypted by you with your keys, it&#x2019;s sent to the AWS service that will ultimately store it.</p>
+<p>Note: Decryption of this data can only happen in your code, using keys under your control.</p>
+<p><img src="images/sap-student-guide-0688.png" alt="0688"></p>
+<p>Typically, an organization that is comfortable with an existing, sophisticated encryption solution tends to choose the DIY route.</p>
+<p>If they must comply with their existing policies and needs, but want to leverage the cloud at the same time, the reasonable approach is to go with DIY.</p>
+<p>The challenge with DIY comes when you have to scale across regions. You must replicate the key management system everywhere. Also, whenever you have new staff, they must learn how to use the infrastructure.</p>
+<p><img src="images/sap-student-guide-0689.png" alt="0689"></p>
+<p>The advantage of purchasing a product from AWS Marketplace is that you can start using the pre-configured AMIs immediately.</p>
+<p>Some partners provide bring-your-own-license capacity. If you already use encryption products in your on-premises environment and want to use the same solutions, you can extend the licenses into the cloud.</p>
+<p>There are a lot of options in the AWS Marketplace for encryption products. Vendors you may have already engaged are providing their software on AWS, so you might find the same thing you are running in your data center.</p>
+<p>In the marketplace, vendors can now upload an AMI with up to three CloudFormation templates. If their application requires EC2 in addition to other services, it can be provided by the vendor in the AWS Marketplace as part of your launch and reduce manual configuration.</p>
+<p><img src="images/sap-student-guide-0690.png" alt="0690"></p>
+<ul>
+<li>If you are a developer who needs to encrypt data in applications, use the AWS SDKs with AWS KMS to access and protect encryption keys.</li>
+<li>If you&#x2019;re an IT administrator looking for a scalable key management infrastructure to support developers and with a growing number of applications, use AWS KMS to reduce licensing costs and operational burdens.</li>
+<li>If you&#x2019;re responsible for providing data security for regulatory or compliance purposes, use AWS KMS to verify if that data is encrypted consistently across the applications where it is used and stored.</li>
+</ul>
+<p><img src="images/sap-student-guide-0691.png" alt="0691"></p>
+<p>You can perform the following key management functions in AWS KMS:</p>
+<ul>
+<li>Create keys with a unique alias and description</li>
+<li>Define which IAM users and roles can manage keys</li>
+<li>Define which IAM users and roles can use keys to encrypt and decrypt data</li>
+<li>Choose to have AWS KMS automatically rotate keys on an annual basis</li>
+<li>Disable keys temporarily so they cannot be used by anyone</li>
+<li>Re-enable disabled keys</li>
+<li>Audit use of keys by inspecting logs in AWS CloudTrail</li>
+</ul>
+<p><img src="images/sap-student-guide-0692.png" alt="0692"></p>
+<ol>
+<li>An application or AWS service client requests an encryption key to encrypt data and passes a reference to a master key under the account.</li>
+<li>The client requests are authenticated based on whether they have access to use the master key.</li>
+<li>A new data encryption key is created and a copy of it is encrypted under the master key.</li>
+<li>Both the data key and encrypted data key are returned to the client. The data key is used to encrypt customer data and then deleted as soon as it is practical.</li>
+<li>The encrypted data key is stored for later use and sent back to AWS KMS when the source data needs to be decrypted.</li>
+</ol>
+<p><img src="images/sap-student-guide-0693.png" alt="0693"></p>
+<p>AWS KMS is designed so that no one has access to your master keys.</p>
+<p>The service is built on systems designed to protect master keys with extensive hardening techniques such as never storing plaintext master keys on disk, not persisting them in memory, and limiting which systems can connect to the device.</p>
+<p>All access to update software on the service is controlled by a multi-level approval process that is audited and reviewed by an independent group within Amazon.</p>
+<p>For a list of services that integrate with AWS KMS, see <a href="https://aws.amazon.com/kms/details/" target="_blank">https://aws.amazon.com/kms/details/</a>.</p>
+<p><img src="images/sap-student-guide-0694.png" alt="0694"></p>
+<p>For more information about Amazon WorkMail, see <a href="https://aws.amazon.com/workmail/" target="_blank">https://aws.amazon.com/workmail/</a>.</p>
+<p><img src="images/sap-student-guide-0695.png" alt="0695"></p>
+<p>The hardware security module is a single-tenant hardware in AWS and is called AWS CloudHSM. This is a physical appliance dedicated to you.</p>
+<p>An HSM is a purpose-built device designed to perform secure key storage &amp; cryptographic operations as well as protect stored key material with physical and logical mechanisms.</p>
+<p>Physical protections include tamper detection and response. If a tampering event is detected, the HSM is designed to securely destroy the keys rather than risk compromise.</p>
+<p>Logical protections include role-based controls that provide a separation of duties between appliance administrators and security officers. For example, an appliance administrator&#x2019;s role will allow network connectivity such as provisioning an IP address, configuring SNMP, and log management. A security officer&#x2019;s role controls access to the keys, their use, and available cryptographic controls.</p>
+<p><img src="images/sap-student-guide-0696.png" alt="0696"></p>
+<p><strong>AWS CloudHSM</strong></p>
+<p>The AWS CloudHSM service supports corporate, contractual and regulatory compliance requirements for data security by using dedicated Hardware Security Modules (HSM) instances within the AWS cloud. AWS and AWS Marketplace partners offer a variety of solutions for protecting sensitive data within the AWS platform, but for some applications and data subject to contractual or regulatory mandates for managing cryptographic keys, additional protection may be necessary.</p>
+<p>CloudHSM complements existing data protection solutions by protecting encryption keys within HSMs that are designed and validated to government standards for secure key management. CloudHSM securely generates, stores, and manages cryptographic keys used for data encryption so that keys are accessible only by you.</p>
+<p><strong>Managed by AWS</strong></p>
+<p>Amazon administrators monitor the health of your HSMs but do not have any access to configure, manage, or use them. Applications use standard cryptographic APIs in conjunction with HSM client software installed on the application instance to send cryptographic requests to the HSM.</p>
+<p>The client software maintains a secure channel to all of the HSMs in your cluster and sends requests on this channel and the HSM performs operations and returns the results over the secure channel. The client then returns the result to the application through the cryptographic API.</p>
+<p><strong>CloudHSM Clusters</strong></p>
+<p>A single CloudHSM Cluster can contain up to 32 HSMs. Customers can create up to 28 instances, subject to account service limits. The remaining capacity is reserved for internal use. (For example when replacing failed HSM instances.)</p>
+<p><strong>Compliance and Cryptographic Key Management</strong></p>
+<p>Compliance requirements regarding CloudHSM are often met directly by the FIPS 140-2 Level 3 validation of the hardware itself rather than as part of a separate audit program.</p>
+<p>FIPS 140-2 Level 3 is a requirement of certain use cases including document signing, payments, or operating as a public Certificate Authority for SSL certificates.</p>
+<p><strong>AWS Compliance</strong></p>
+<p>For information about which compliance programs cover CloudHSM refer to the AWS Compliance site: <a href="https://aws.amazon.com/compliance/" target="_blank">https://aws.amazon.com/compliance/</a></p>
+<p><strong>Requesting compliance reports that include CloudHSM in scope</strong></p>
+<p>You can request compliance reports through your Business Development representative. If you don&#x2019;t have one, you can request one here: <a href="https://pages.awscloud.com/compliance-contact-us.html" target="_blank">https://pages.awscloud.com/compliance-contact-us.html</a></p>
+<p><img src="images/sap-student-guide-0698.png" alt="0698"></p>
+<p>Following a list of the CloudHSM features and benefits:</p>
+<ul>
+<li>CloudHSM pricing is based on use; there are no upfront costs.</li>
+<li>Start and stop HSMs on demand. Spin cluster down to zero HSMs, restore from backup when needed.</li>
+<li>FIPS 140-2 Level 3 validated. MofN &amp; 2FA supported.</li>
+<li>Provisioning, patching, backup, and HA included.</li>
+<li>Export, as permitted, keys to most commercially available HSMs, such as PKCS#11, Java Cryptography Extensions (JCE), and Microsoft CryptoNG (CNG).</li>
+<li>HSMs are isolated from the rest of the network. Each HSM appears as a network resource in your Virtual Private Cloud (VPC).</li>
+<li>New HSMs are automatically cloned; clients automatically reconfigured. High availability is provided automatically when you have at least two HSMs in your CloudHSM cluster.</li>
+<li>CloudHSM supports Quorum authentication for critical administrative and key management functions, and multi-factor authentication (MFA) using tokens you provide.</li>
+</ul>
+<p><img src="images/sap-student-guide-0699.png" alt="0699"></p>
+<p>CloudHSM provides hardware security modules (HSMs) in a cluster. A cluster is a collection of individual HSMs that CloudHSM keeps in sync as a single logical HSM. When a task or operation is performed on one HSM in a cluster, the other HSMs in the cluster are automatically updated.</p>
+<p>Cluster can be created in size from 0 to 32 HSMs. (The default limit is 6 HSMs per AWS account per AWS Region.)</p>
+<p>Placing HSMs in different Availability Zones in a region creates high availability and adding more HSMs to a cluster improves performance.</p>
+<p>When creating a CloudHSM cluster with more than one HSM, load balancing is automatically enabled. The client distributes cryptographic operations across all HSMs in the cluster based on each HSM&apos;s capacity.</p>
+<p>Cross-region replication is not supported but AWS CloudHSM allows for backups of a CloudHSM Cluster to be copied from one region to another for disaster recovery purposes. For more details, see <a href="https://aws.amazon.com/about-aws/whats-new/2018/07/aws-cloudhsm-backups-can-now-be-copied-across-regions/" target="_blank">https://aws.amazon.com/about-aws/whats-new/2018/07/aws-cloudhsm-backups-can-now-be-copied-across-regions/</a>.</p>
+<p><img src="images/sap-student-guide-0700.png" alt="0700"></p>
+<p>The performance of the individual HSMs varies based on the specific workload. The table below shows approximate single-HSM performance for several common cryptographic algorithms.</p>
+<p>Performance can vary based on exact configuration and data sizes. AWS encourages load testing applications with CloudHSM to determine exact scaling needs.</p>
+<p><img src="images/sap-student-guide-0701.png" alt="0701"></p>
+<p>Start using CloudHSM by creating a cluster in an AWS region. A cluster can contain multiple individual HSMs. For production workloads, have at least two HSMs spread across multiple Availability Zones.</p>
+<p>For idle workloads, delete all HSMs and retain the empty cluster. When a cluster is no longer needed, delete its HSMs as well as the cluster. Later, when HSMs are required again, create a new cluster from the backup. This effectively restores the previous HSM.</p>
+<p>By accessing CloudHSM devices via a HA partition group, all traffic is load balanced between all backing CloudHSM devices. The HA partition group ensures each CloudHSM has identical information and can respond to any request issued.</p>
+<p>With an HA partition group set up with automatic recovery, if a CloudHSM device fails, the device will attempt to recover itself and all traffic will be rerouted to the remaining CloudHSM devices in the HA partition group. This prevents traffic from being interrupted. After recovery, all data will be replicated across the CloudHSM devices in the HA partition group to ensure consistency.</p>
+<p><img src="images/sap-student-guide-0702.png" alt="0702"></p>
+<p>Some versions of Oracle&apos;s database software offer a feature called Transparent Data Encryption (TDE) where the database software encrypts data before storing it on disk. The data in the database&apos;s table columns or tablespaces is encrypted with a table key or tablespace key encrypted with the TDE master encryption key. It is possible to store the TDE master encryption key in the HSMs in your CloudHSM cluster to provide additional security.</p>
+<p>In this solution, the Oracle Database is installed on an Amazon EC2 instance. Oracle Database integrates with the CloudHSM software library for PKCS #11 to store the TDE master key in the HSMs in your cluster.</p>
+<p>Amazon RDS Oracle TDE is not supported on AWS CloudHSM. Oracle TDE is supported for Oracle databases (11g and 12c) on an Amazon EC2.</p>
+<p>For information about integrating an Oracle instance in Amazon RDS with CloudHSM Classic, see <a href="https://docs.aws.amazon.com/cloudhsm/latest/userguide/oracle-tde.html" target="_blank">https://docs.aws.amazon.com/cloudhsm/latest/userguide/oracle-tde.html</a> For information about Oracle TDE and AWS Cloud HSM, see <a href="https://docs.aws.amazon.com/cloudhsm/latest/userguide/oracle-tde.html" target="_blank">https://docs.aws.amazon.com/cloudhsm/latest/userguide/oracle-tde.html</a>.</p>
+<p><img src="images/sap-student-guide-0703.png" alt="0703"></p>
+<p>Amazon Redshift uses a hierarchy of encryption keys to encrypt the database. Use either AWS KMS or a hardware security module (HSM) to manage the top-level encryption keys in this hierarchy. The process that Amazon Redshift uses for encryption differs depending on how the keys are managed.</p>
+<p>When Amazon Redshift is configured to use an HSM, Redshift sends a request to the HSM to generate and store a key to be used as the Cluster Encryption Key (CEK). However, the HSM doesn&#x2019;t export the CEK to Amazon Redshift. Instead, Amazon Redshift randomly generates a Database Encryption Key (DEK) in the cluster and passes it to the HSM to be encrypted by the CEK. The HSM returns the encrypted DEK to Redshift, where it is further encrypted using a randomly-generated, internal master key and stored internally on disk in a separate network from the cluster.</p>
+<p>Amazon Redshift also loads the decrypted version of the DEK in memory in the cluster so that the DEK can be used to encrypt and decrypt the individual keys for the data blocks.</p>
+<p><strong>Rebooting Amazon Redshift</strong></p>
+<p>If the cluster is rebooted, Amazon Redshift decrypts the internally-stored, double-encrypted DEK using the internal master key to return the internally stored DEK to the CEK-encrypted state. The CEK-encrypted DEK is then passed to the HSM to be decrypted and passed back to Amazon Redshift, where it can be loaded in memory again for use with the individual data block keys.</p>
+<p>When using an HSM, client and server certificates are required to create a trusted connection between Amazon Redshift and and HSM.</p>
+<p><img src="images/sap-student-guide-0705.png" alt="0705"></p>
+<p>CloudHSM provides a dedicated hardware device installed in a virtual private cloud that provides a FIPS 140-2 Level 3 validated single-tenant HSM to store and use keys.</p>
+<p>You have total control over your keys and the application software that uses them with CloudHSM.
+AWS KMS allows you to control the encryption keys used by your applications and supported AWS services in multiple regions around the world from a single console.</p>
+<p>Centralized management of all your keys in AWS KMS lets you enforce who can use your keys, when they get rotated, and who can manage them.</p>
+<p>AWS KMS integration with AWS CloudTrail gives you the ability to audit the use of your keys to support your regulatory and compliance activities.</p>
+<p><img src="images/sap-student-guide-0706.png" alt="0706"></p>
+<p><img src="images/sap-student-guide-0707.png" alt="0707"></p>
+<p>Here is a broader comparison of key management options, including non-AWS options.</p>
+<p><img src="images/sap-student-guide-0708.png" alt="0708"></p>
+<p>AWS KMS has integrated with AWS CloudHSM to create your own KMS custom key store.</p>
+<p>Each custom key store is backed by a CloudHSM cluster and enables you to generate, store, and use your KMS keys in hardware security modules (HSMs) that you control.</p>
+<p>The KMS custom key store helps satisfy compliance obligations that would otherwise require the use of on-premises HSMs and supports AWS services and encryption toolkits that are integrated with KMS.</p>
+<p>Generate AWS KMS customer master keys (CMKs) and store them in a custom key store rather than the default KMS key store.</p>
+<p>Each KMS custom key store is created using HSM instances in a CloudHSM cluster that you own. These HSMs can be managed independently of KMS. When using a KMS CMK in a custom key store, the cryptographic operations under that key are performed exclusively in your CloudHSM cluster.</p>
+<p>Master keys stored in a custom key store are managed in the same way as any other master key in KMS and can be used by any AWS service that encrypts data and that supports KMS customer managed CMKs.</p>
+<p>The use of a custom key store does not affect KMS charges for storing and using a CMK. However, a custom key store does involve the additional cost of maintaining a CloudHSM cluster with at least two HSMs.</p>
+<p><img src="images/sap-student-guide-0710.png" alt="0710"></p>
+<p><img src="images/sap-student-guide-0711.png" alt="0711"></p>
+<p><img src="images/sap-student-guide-0712.png" alt="0712"></p>
+<p>Designate data as confidential and limit the number of users who can access it.</p>
+<p>Use AWS permissions to manage access to resources for services such as Amazon S3.</p>
+<p>Use encryption to protect confidential data. </p>
+<p><img src="images/sap-student-guide-0713.png" alt="0713"></p>
+<p>To ensure that data integrity is not compromised through deliberate or accidental modification, use resource permissions to limit the scope of users who can modify the data.</p>
+<p>Even with resource permissions, accidental deletion by a privileged user is still a threat.
+If you detect data compromise, restore the data from a backup, or, in the case of Amazon S3, from a previous object version.</p>
+<p>MAC = message authentication code</p>
+<p>HMAC = keyed-hash message authentication code</p>
+<p>DS = data source</p>
+<p>AEAD = Authenticated Encryption with Additional Data</p>
+<p><img src="images/sap-student-guide-0714.png" alt="0714"></p>
+<p>Using the correct permissions and the principle of least privileged access is the best protection against accidental or malicious deletion.</p>
+<p>For services such as Amazon S3, use MFA Delete to require multi-factor authentication to delete an object.</p>
+<p>If you detect a data compromise, restore the data from backup, or, in the case of Amazon S3 with versioning enabled, from a previous object version.</p>
+<p><img src="images/sap-student-guide-0715.png" alt="0715"></p>
+<p>Depending on security requirements, use server-side encryption and client-side encryption to encrypt data.</p>
+<p>Each approach has its own advantages. For an enhanced security profile, both techniques can be used.</p>
+<p>AWS server-side encryption will encrypt data on your behalf &#x201C;after&#x201D; the API call is received by the service, leveraging AWS KMS.</p>
+<p>AWS automatically manages and rotes the keys.</p>
+<p>Note: Metadata is not encrypted when using server-side encryption such as Amazon S3.</p>
+<p><img src="images/sap-student-guide-0716.png" alt="0716"></p>
+<p>Source data comes from either systems in a data center or an Amazon EC2 instance.</p>
+<p>Data can be uploaded via a secure HTTPS connection to any of five AWS services that support automatic server-side encryption.</p>
+<p>The service endpoint handle the encryption and key management processes.</p>
+<p>With Amazon S3 and Redshift, encryption is an optional step determined at the time it is uploaded. Using Amazon Glacier, all data is encrypted by default.</p>
+<p>Amazon RDS for Oracle and Microsoft SQL use a feature specific to those database packages called Transparent Data Encryption, or TDE. TDE uses keys created in the database application along with keys created by AWS to protect your data.</p>
+<p><img src="images/sap-student-guide-0717.png" alt="0717"></p>
+<p>Because AWS manages all the keys and encryption processes for you, it&#x2019;s important to understand how AWS does that in a secure way.</p>
+<ul>
+<li>The AWS service that is responsible for storing your data on disk creates a unique 256-bit AES data key per Amazon S3 object, Amazon Glacier archive, Amazon Redshift cluster, or Amazon RDS database.</li>
+<li>This data key is used to encrypt the relevant data.</li>
+<li>The data key is then encrypted with a master key that is unique to the service and the region. This master key is stored in a separate system with stringent access control mechanisms.</li>
+<li>The original data key is deleted and only the encrypted version persists on disks controlled by the service that stores your data.</li>
+</ul>
+<p><strong>Amazon Redshift and Amazon RDS</strong></p>
+<p>With Amazon Redshift and Amazon RDS, there are some extra levels of envelope encryption happening between the data key and the regional master key. The data key is persisted in memory on the instance to be used for active read/writes.</p>
+<p><img src="images/sap-student-guide-0718.png" alt="0718"></p>
+<p>Because Amazon EBS volumes are presented to instances as a block devices, most standard encryption tools can be leveraged for file system&#x2013;level or block-level encryption.</p>
+<p>Common block-level open source encryption solutions for Linux are Loop-AES, dm-crypt (with or without) LUKS, and TrueCrypt.</p>
+<p>Each of these operates below the file system layer using OS specific device drivers to perform encryption and decryption. This is useful when all data written to a volume is to be encrypted.</p>
+<p>Another option is to use file system&#x2013;level encryption, which works by stacking an encrypted file system on top of an existing file system. This method is typically used to encrypt a specific directory. eCryptfs and EncFs are two Linux-based open source examples of file system&#x2013;level encryption tools.</p>
+<p>These solutions require you to provide keys either manually or from your KMI.</p>
+<p><strong>EBS volumes</strong></p>
+<p>An important caveat with both block-level and file system&#x2013;level encryption tools is that they can only be used to encrypt data volumes that are not Amazon EBS boot volumes. This is because these tools don&#x2019;t allow you to automatically make a trusted key available to the boot volume at startup.</p>
+<p>Encrypting Amazon EBS volumes attached to Windows instances can be done using BitLocker or Encrypted File System (EFS) or other software applications. In either case, you still need to provide keys to these encryption methods and you can only encrypt data volumes.</p>
+<p>AWS partner solutions can help automate the process of encrypting Amazon EBS volumes and supplying and protecting the necessary keys. Trend Micro SecureCloud and SafeNet ProtectV are two such partner products that encrypt Amazon EBS volumes and include a KMI.</p>
+<p>Both products can encrypt boot volumes in addition to data volumes. These solutions also support use cases where Amazon EBS volumes attach to autoscaled Amazon EC2 instances.</p>
+<p><img src="images/sap-student-guide-0720.png" alt="0720"></p>
+<p>Amazon S3 supports server-side encryption (SSE) of user data that is transparent to the end user.</p>
+<p>S3 provides three different options for managing encryption keys when using server-side encryption.</p>
+<ul>
+<li>SSE with Amazon S3&#x2013;managed keys (SSE-S3)</li>
+<li>SSE with AWS KMS&#x2013;managed keys (SSE-KMS)</li>
+<li>SSE with customer-provided keys (SSE-C)</li>
+</ul>
+<p>The slide illustrates the SSE-C process where you set your own encryption keys.</p>
+<p>With the encryption key you provide as part of the request, Amazon S3 manages both the encryption as it writes to disks, and decryption, when you access objects. You don&apos;t maintain the code to perform data encryption and decryption, just the keys.</p>
+<p>Amazon S3 does not store the encryption key you provide. Instead, a randomly salted hash-based message authentication code (HMAC ) value of the encryption key is stored to validate future requests. The salted HMAC value cannot be used to derive the value of the encryption key or to decrypt the contents of the encrypted object. That means if you lose the encryption key, you lose the object.</p>
+<p><img src="images/sap-student-guide-0721.png" alt="0721"></p>
+<p>The slide illustrates the SSE-S3 process where Amazon S3 manages the encryption keys.
+In this option, AWS generates a unique encryption key for each object and then encrypts the object using AES-256.</p>
+<p>The encryption key is then encrypted itself using AES-256 with a master key that is stored in a secure location.</p>
+<p>The master key is rotated on a regular basis. </p>
+<p><img src="images/sap-student-guide-0722.png" alt="0722"></p>
+<p>AWS KMS can be managed via the Encryption Keys section in the IAM console or via AWS KMS APIs. Use KMS to centrally create encryption keys, define the policies that control how keys can be used, and audit key usage to prove they are being used correctly.</p>
+<p>The first time an SSE-KMS-encrypted object is added to a bucket in a region, a default CMK is automatically created. This key is used for SSE-KMS encryption unless selecting a CMK that created separately using AWS KMS.</p>
+<p>Creating your own CMK gives you flexibility, including the ability to create, rotate, disabled, and define access controls and to audit the encryption keys used to protect data.</p>
+<p>Uploading or accessing objects encrypted by SSE-KMS requires the use of AWS Signature Version 4 for added security.</p>
+<p>For more information, see &lt;<a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingAWSSDK.html#s" target="_blank">https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingAWSSDK.html#s</a> pecify-signature-version&gt;.</p>
+<p><img src="images/sap-student-guide-0723.png" alt="0723"></p>
+<p>When a Hadoop cluster is created, each node is created from an Amazon EC2 instance which comes with a preconfigured block of attached disk storage called an Amazon EC2 local instance store.</p>
+<p>Transparent encryption is implemented through the use of HDFS encryption zones, which are HDFS paths that you define. Each encryption zone has its own key, which is stored in the key server specified by the hdfs-site configuration.</p>
+<p>Amazon EMR uses the Hadoop KMS by default. However, you can use another KMS that implements the KeyProvider API operation. Each file in an HDFS encryption zone has its own unique data encryption key, which is encrypted by the encryption zone key. HDFS data is encrypted end-to-end (at-rest and in-transit) when data is written to an encryption zone because encryption and decryption activities only occur in the client.</p>
+<p>The storage used for the HDFS mount point is the ephemeral storage of the cluster nodes. Depending upon the instance type there may be more than one mount.</p>
+<p><strong>Encrypting mount points</strong></p>
+<p>Encrypting mount points requires the use of an Amazon EMR bootstrap script that will:</p>
+<ul>
+<li>Stop the Hadoop service</li>
+<li>Install a file system encryption tool on the instance</li>
+<li>Create an encrypted directory to mount the encrypted file system on top of the existing mount points</li>
+<li>Restart the Hadoop service</li>
+</ul>
+<p>Note: Another option is to perform these steps using the open source eCryptfs package and have an ephemeral key generated in code on each of the HDFS mounts.</p>
+<p>You do not need to worry about persistent storage of this encryption key, because the data it encrypts does not persist beyond the life of the HDFS instance.</p>
+<p><img src="images/sap-student-guide-0735.png" alt="0735"></p>
+<p>Remote Desktop Protocol (RDP): Users who access Windows Terminal Services in the public cloud usually use the Microsoft Remote Desktop Protocol.</p>
+<p>By default, RDP connections establish an underlying SSL/TLS connection.</p>
+<p><img src="images/sap-student-guide-0725.png" alt="0725"></p>
+<p>In Amazon Redshift, database encryption can be enabled for clusters to protect data at rest. When enabling encryption for a cluster, the data blocks and system metadata are encrypted for the cluster and its snapshots.</p>
+<p>Encryption is an optional, immutable setting of a cluster. If encryption is desired, it must be enabled during the launch process. To change to an unencrypted cluster, the data must be unloaded from the encrypted one and loaded into the unencrypted one.</p>
+<p>Though encryption is an optional setting in Amazon Redshift, AWS recommends enabling it for clusters that contain sensitive data.</p>
+<p>Amazon Redshift automatically integrates with AWS KMS but not with an HSM. When you use an HSM, you must use client and server certificates to configure a trusted connection between Amazon Redshift and the HSM.</p>
+<p><img src="images/sap-student-guide-0726.png" alt="0726"></p>
+<p><img src="images/sap-student-guide-0727.png" alt="0727"></p>
+<p>Designate data as confidential and limit the number of users who can access it.</p>
+<p>Use AWS permissions to manage access to resources for services such as Amazon S3. Use encryption to protect confidential data.</p>
+<p><img src="images/sap-student-guide-0728.png" alt="0728"></p>
+<p>Whether or not data is confidential, you want to know that data integrity is not compromised through deliberate or accidental modification.</p>
+<p><img src="images/sap-student-guide-0729.png" alt="0729"></p>
+<p>Encryption and data integrity authentication are important for protecting the communications channel. It is equally important to authenticate the identity of the remote end of the connection.</p>
+<p>An encrypted channel is worthless if the remote end happens to be an attacker or an imposter relaying the connection to the intended recipient.</p>
+<p>This is called a man-in-the-middle attack or identity spoofing. </p>
+<p><img src="images/sap-student-guide-0730.png" alt="0730"></p>
+<p><strong>HTTP/HTTPS traffic:</strong> By default, HTTP traffic is unprotected.</p>
+<p>SSL/TLS protection for HTTP traffic (HTTPS) is industry-standard and widely supported by web servers and browsers.</p>
+<p>HTTP traffic can include not just client access to web pages but also web services (REST/SOAP-based access).</p>
+<p><img src="images/sap-student-guide-0731.png" alt="0731"></p>
+<p><strong>HTTPS offload:</strong> While using HTTPS is often recommended, especially for sensitive data, SSL/TLS processing requires additional CPU and memory resources from both the web server and the client.</p>
+<p>This can put a considerable load on web servers that are handling thousands of SSL/TLS sessions.</p>
+<p>There is less impact on the client, where only a limited number of SSL/TLS connections are terminated.</p>
+<p><img src="images/sap-student-guide-0732.png" alt="0732"></p>
+<p>As a security best practice, it is recommended to use HTTPS protocol to protect data in transit. The SSL encryption and decryption operations can be handled by your EC2 instances but cryptographic operations consume resources. A better way to handle SSL termination is to use Elastic Load Balancing. Elastic Load Balancing (ELB) supports SSL termination and can centrally manage SSL certificates and manage encryption to back-end instances with optional public key authentication.</p>
+<p>ELB can load balance HTTP/HTTPS applications and use layer 7&#x2013;specific features, such as X-Forwarded and sticky sessions. It can also use strict layer-4 load balancing for applications that rely entirely on the TCP protocol.</p>
+<p>Additional options can be implemented when using ELB. Use Perfect Forward Secrecy (PFS), to prevent the decoding of captured data even if the secret long-term key itself is compromised.</p>
+<p>When the Server Order Preference option is selected, the load balancer will select a cipher suite based on the server&#x2019;s prioritization of cipher suites rather than the client&#x2019;s.</p>
+<p><img src="images/sap-student-guide-0733.png" alt="0733"></p>
+<p>While SSL sessions can be terminated at the load balancer, certain compliance standards may require the sessions to be encrypted all-the-way to the application or database server.</p>
+<p>In such scenarios, you may still terminate SSL sessions at the load balancer and then re-encrypt them before they are sent to the back-end EC2 instances.</p>
+<p>This way you can leverage advantages of ELB such as session affinity, perfect forward secrecy, and server order preference, while still using HTTPS.</p>
+<p>In this process, for additional protection, you can also use ELB to verify the authenticity of the EC2 server before sending the request.</p>
+<p><img src="images/sap-student-guide-0734.png" alt="0734"></p>
+<p>Another capability of ELB is TCP Pass-through (Classic ELB and NLB only) which allows you to perform SSL termination at your EC2 instances while leveraging other advantages of ELB.</p>
+<p>Use a load balancer in front of your architecture to act as your first line of defense because it is a highly available load balancing solution.</p>
 <p><img src="images/sap-student-guide-0735.png" alt="0735"></p>
 <p>Remote Desktop Protocol (RDP): Users who access Windows Terminal Services in the public cloud usually use the Microsoft Remote Desktop Protocol.</p>
 <p>By default, RDP connections establish an underlying SSL/TLS connection. </p>
@@ -200,9 +475,10 @@
 <p><img src="images/sap-student-guide-0739.png" alt="0739"></p>
 <p>The slide lists a few commonly practiced techniques to protect data in transit.</p>
 <p><img src="images/sap-student-guide-0740.png" alt="0740"></p>
-<p>For more information about AWS Certificate Manager, see <a href="https://aws.amazon.com/certificate-manager/" target="_blank">https://aws.amazon.com/certificate-manager/</a>. </p>
+<p>For more information about AWS Certificate Manager, see <a href="https://aws.amazon.com/certificate-manager/" target="_blank">https://aws.amazon.com/certificate-manager/</a>.</p>
+<p><img src="images/sap-student-guide-0741.png" alt="0741"> </p>
 <footer class="page-footer"><span class="copyright">@Copyright &#xA9; one 2014-2019, powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x6700;&#x540E;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-05-08 23:13:20
+2019-05-09 15:49:00
 </span></footer>
                                 
                                 </section>
@@ -230,10 +506,6 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
                 
             
         
@@ -242,7 +514,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SAP培训","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["local-pagefooter","expandable-menu","-sharing","sharing-plus","splitter","anchor-navigation-ex","prism","-highlight","include-codeblock","ace","-lunr","-search","search-pro","insert-logo-link-style","mermaid-flow"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"ignore":["mermaid","eval-js"]},"ace":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"insert-logo-link-style":{"link":"https://sunyone.github.io/AWS/docs/index.html","src":"data:image/png;base64,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","style":"background: none;","target":""},"local-pagefooter":{"copyright":"Copyright &copy one 2014-2019","islocal":true,"modify_label":"该文件最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-flow":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-menu":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"monokai","unindent":true},"sharing":{"qq":true,"all":[],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"AWS","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"AWS","language":"zh-hans","links":{"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"AWS"},"file":{"path":"SAP/SAP-Student-Guide-moudule07.md","mtime":"2019-05-08T15:13:20.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-09T03:47:37.983Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Module7:Encryption and data security","level":"1.2.1","depth":2,"previous":{"title":"[SAP培训]","level":"1.2","depth":1,"ref":"","articles":[{"title":"Module7:Encryption and data security","level":"1.2.1","depth":2,"path":"SAP/SAP-Student-Guide-moudule07.md","ref":"SAP/SAP-Student-Guide-moudule07.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["local-pagefooter","expandable-menu","-sharing","sharing-plus","splitter","anchor-navigation-ex","prism","-highlight","include-codeblock","ace","-lunr","-search","search-pro","insert-logo-link-style","mermaid-flow"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"ignore":["mermaid","eval-js"]},"ace":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"insert-logo-link-style":{"link":"https://sunyone.github.io/AWS/book/","src":"data:image/png;base64,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","style":"background: none;","target":""},"local-pagefooter":{"copyright":"Copyright &copy one 2014-2019","islocal":true,"modify_label":"该文件最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-flow":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-menu":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"monokai","unindent":true},"sharing":{"qq":true,"all":[],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"AWS","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"AWS","language":"zh-hans","links":{"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"AWS"},"file":{"path":"SAP/SAP-Student-Guide-moudule07.md","mtime":"2019-05-09T07:49:00.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-09T07:50:07.853Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
