@@ -43,7 +43,7 @@
 
 #
 .DS_Store
-_book/
+#_book/
 node_modules/
 .vscode/
 .ipynb_checkpoints/
