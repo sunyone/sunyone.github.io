@@ -2,6 +2,8 @@
 
 ![0374](./images/sap-exam-guide-0374.png)
 
+![0375](./images/sap-exam-guide-0375.png)
+
 认证目标
 
 设计信息安全管理系统和合规控制
@@ -13,8 +15,6 @@
 静态控制数据的设计保护
 
 数据传输和网络周界控制的设计保护
-
-![0375](./images/sap-exam-guide-0375.png)
 
 ![0376](./images/sap-exam-guide-0376.png)
 
@@ -31,8 +31,6 @@ Resources:
 - AWS Re:Invent 2014: AWS Security Keynote Address: <https://www.youtube.com/watch?v=OEK7mHn4JLs>
 - AWS Re:Invent 2015: Architecting for End-to-End Security in the Enterprise: <https://www.youtube.com/watch?v=nqaL5zJqFuo>
 - Cloud Migration, Application Modernization and Security for Partners: <https://www.youtube.com/watch?v=UpeV4OqB6Us>
-
-![0377](./images/sap-exam-guide-0377.png)
 
 ![0378](./images/sap-exam-guide-0378.png)
 
@@ -173,7 +171,9 @@ Amazon RedShift can use AES256 encryption to encrypt data at rest.
 
 Databases created in RDS can use KMS for encryption. Oracle and Microsoft SQL also support Transparent Data Encryption (TDS), which uses CloudHSM.
 
-Amazon Redshift Database Encryption: <http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html> Encrypting Amazon RDS Resources: <http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html>
+Amazon Redshift Database Encryption: <http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html>
+
+Encrypting Amazon RDS Resources: <http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html>
 
 ![0397](./images/sap-exam-guide-0397.png)
 
