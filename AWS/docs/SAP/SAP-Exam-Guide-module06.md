@@ -214,6 +214,7 @@ OpsWorks doesn’t have an inherent understanding of application versioning. If 
 When you run a Deploy lifecycle event, you can choose to remove layers and individual instances from the scope of the Deploy event. This allows you to perform an incremental/rolling deployment, by targeting a subset of instances. Running the Deploy lifecycle event against a layer also runs the Configure lifecycle event against all other layers, i.e., other layers are aware of the changes introduced by the Deploy event. For example, the Configure lifecycle event may trigger an update of the Database schema in the Database layer, or add a new listener in an Elastic Load Balancing layer.
 
 For more information, see:
+
 - OpsWorks – Adding Apps: <http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-creating.html>
 - OpsWorks – Deploying Apps: <http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-deploying.html>
 - OpsWorks - Cookbooks and Recipes: <http://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook.html>
@@ -244,7 +245,7 @@ Amazon Elastic Container Service (Amazon ECS) is a highly scalable, fast, contai
 An ECS Cluster is a logical grouping of container instances that you can place tasks on. For more information, see: <http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_clusters.html>.
 
 A Container instance is an Amazon EC2 instance that is running the Amazon ECS agent and is registered into a cluster. For more information, see: <http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_instances.html>.
-An ECS task definition is a description of an application that contains one or more container definitions, such as CPU and RAM requirements, network port bindings, and storage. For more information, see: <http://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_defintions.ht ml>.
+An ECS task definition is a description of an application that contains one or more container definitions, such as CPU and RAM requirements, network port bindings, and storage. For more information, see: <http://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_defintions.html>.
 
 For a video on Amazon Elastic Container Service: Manage Docker-Enabled Apps in EC2, see: <https://www.youtube.com/watch?v=c0EnHl3o-L4>
 
@@ -307,7 +308,7 @@ Your company runs an event management SaaS application that uses Amazon EC2, Aut
 
 A. Use the zero downtime feature of AWS Elastic Beanstalk to deploy new software releases to your existing instances.
 
-B. Use AWS Codedeploy Create an application and a deployment targeting the Auto Scaling group Use AWS 
+B. Use AWS Codedeploy Create an application and a deployment targeting the Auto Scaling group Use AWS
 Codedeploy to deploy and update the application in thefuture.
 
 C. Suspend the Auto Scaling process.Deregister the instance from ELB before updating the application, and register it with ELB on successful update.
@@ -388,7 +389,7 @@ C. This is not true. It’s possible to have two RDS instances with the same nam
 
 ![0368](./images/sap-exam-guide-0368.png)
 
-D. IAM is a global service. IAM users cannot be defined per region. 
+D. IAM is a global service. IAM users cannot be defined per region.
 
 ![0369](./images/sap-exam-guide-0369.png)
 
