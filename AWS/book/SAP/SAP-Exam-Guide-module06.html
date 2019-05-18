@@ -273,9 +273,9 @@
                                 <section class="normal markdown-section">
                                 
                                 <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#module6deployment-management"><b> </b>Module6:Deployment Management</a></li></ul></div><a href="#module6deployment-management" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="module6deployment-management"><a name="module6deployment-management" class="anchor-navigation-ex-anchor" href="#module6deployment-management"><i class="fa fa-link" aria-hidden="true"></i></a> Module6:Deployment Management</h1>
-<p><img src="images/sap-student-guide-0309.png" alt="0309"></p>
-<p><img src="images/sap-student-guide-0310.png" alt="0310"></p>
-<p><img src="images/sap-student-guide-0311.png" alt="0311"></p>
+<p><img src="images/sap-exam-guide-0309.png" alt="0309"></p>
+<p><img src="images/sap-exam-guide-0310.png" alt="0310"></p>
+<p><img src="images/sap-exam-guide-0311.png" alt="0311"></p>
 <p>AWS has several services that can be used for different aspects of deployment.</p>
 <p>This slide and the subsequent slides place those services into different layers to help you understand which services are typically used for which purpose.</p>
 <p><strong>AWS Elastic Beanstal</strong></p>
@@ -283,20 +283,20 @@
 <p>Elastic Beanstalk has strong requirements for the way an application is architected. It works best when you use a two-tier or three-tier application. The service offers a choice between web or worker tier, RDS database tier, and possibly a load balancer. A web tier is typically behind a load balancer. A worker tier uses an SQS queue. Elastic Beanstalk deploys only to Amazon EC2 instances, not to systems outside AWS.</p>
 <p>Elastic Beanstalk can be extended to include other AWS services. However, it won&#x2019;t actively manage those other services.</p>
 <p>If your application fits into the Beanstalk model, it&#x2019;s a great starting point.</p>
-<p><img src="images/sap-student-guide-0312.png" alt="0312"></p>
+<p><img src="images/sap-exam-guide-0312.png" alt="0312"></p>
 <p><strong>AWS OpsWorks</strong></p>
 <p>OpsWorks has a DevOps focus. It allows ongoing management of your environment, and provides more control than Elastic Beanstalk. For example, you can do rolling upgrades of the EC2 instance operating systems or install custom software via Chef recipes. OpsWorks can manage systems in Amazon EC2 and systems that are external to AWS. It does not follow the concept of multiple application versions.</p>
 <p><strong>AWS CloudFormation</strong></p>
 <p>AWS CloudFormation deploys environments based on a template. CloudFormation doesn&#x2019;t have the ongoing configuration management capabilities of OpsWorks. Most or all AWS services are supported for deployment via CloudFormation.</p>
-<p><img src="images/sap-student-guide-0313.png" alt="0313"></p>
+<p><img src="images/sap-exam-guide-0313.png" alt="0313"></p>
 <p><strong>AWS CodeCommit</strong></p>
 <p>CodeCommit is a managed Git code repository; it can store multiple versions of code and also deployment artifacts. CodeCommit doesn&#x2019;t compile or deploy code. It relies on other services or systems to do this. Contrast this with Elastic Beanstalk, which can also keep and deploy multiple application versions. However, Elastic Beanstalk stores and maintains only deployment artifacts, not source code.</p>
 <p><strong>AWS CodePipeline</strong></p>
 <p>CodePipeline performs automated software testing before release. It doesn&#x2019;t deploy code.</p>
-<p><img src="images/sap-student-guide-0314.png" alt="0314"></p>
+<p><img src="images/sap-exam-guide-0314.png" alt="0314"></p>
 <p><strong>AWS CodeDeploy</strong></p>
 <p>CodeDeploy handles deployment of application artifacts to target systems. It can deploy to both EC2 instances and external systems. CodeDeploy can store multiple application versions and has powerful, customizable logic to control deployment behavior.</p>
-<p><img src="images/sap-student-guide-0315.png" alt="0315"></p>
+<p><img src="images/sap-exam-guide-0315.png" alt="0315"></p>
 <p><strong>Amazon Elastic Container Service (Amazon ECS)</strong></p>
 <p>Amazon ECS deploys Docker containers and provides container management and scheduling.</p>
 <p><strong>AWS Lambda</strong></p>
@@ -306,7 +306,7 @@
 <li>Overview of Deployment Options on AWS: <a href="https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf" target="_blank">https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf</a></li>
 <li>Managing Your AWS Infrastructure at Scale: <a href="https://d0.awsstatic.com/whitepapers/managing-your-aws-infrastructure-at-scale.pdf" target="_blank">https://d0.awsstatic.com/whitepapers/managing-your-aws-infrastructure-at-scale.pdf</a></li>
 </ul>
-<p><img src="images/sap-student-guide-0316.png" alt="0316"></p>
+<p><img src="images/sap-exam-guide-0316.png" alt="0316"></p>
 <p>The following slides use the Lifecycle Events from AWS OpsWorks to illustrate how
 you can use AWS services to manage an application lifecycle. Lifecycle events are:</p>
 <ul>
@@ -324,15 +324,15 @@ you can use AWS services to manage an application lifecycle. Lifecycle events ar
 <p>Similarly to CreationPolicy, a WaitCondition is a separate resource that allows a delay. A WaitCondition is a separate CloudFormation resource, not a property of an instance or Auto Scaling group. Multiple instances can depend on one WaitCondition, such as a database and a cache, both of which need to be configured before CloudFormation creates application servers.</p>
 <p>The instances send a signal to AWS CloudFormation using the cfn-signal tool, which AWS provides for most operating systems.</p>
 <p>For a related video from the 2015 re:Invent on CloudFormation best practices, see: <a href="https://www.youtube.com/watch?v=fVMlxJJNmyA" target="_blank">https://www.youtube.com/watch?v=fVMlxJJNmyA</a></p>
-<p><img src="images/sap-student-guide-0318.png" alt="0318"></p>
+<p><img src="images/sap-exam-guide-0318.png" alt="0318"></p>
 <p>UserData is an alternative to AWS::CloudFormation::Init. With UserData, you are just executing raw shell code. The biggest difference between AWS::CloudFormation::Init and UserData is error handling. With UserData, you use another tool called cfn-signal to notify AWS CloudFormation that the UserData script has successfully executed&#x2014;or, if there was an error, to capture that error and then notify AWS CloudFormation that a resource was not created successfully. With CloudFormation::Init, that function is built in inherently within the DSL.</p>
 <p>Stack updates help when you have a stack that is running (e.g., resources were created with an AWS CloudFormation template) and you need to make some change (e.g., change to security groups, user policies, etc.). You can document those changes in the same AWS CloudFormation template. First do an update-stack operation and pass the new template. AWS receives that new template via the API call, looks at the current stack and the properties that are applied to those resources, and compares them to the new AWS CloudFormation template, identifying the differences. The differences are what end up being executed on. There is also another feature that blends into this process: Change Sets. When you do an update-stack operation, you are identifying what the potential changes are, but you do not specify when those changes should be applied. By using Change Set, you can identify what resources are impacted and then specify the timing of when those changes are executed (e.g., some changes might require a downtime window, which you would want to do during an off-peak time).</p>
-<p><img src="images/sap-student-guide-0320.png" alt="0320"></p>
+<p><img src="images/sap-exam-guide-0320.png" alt="0320"></p>
 <p>delete-stack operation is the opposite of a create stack operation. In a create-stack operation, AWS goes through the AWS CloudFormation template submitted and executes those resources in the order you defined them in the template. In a delete-stack, the opposite occurs. AWS systematically removes those resources in a top-down approach. For instance, EC2 instances might be removed first, followed by the networking construct (e.g. VPC), and then the users and groups. That way, all resources are cleaned up and there are no dangling dependencies persisting in your account after you no longer need this application.</p>
 <p>In regards to a DeletionPolicy: sometimes when you are deprovisioning resources, you don&#x2019;t want to pay for the resource itself, but you still need some of the data contained in that service. For example, with an RDS database, you may no longer need the service, but don&#x2019;t want to lose the data associated with that database. By applying a DeletionPolicy onto that resource in the AWS CloudFormation notation, you can indicate to create a snapshot of your data before deleting the resource. Snapshot storage is much cheaper than having a service like Amazon RDS running 24 hours, 7 days a week, sitting idle just to store data.</p>
-<p><img src="images/sap-student-guide-0321.png" alt="0321"></p>
+<p><img src="images/sap-exam-guide-0321.png" alt="0321"></p>
 <p>First, author a template. Then perform a create-stack operation to generate all of the resources defined with that template. All the property values you define in that AWS CloudFormation notation are applied to those resources. Then you can do an update-stack operation in order to apply changes and make modifications throughout the lifecycle of your app. Finally, run a delete-stack operation, which is the inverse of create-stack&#x2014;removing all those resources in the correct order.</p>
-<p><img src="images/sap-student-guide-0322.png" alt="0322"></p>
+<p><img src="images/sap-exam-guide-0322.png" alt="0322"></p>
 <p><strong>Deploy &#x2013; AWS CodeDeploy</strong></p>
 <p>AWS CodeDeploy deploys code to a set of instances (within EC2, outside AWS, or a combination of both). It doesn&#x2019;t set up the EC2 instances, though. AWS CloudFormation or other services can be used for that.</p>
 <p>An AWS CodeDeploy application has multiple revisions (called versions). An application has deployment configurations and deployment groups. The application binaries are stored in Amazon S3 or in GitHub.</p>
@@ -341,11 +341,11 @@ you can use AWS services to manage an application lifecycle. Lifecycle events ar
 <p>AWS CodeDeploy uses appspec.yml (which is usually checked in with the application source code) to orchestrate the deployment activities. Appspec.yml has lifecycle hooks, that AWS CodeDeploy triggers scripts on.</p>
 <p>For more information on AWS CodeDeploy deployments, see: <a href="http://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps.html" target="_blank">http://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps.html</a></p>
 <p>For more information on AWS CodeDeploy Lifecycle Hooks, see: <a href="http://docs.aws.amazon.com/codedeploy/latest/userguide/app-spec-ref-hooks.html" target="_blank">http://docs.aws.amazon.com/codedeploy/latest/userguide/app-spec-ref-hooks.html</a></p>
-<p><img src="images/sap-student-guide-0324.png" alt="0324"></p>
+<p><img src="images/sap-exam-guide-0324.png" alt="0324"></p>
 <p><strong>Undeploy/Shut down &#x2013; AWS CodeDeploy</strong></p>
 <p>AWS CodeDeploy can remove applications by using customized pre-or post-deployment scripts.</p>
 <p>AWS CodeDeploy cannot remove the underlying infrastructure (EC2 instances). Typically, another service such as AWS CloudFormation is used to remove the infrastructure components.</p>
-<p><img src="images/sap-student-guide-0325.png" alt="0325"></p>
+<p><img src="images/sap-exam-guide-0325.png" alt="0325"></p>
 <p><strong>AWS CodeDeploy Tips</strong></p>
 <ol>
 <li>The AWS CodeDeploy agent is open source. It has been tested on Amazon Linux, RHEL, Ubuntu server, and Windows.</li>
@@ -361,7 +361,7 @@ you can use AWS services to manage an application lifecycle. Lifecycle events ar
 <li>CodeDeploy keeps track of the files that were copied for the current revision and removes them before starting a new deployment.</li>
 <li>CodeDeploy supports resource-level permissions: <a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/access_permissions.html" target="_blank">http://docs.aws.amazon.com/IAM/latest/UserGuide/access_permissions.html</a>. For each AWS CodeDeploy resource, you can specify which user has access to which actions. For example, you can create an IAM policy to allow a user to deploy a particular application, but only list revisions for other applications.</li>
 </ol>
-<p><img src="images/sap-student-guide-0327.png" alt="0327"></p>
+<p><img src="images/sap-exam-guide-0327.png" alt="0327"></p>
 <p><strong>Set up/Configure &#x2013; AWS Elastic Beanstalk</strong></p>
 <p>An Elastic Beanstalk application contains one or more environments to deploy an application onto. Each environment can be a single EC2 instance or a load-balanced Auto Scaling group. A single application can have multiple Elastic Beanstalk environments.</p>
 <p>You can configure and customize an Elastic Beanstalk environment using .ebextensions, which is a folder in the root of the application package, and contains files in a YAML format. The files specify users, groups, services, files, sources, and commands. This is much the same as CloudFormation::Init property.</p>
@@ -378,86 +378,153 @@ you can use AWS services to manage an application lifecycle. Lifecycle events ar
 <li>For information on customizing software on Windows Servers, see: <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-windows-ec2.html" target="_blank">http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-windows-ec2.html</a></li>
 <li>For information on customizing software on Linux Servers, see: <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-ec2.html" target="_blank">http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-ec2.html</a></li>
 </ul>
-<p><img src="images/sap-student-guide-0329.png" alt="0329"></p>
+<p><img src="images/sap-exam-guide-0329.png" alt="0329"></p>
 <p><strong>Deploy &#x2013; Elastic Beanstalk</strong></p>
 <p>An Elastic Beanstalk application can contain multiple application versions. An application version is deployed to an environment.</p>
 <p>You can upload a new version of your application to Elastic Beanstalk, specifying a version label. After upload, you can deploy the new version to an Elastic Beanstalk environment. A deployment can target a whole environment or perform a rolling update to a percentage of instances in the environment.</p>
 <p>The &#x201C;deployment with zero downtime&#x201D; option deploys a new application version to a second environment, and then swaps the DNS CNAME between the two environments.</p>
 <p>For more information on deploying applications to AWS Elastic Beanstalk environments, see: <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.deploy-existing-version.html" target="_blank">http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.deploy-existing-version.html</a></p>
-<p><img src="images/sap-student-guide-0330.png" alt="0330"></p>
+<p><img src="images/sap-exam-guide-0330.png" alt="0330"></p>
 <p><strong>Undeploy/Shutdown &#x2013; Elastic Beanstalk</strong></p>
 <p>An environment can be removed from an Elastic Beanstalk application. An application version running on that environment will be stopped as part of the removal of the environment.</p>
-<p><img src="images/sap-student-guide-0331.png" alt="0331">
-<img src="images/sap-student-guide-0332.png" alt="0332">
-<img src="images/sap-student-guide-0333.png" alt="0333">
-<img src="images/sap-student-guide-0334.png" alt="0334">
-<img src="images/sap-student-guide-0335.png" alt="0335">
-<img src="images/sap-student-guide-0336.png" alt="0336">
-<img src="images/sap-student-guide-0337.png" alt="0337">
-<img src="images/sap-student-guide-0338.png" alt="0338">
-<img src="images/sap-student-guide-0339.png" alt="0339"></p>
-<p><img src="images/sap-student-guide-0340.png" alt="0340">
-<img src="images/sap-student-guide-0341.png" alt="0341">
-<img src="images/sap-student-guide-0342.png" alt="0342">
-<img src="images/sap-student-guide-0343.png" alt="0343">
-<img src="images/sap-student-guide-0344.png" alt="0344">
-<img src="images/sap-student-guide-0345.png" alt="0345">
-<img src="images/sap-student-guide-0346.png" alt="0346">
-<img src="images/sap-student-guide-0347.png" alt="0347">
-<img src="images/sap-student-guide-0348.png" alt="0348">
-<img src="images/sap-student-guide-0349.png" alt="0349"></p>
-<p><img src="images/sap-student-guide-0350.png" alt="0350">
-<img src="images/sap-student-guide-0351.png" alt="0351">
-<img src="images/sap-student-guide-0352.png" alt="0352">
-<img src="images/sap-student-guide-0353.png" alt="0353">
-<img src="images/sap-student-guide-0354.png" alt="0354">
-<img src="images/sap-student-guide-0355.png" alt="0355">
-<img src="images/sap-student-guide-0356.png" alt="0356">
-<img src="images/sap-student-guide-0357.png" alt="0357">
-<img src="images/sap-student-guide-0358.png" alt="0358">
-<img src="images/sap-student-guide-0359.png" alt="0359"></p>
-<p><img src="images/sap-student-guide-0360.png" alt="0360">
-<img src="images/sap-student-guide-0361.png" alt="0361">
-<img src="images/sap-student-guide-0362.png" alt="0362">
-<img src="images/sap-student-guide-0363.png" alt="0363">
-<img src="images/sap-student-guide-0364.png" alt="0364">
-<img src="images/sap-student-guide-0365.png" alt="0365">
-<img src="images/sap-student-guide-0366.png" alt="0366">
-<img src="images/sap-student-guide-0367.png" alt="0367">
-<img src="images/sap-student-guide-0368.png" alt="0368">
-<img src="images/sap-student-guide-0369.png" alt="0369"></p>
-<p><img src="images/sap-student-guide-0370.png" alt="0370">
-<img src="images/sap-student-guide-0371.png" alt="0371">
-<img src="images/sap-student-guide-0372.png" alt="0372">
-<img src="images/sap-student-guide-0373.png" alt="0373">
-<img src="images/sap-student-guide-0374.png" alt="0374">
-<img src="images/sap-student-guide-0375.png" alt="0375">
-<img src="images/sap-student-guide-0376.png" alt="0376">
-<img src="images/sap-student-guide-0377.png" alt="0377">
-<img src="images/sap-student-guide-0378.png" alt="0378">
-<img src="images/sap-student-guide-0379.png" alt="0379"></p>
-<p><img src="images/sap-student-guide-0380.png" alt="0380">
-<img src="images/sap-student-guide-0381.png" alt="0381">
-<img src="images/sap-student-guide-0382.png" alt="0382">
-<img src="images/sap-student-guide-0383.png" alt="0383">
-<img src="images/sap-student-guide-0384.png" alt="0384">
-<img src="images/sap-student-guide-0385.png" alt="0385">
-<img src="images/sap-student-guide-0386.png" alt="0386">
-<img src="images/sap-student-guide-0387.png" alt="0387">
-<img src="images/sap-student-guide-0388.png" alt="0388">
-<img src="images/sap-student-guide-0389.png" alt="0389"></p>
-<p><img src="images/sap-student-guide-0390.png" alt="0390">
-<img src="images/sap-student-guide-0391.png" alt="0391">
-<img src="images/sap-student-guide-0392.png" alt="0392">
-<img src="images/sap-student-guide-0393.png" alt="0393">
-<img src="images/sap-student-guide-0394.png" alt="0394">
-<img src="images/sap-student-guide-0395.png" alt="0395">
-<img src="images/sap-student-guide-0396.png" alt="0396">
-<img src="images/sap-student-guide-0397.png" alt="0397">
-<img src="images/sap-student-guide-0398.png" alt="0398">
-<img src="images/sap-student-guide-0399.png" alt="0399"> </p>
+<p><img src="images/sap-exam-guide-0331.png" alt="0331"></p>
+<p><strong>Elastic Beanstalk Tips</strong></p>
+<ol>
+<li>Beanstalk runs on the Amazon Linux AMI and the Windows Server 2012 R2 AMI.</li>
+<li>With Git deployment, only the modified files are transmitted to AWS Elastic Beanstalk.</li>
+<li>Elastic Beanstalk can detect if your application is not responding on the custom URL even though the underlying infrastructure appears healthy and will log that as an environment event.</li>
+<li>You can allow or deny permissions to specific AWS Elastic Beanstalk resources such as applications, application versions, and environments.</li>
+<li>You can opt to have your AWS Elastic Beanstalk environments automatically updated to the latest version of the underlying platform that is running your application during a specified maintenance window.</li>
+</ol>
+<p><img src="images/sap-exam-guide-0332.png" alt="0332"></p>
+<p><strong>Set up/Configure &#x2013; AWS OpsWorks</strong></p>
+<p>With OpsWorks, you can create a stack, which defines an application. Within the stack, layers are a functional grouping; e.g., application tier, database, or caching. OpsWorks can use some existing AWS services, such as the Relational Database Service and Elastic Load Balancing, as layers. Other layers can be custom EC2 instances or even systems that are external to AWS. OpsWorks uses Chef recipes to configure EC2 instances. This means that you can run complex declarative configuration of multiple EC2 instances. OpsWorks can inject variables into these Chef recipes, so you can insert instance IDs, passwords, and other items into the Chef recipes at runtime, instead of hard-coding them.</p>
+<p>For a video from the 2015 re:Invent entitled &#x201C;AWS OpsWorks Under the Hood&#x201D;, see: <a href="https://www.youtube.com/watch?v=WxSu015Zgak" target="_blank">https://www.youtube.com/watch?v=WxSu015Zgak</a></p>
+<p><img src="images/sap-exam-guide-0333.png" alt="0333"></p>
+<p>In OpsWorks, an app is the definition of the application. This includes the location of the application binaries and the Chef recipes needed to deploy and configure them. The Deploy lifecycle event in OpsWorks is used to run these Chef recipes.</p>
+<p>Lifecycle events are how OpsWorks manages an application lifecycle. Chef recipes are attached to one or more lifecycle events. You can use pre-prepared Chef recipes and you can create and use your own recipes.</p>
+<p>OpsWorks doesn&#x2019;t have an inherent understanding of application versioning. If you upload a new application binary, there isn&#x2019;t a way to mark this with an explicit version number within OpsWorks. You can deploy the application by executing the OpsWorks Deploy lifecycle event against the layer you specify. For example, a new App deployment would typically run against the layer that contains the Amazon EC2 instances that host the application.</p>
+<p>When you run a Deploy lifecycle event, you can choose to remove layers and individual instances from the scope of the Deploy event. This allows you to perform an incremental/rolling deployment, by targeting a subset of instances. Running the Deploy lifecycle event against a layer also runs the Configure lifecycle event against all other layers, i.e., other layers are aware of the changes introduced by the Deploy event. For example, the Configure lifecycle event may trigger an update of the Database schema in the Database layer, or add a new listener in an Elastic Load Balancing layer.</p>
+<p>For more information, see:</p>
+<ul>
+<li>OpsWorks &#x2013; Adding Apps: <a href="http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-creating.html" target="_blank">http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-creating.html</a></li>
+<li>OpsWorks &#x2013; Deploying Apps: <a href="http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-deploying.html" target="_blank">http://docs.aws.amazon.com/opsworks/latest/userguide/workingapps-deploying.html</a></li>
+<li>OpsWorks - Cookbooks and Recipes: <a href="http://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook.html" target="_blank">http://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook.html</a></li>
+</ul>
+<p><img src="images/sap-exam-guide-0335.png" alt="0335"></p>
+<p><strong>Undeploy/Shutdown &#x2013; OpsWorks</strong></p>
+<p>The OpsWorks Undeploy lifecycle event can remove an app. This is useful if you want to remove files before installing a new version. The OpsWorks Shutdown lifecycle event will stop an instance. You can also delete instances that are stopped, delete entire layers, or delete an entire stack.</p>
+<p><img src="images/sap-exam-guide-0336.png" alt="0336"></p>
+<p><strong>OpsWorks Tips</strong></p>
+<ol>
+<li>With OpsWorks you can deploy to Amazon Linux, Ubuntu 12.04 LTS, Ubuntu 14.04 LTS, and Windows Server 2012 R2</li>
+<li>OpsWorks itself runs in US East (Northern Virginia) and provides access to all of your OpsWorks applications no matter where they&#x2019;re running.</li>
+<li>OpsWorks supports all Linux machines on-premises that can install the OpsWorks agent and have connection to AWS.</li>
+<li>You can use your own AMIs or customize the AMIs OpsWorks supports using Chef scripts to install agents and other software that you require. Using your own Windows AMIs is not currently supported by OpsWorks. (For information on using custom AMIs, see: <a href="http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-custom-ami.html" target="_blank">http://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-custom-ami.html</a>)</li>
+<li>Instance setup is done exclusively through Chef recipes. Do not use EC2 user data to customize.</li>
+<li>OpsWorks supports automatic time and load-based instance scaling.</li>
+</ol>
+<p><img src="images/sap-exam-guide-0337.png" alt="0337"></p>
+<p><strong>Set up/Configure &#x2013; Amazon Elastic Container Service (Amazon ECS)</strong></p>
+<p>Amazon Elastic Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster of Amazon EC2 instances.</p>
+<p>An ECS Cluster is a logical grouping of container instances that you can place tasks on. For more information, see: <a href="http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_clusters.html" target="_blank">http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_clusters.html</a>.</p>
+<p>A Container instance is an Amazon EC2 instance that is running the Amazon ECS agent and is registered into a cluster. For more information, see: <a href="http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_instances.html" target="_blank">http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_instances.html</a>.
+An ECS task definition is a description of an application that contains one or more container definitions, such as CPU and RAM requirements, network port bindings, and storage. For more information, see: &lt;<a href="http://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_defintions.ht" target="_blank">http://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_defintions.ht</a> ml&gt;.</p>
+<p>For a video on Amazon Elastic Container Service: Manage Docker-Enabled Apps in EC2, see: <a href="https://www.youtube.com/watch?v=c0EnHl3o-L4" target="_blank">https://www.youtube.com/watch?v=c0EnHl3o-L4</a></p>
+<p><img src="images/sap-exam-guide-0339.png" alt="0339"></p>
+<p><strong>Deploy &#x2013; Elastic Container Service</strong></p>
+<p>An ECS Task is an instantiation of a task definition that is running on a container instance.</p>
+<p>An ECS Service allows you to run and maintain a specified number of instances of a task definition simultaneously.</p>
+<p>The ECS Scheduler places tasks on container instances, based on resource availability.</p>
+<p>The service scheduler is ideally suited for long-running stateless services and applications. The service scheduler ensures that the specified number of tasks are constantly running and reschedules tasks when a task fails (for example, if the underlying container instance fails for some reason). The service scheduler optionally also makes sure that tasks are registered against an Elastic Load Balancing load balancer. You can update your services that are maintained by the service scheduler, such as deploying a new task definition, or changing the
+running number of desired tasks.</p>
+<p>The RunTask action is ideally suited for processes such as batch jobs that perform work and then stop. RunTask randomly distributes tasks across your cluster and tries to minimize the chances of a single instance on your cluster receiving a disproportionate number of tasks. For example, you could have a process that calls RunTask when work comes into a queue. The task pulls work from the queue, performs the work, such as a data transformation, and then exits.</p>
+<p><img src="images/sap-exam-guide-0341.png" alt="0341"></p>
+<p><strong>Elastic Container Service Tips:</strong></p>
+<ol>
+<li>Docker is the only container platform supported by Elastic Container Service at this time.</li>
+<li>You can use any AMI that meets the Amazon ECS AMI specification.</li>
+</ol>
+<p><img src="images/sap-exam-guide-0342.png" alt="0342"></p>
+<p>When designing a development, testing, or staging environment, you need to consider several factors:</p>
+<p><strong>Level of availability required:</strong></p>
+<ul>
+<li>If developers have their own environment, they may not need high availability.</li>
+<li>If developers share an environment, they may need high availability because the loss of the environment could cause large productivity losses.</li>
+</ul>
+<p><strong>Performance:</strong></p>
+<ul>
+<li>Simple smoke tests in an environment could use considerably fewer resources (e.g., smaller EC2 instances) to achieve the goal of the smoke test.</li>
+<li>A load test would require a full-size environment.</li>
+<li>You might be able to scale an environment from small to large by resizing EC2 instances, RDS instances, etc.</li>
+</ul>
+<p><strong>Similarity:</strong></p>
+<ul>
+<li>Test environments should be built the same way production environments are built. This reduces the chance of environmental factors-causing issues when code is moved into production.</li>
+</ul>
+<p><strong>Cost:</strong></p>
+<ul>
+<li>Always architect with cost in mind.</li>
+<li>Smaller, fewer resources mean lower cost.</li>
+<li>Turn off non-production environments at night.</li>
+</ul>
+<p><img src="images/sap-exam-guide-0344.png" alt="0344"></p>
+<p><img src="images/sap-exam-guide-0345.png" alt="0345"></p>
+<p>Your company runs an event management SaaS application that uses Amazon EC2, Auto Scaling, Elastic Load Balancing, and Amazon RDS. Your software is installed on instances at first boot, using a tool such as Puppet or Chef, which you also use to deploy small software updates multiple times per week. After a maior overhaul of your software, you roll out version 2-a new, much larger version of the software-to your running instances. Some of the instances are terminated during the update process. What actions could you take to prevent instances from being terminated in the future?(Select two answers.)</p>
+<p><img src="images/sap-exam-guide-0346.png" alt="0346"></p>
+<p><img src="images/sap-exam-guide-0347.png" alt="0347"></p>
+<p>A. Use the zero downtime feature of AWS Elastic Beanstalk to deploy new software releases to your existing instances.</p>
+<p>B. Use AWS Codedeploy Create an application and a deployment targeting the Auto Scaling group Use AWS 
+Codedeploy to deploy and update the application in thefuture.</p>
+<p>C. Suspend the Auto Scaling process.Deregister the instance from ELB before updating the application, and register it with ELB on successful update.</p>
+<p>D. Use the AWS Console to enable termination protection for the current instances.</p>
+<p>E. Run&quot;aws autoscaling detach-load-balancers&quot; before updating your application.</p>
+<p><img src="images/sap-exam-guide-0348.png" alt="0348"></p>
+<p><img src="images/sap-exam-guide-0349.png" alt="0349"></p>
+<p>The zero downtime deployment is a blue/green (or red/black) deployment, which deploys an updated application to new instances, and then swaps the DNS to point to the new instances. The answer is internally inconsistent because it states that you could use the zero downtime feature to deploy new software to existing instances, which is not what the zero downtime deployment feature does.</p>
+<p><img src="images/sap-exam-guide-0350.png" alt="0350">
+<img src="images/sap-exam-guide-0351.png" alt="0351"></p>
+<p>AWS CodeDeploy can run pre-install tasks to remove an instance from an ELB load balancer or suspend health checks before install, and then reinstate. AWS CodeDeploy supports deploying to an Auto Scaling group, (<a href="http://docs.aws.amazon.com/codedeploy/latest/userguide/auto-scaling-integ.html" target="_blank">http://docs.aws.amazon.com/codedeploy/latest/userguide/auto-scaling-integ.html</a>) and ELB load balancer (<a href="http://docs.aws.amazon.com/codedeploy/latest/userguide/elastic-load-balancing-integ.html" target="_blank">http://docs.aws.amazon.com/codedeploy/latest/userguide/elastic-load-balancing-integ.html</a>).</p>
+<p><img src="images/sap-exam-guide-0352.png" alt="0352"></p>
+<p><img src="images/sap-exam-guide-0353.png" alt="0353"></p>
+<p>C. Suspend the Auto Scaling process, and then use the AWS CodeDeploy lifecycle hooks to deregister the instance from the ELB, update the application, and then re-register it with ELB. Resume the Auto Scaling process.</p>
+<p><img src="images/sap-exam-guide-0354.png" alt="0354"></p>
+<p><img src="images/sap-exam-guide-0355.png" alt="0355"></p>
+<p>D. This won&#x2019;t prevent instances in an Auto Scaling group from terminating
+(<a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination" target="_blank">http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination</a>).</p>
+<p><img src="images/sap-exam-guide-0356.png" alt="0356"></p>
+<p><img src="images/sap-exam-guide-0357.png" alt="0357"></p>
+<p>E. Detaching the load balancer would stop all traffic to all instances in the Auto Scaling group (<a href="http://docs.aws.amazon.com/autoscaling/latest/userguide/attach-load-balancer-asg.html" target="_blank">http://docs.aws.amazon.com/autoscaling/latest/userguide/attach-load-balancer-asg.html</a>).</p>
+<p><img src="images/sap-exam-guide-0358.png" alt="0358"></p>
+<p>Your company has developed a system to collect clickstream data from web marketingcampaigns that are run all over the world. The system uses Autoscaling for Amazon EC2 instances behind an Elastic Load Balancing load balancer, with data stored in MySQL RDS. A campaign  lasts one to two weeks. When it is finished, the tracking system is torn down to minimize costs. At the end of each quarter, data from all campaigns is moved to Amazon Redshift, where it is aggregated, analyzed, and used to generate detailed reports. The company has adopted AWS Cloudformation to automatically deploy the application in any region. How can you ensure that the AWS Cloudformation template meets the customer&apos;s requirements?(Select two answers.)</p>
+<p><img src="images/sap-exam-guide-0359.png" alt="0359"></p>
+<p><img src="images/sap-exam-guide-0360.png" alt="0360"></p>
+<p>A. Use mappings and the Fn::Findlnmap function to find the right AMI ID for the Imageld attribute.</p>
+<p>B. Use conditions and the AWS::Region pseudo parameter to find the right AMI ID for the Imageld attribute.</p>
+<p>C. Make sure that the name of the RDS instance is different in every region.</p>
+<p>D. Define IAM users with the right to create an AWS Cloudformation stack in every region.</p>
+<p>E. Set a Deletionpolicy of &quot;Snapshot&quot; for the RDS instances.</p>
+<p>F. Set a Stackpolicy with &quot;Effect:Deny &quot;, &quot;Action:Update<em>&quot;,and&quot;Resource: RDS</em>&quot;.</p>
+<p><img src="images/sap-exam-guide-0361.png" alt="0361"></p>
+<p><img src="images/sap-exam-guide-0362.png" alt="0362"></p>
+<p>A. This helps deploy a stack in any region. This approach is used in sample AWS CloudFormation templates.</p>
+<p><img src="images/sap-exam-guide-0363.png" alt="0363"></p>
+<p><img src="images/sap-exam-guide-0364.png" alt="0364"></p>
+<p>B. You could do this, but it&#x2019;s more complex than response A. It would require conditions to be repeated within each resource that references an AMI.</p>
+<p><img src="images/sap-exam-guide-0365.png" alt="0365"></p>
+<p><img src="images/sap-exam-guide-0366.png" alt="0366"></p>
+<p>C. This is not true. It&#x2019;s possible to have two RDS instances with the same name in different regions.</p>
+<p><img src="images/sap-exam-guide-0367.png" alt="0367"></p>
+<p><img src="images/sap-exam-guide-0368.png" alt="0368"></p>
+<p>D. IAM is a global service. IAM users cannot be defined per region. </p>
+<p><img src="images/sap-exam-guide-0369.png" alt="0369"></p>
+<p><img src="images/sap-exam-guide-0370.png" alt="0370"></p>
+<p>E. A DeletionPolicy of &#x201C;Snapshot&#x201D; allows you to retain the data from the database. You can then recreate the RDS instances from a snapshot at the end of the quarter and import the data into Redshift. Note that the response isn&#x2019;t explicit about WHY you would want to snapshot the RDS instances on termination. Inferring that this solves part of your problem is up to you.</p>
+<p><img src="images/sap-exam-guide-0371.png" alt="0371"></p>
+<p><img src="images/sap-exam-guide-0372.png" alt="0372"></p>
+<p>F. An AWS CloudFormation StackPolicy stops only stack updates, not stack deletion. This policy would prevent stack updates from updating RDS resources, but wouldn&#x2019;t stop the stack from being deleted. When the stack is deleted, the RDS database would also be deleted, so you will not be able to load the data into Amazon Redshift at the end of the quarter. </p>
 <footer class="page-footer"><span class="copyright">@Copyright &#xA9; one 2014-2019, powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x6700;&#x540E;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-05-18 15:20:42
+2019-05-18 17:15:47
 </span></footer>
                                 
                                 </section>
@@ -497,7 +564,7 @@ you can use AWS services to manage an application lifecycle. Lifecycle events ar
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Module6:Deployment Management","level":"1.3.1","depth":2,"next":{"title":"Module7:security","level":"1.3.2","depth":2,"path":"SAP/SAP-Exam-Guide-module07.md","ref":"SAP/SAP-Exam-Guide-module07.md","articles":[]},"previous":{"title":"[SAP认证辅导]","level":"1.3","depth":1,"ref":"","articles":[{"title":"Module6:Deployment Management","level":"1.3.1","depth":2,"path":"SAP/SAP-Exam-Guide-module06.md","ref":"SAP/SAP-Exam-Guide-module06.md","articles":[]},{"title":"Module7:security","level":"1.3.2","depth":2,"path":"SAP/SAP-Exam-Guide-module07.md","ref":"SAP/SAP-Exam-Guide-module07.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["local-pagefooter","expandable-menu","-sharing","sharing-plus","splitter","anchor-navigation-ex","prism","-highlight","include-codeblock","ace","-lunr","-search","search-pro","insert-logo-link-style","mermaid-flow"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"ignore":["mermaid","eval-js"]},"ace":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"insert-logo-link-style":{"link":"https://sunyone.github.io/AWS/book/","src":"data:image/png;base64,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","style":"background: none;","target":""},"local-pagefooter":{"copyright":"Copyright &copy one 2014-2019","islocal":true,"modify_label":"该文件最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-flow":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-menu":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"monokai","unindent":true},"sharing":{"qq":true,"all":[],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"AWS","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"AWS","language":"zh-hans","links":{"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"AWS"},"file":{"path":"SAP/SAP-Exam-Guide-module06.md","mtime":"2019-05-18T07:20:42.880Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-18T07:25:48.408Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Module6:Deployment Management","level":"1.3.1","depth":2,"next":{"title":"Module7:security","level":"1.3.2","depth":2,"path":"SAP/SAP-Exam-Guide-module07.md","ref":"SAP/SAP-Exam-Guide-module07.md","articles":[]},"previous":{"title":"[SAP认证辅导]","level":"1.3","depth":1,"ref":"","articles":[{"title":"Module6:Deployment Management","level":"1.3.1","depth":2,"path":"SAP/SAP-Exam-Guide-module06.md","ref":"SAP/SAP-Exam-Guide-module06.md","articles":[]},{"title":"Module7:security","level":"1.3.2","depth":2,"path":"SAP/SAP-Exam-Guide-module07.md","ref":"SAP/SAP-Exam-Guide-module07.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["local-pagefooter","expandable-menu","-sharing","sharing-plus","splitter","anchor-navigation-ex","prism","-highlight","include-codeblock","ace","-lunr","-search","search-pro","insert-logo-link-style","mermaid-flow"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"ignore":["mermaid","eval-js"]},"ace":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"insert-logo-link-style":{"link":"https://sunyone.github.io/AWS/book/","src":"data:image/png;base64,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","style":"background: none;","target":""},"local-pagefooter":{"copyright":"Copyright &copy one 2014-2019","islocal":true,"modify_label":"该文件最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-flow":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"expandable-menu":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"monokai","unindent":true},"sharing":{"qq":true,"all":[],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"AWS","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"AWS","language":"zh-hans","links":{"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"AWS"},"file":{"path":"SAP/SAP-Exam-Guide-module06.md","mtime":"2019-05-18T09:15:47.150Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-18T09:16:11.703Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
